@@ -1,0 +1,148 @@
+'use client';
+
+import { useState } from 'react';
+import PermitMap, { type PermitFeature } from './PermitMap';
+
+type Row = Record<string, unknown>;
+type Response = { sql?: string; explanation?: string; rows?: Row[]; error?: string };
+
+const EXAMPLES = [
+  'Multi-family residential permits in Beltline issued since January over $5 million',
+  'Top 10 contractors by permit count in the last 12 months',
+  'Demolition permits within 1 km of downtown in the last 90 days',
+  'Average project cost by community for new residential construction',
+];
+
+export default function QueryApp() {
+  const [q, setQ] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [resp, setResp] = useState<Response | null>(null);
+
+  async function run(question: string) {
+    if (!question.trim() || loading) return;
+    setLoading(true);
+    setResp(null);
+    try {
+      const r = await fetch('/api/query', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question }),
+      });
+      setResp(await r.json());
+    } catch (e) {
+      setResp({ error: e instanceof Error ? e.message : String(e) });
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const rows = resp?.rows ?? [];
+  const cols = rows.length ? Object.keys(rows[0]) : [];
+  const mapRows: PermitFeature[] = rows
+    .filter((r) => Number.isFinite(Number(r.latitude)) && Number.isFinite(Number(r.longitude)))
+    .map((r) => ({ ...r, latitude: Number(r.latitude), longitude: Number(r.longitude) }));
+
+  return (
+    <div className="flex flex-col gap-4">
+      <form
+        onSubmit={(e) => { e.preventDefault(); run(q); }}
+        className="flex gap-2"
+      >
+        <input
+          className="flex-1 px-4 py-3 rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Ask anything about Calgary permits..."
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          disabled={loading}
+        />
+        <button
+          className="px-5 py-3 rounded-md bg-blue-600 text-white font-medium disabled:opacity-50"
+          disabled={loading || !q.trim()}
+          type="submit"
+        >
+          {loading ? 'Thinking…' : 'Ask'}
+        </button>
+      </form>
+
+      <div className="flex flex-wrap gap-2 text-xs">
+        {EXAMPLES.map((ex) => (
+          <button
+            key={ex}
+            onClick={() => { setQ(ex); run(ex); }}
+            disabled={loading}
+            className="px-3 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+          >
+            {ex}
+          </button>
+        ))}
+      </div>
+
+      {resp?.explanation && (
+        <div className="text-sm text-zinc-600 dark:text-zinc-400 italic">{resp.explanation}</div>
+      )}
+
+      {resp?.sql && (
+        <details className="bg-zinc-100 dark:bg-zinc-900 rounded-md p-3 text-xs">
+          <summary className="cursor-pointer text-zinc-500">Generated SQL</summary>
+          <pre className="mt-2 whitespace-pre-wrap font-mono">{resp.sql}</pre>
+        </details>
+      )}
+
+      {resp?.error && (
+        <div className="p-3 rounded-md bg-red-50 dark:bg-red-950/40 text-red-700 dark:text-red-300 text-sm font-mono">
+          {resp.error}
+        </div>
+      )}
+
+      {mapRows.length > 0 && (
+        <div className="rounded-md overflow-hidden border border-zinc-300 dark:border-zinc-700">
+          <PermitMap rows={mapRows} />
+        </div>
+      )}
+
+      {rows.length > 0 && (
+        <div className="overflow-auto border border-zinc-300 dark:border-zinc-700 rounded-md">
+          <table className="w-full text-xs">
+            <thead className="bg-zinc-100 dark:bg-zinc-900">
+              <tr>
+                {cols.map((c) => (
+                  <th key={c} className="text-left px-3 py-2 font-semibold border-b border-zinc-300 dark:border-zinc-700">
+                    {c}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, i) => (
+                <tr key={i} className="border-b border-zinc-200 dark:border-zinc-800">
+                  {cols.map((c) => (
+                    <td key={c} className="px-3 py-2 font-mono whitespace-nowrap">
+                      {formatCell(r[c])}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div className="px-3 py-2 text-xs text-zinc-500 bg-zinc-50 dark:bg-zinc-900">
+            {rows.length} row{rows.length === 1 ? '' : 's'}
+          </div>
+        </div>
+      )}
+
+      {resp && !resp.error && rows.length === 0 && (
+        <div className="text-sm text-zinc-500">No rows returned.</div>
+      )}
+    </div>
+  );
+}
+
+function formatCell(v: unknown): string {
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'number') return v.toLocaleString();
+  if (typeof v === 'string') {
+    if (/^\d{4}-\d{2}-\d{2}T/.test(v)) return v.slice(0, 10);
+    return v;
+  }
+  return JSON.stringify(v);
+}
