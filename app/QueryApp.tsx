@@ -4,7 +4,7 @@ import { useState } from 'react';
 import PermitMap, { type PermitFeature } from './PermitMap';
 
 type Row = Record<string, unknown>;
-type Response = { sql?: string; explanation?: string; rows?: Row[]; error?: string };
+type Response = { sql?: string; explanation?: string; rows?: Row[]; error?: string; total?: number; truncated?: boolean };
 
 const EXAMPLES = [
   'Multi-family residential permits in Beltline issued since January over $5 million',
@@ -125,7 +125,10 @@ export default function QueryApp() {
             </tbody>
           </table>
           <div className="px-3 py-2 text-xs text-zinc-500 bg-zinc-50 dark:bg-zinc-900">
-            {rows.length} row{rows.length === 1 ? '' : 's'}
+            {resp?.truncated
+              ? <>Showing {rows.length.toLocaleString()} of {(resp.total ?? 0).toLocaleString()} rows <span className="text-amber-600 dark:text-amber-400">— refine your query for the full set</span></>
+              : <>{(resp?.total ?? rows.length).toLocaleString()} row{(resp?.total ?? rows.length) === 1 ? '' : 's'}</>
+            }
           </div>
         </div>
       )}

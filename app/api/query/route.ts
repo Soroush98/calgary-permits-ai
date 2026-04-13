@@ -25,5 +25,6 @@ export async function POST(req: Request) {
   if (!result.ok) {
     return Response.json({ sql, explanation, error: result.error, rows: [] }, { status: 200 });
   }
-  return Response.json({ sql, explanation, rows: result.rows });
+  const truncated = result.rows.length < result.total;
+  return Response.json({ sql, explanation, rows: result.rows, total: result.total, truncated });
 }

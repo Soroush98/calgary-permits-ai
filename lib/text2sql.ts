@@ -9,11 +9,13 @@ TABLE permits (
   applieddate        timestamptz,               -- always present
   issueddate         timestamptz,               -- null while permit still under review; filter IS NOT NULL for "issued" queries
   completeddate      timestamptz,               -- rarely populated, ~2% fill. Avoid unless user explicitly asks about completed.
-  permittype         text,                      -- 'Residential Improvement Project' | 'Commercial / Multi Family Project' | 'Demolition' | 'New Residential' | ...
-  permitclass        text,                      -- e.g. '1101 - Basement Development', '1506 - Apt Apartment'
+  permittype         text,                      -- 'Residential Improvement Project' | 'Single Construction Permit' | 'Commercial / Multi Family Project' | 'Demolition' | 'Sign'
+  permitclass        text,                      -- e.g. '1101 - Basement Development', '1106 - Single Family House', '1506 - Apt Apartment', '1706 - Rhs Rowhouse'
   permitclassgroup   text,
-  workclass          text,                      -- 'New' | 'Alteration' | 'Repair' | 'Demolition' | 'Fire/ Security Alarm' | ...
+  permitclassmapped  text,                      -- 'Residential' | 'Non-Residential' — high-level category, useful for filtering residential vs commercial
+  workclass          text,                      -- 'New' | 'Alteration' | 'Addition' | 'Repair' | 'Demolition' | 'Fire/ Security Alarm'
   workclassgroup     text,
+  workclassmapped    text,                      -- 'New' | 'Existing'
   description        text,                      -- free text, often terse like 'Basement Dev', ~65% filled
   applicantname      text,                      -- free text, not normalized
   contractorname     text,                      -- free text, ~60% filled, NOT deduplicated (same co. may appear as multiple strings)
@@ -36,8 +38,9 @@ ${SCHEMA}
 Rules:
 - Output exactly one SELECT (or WITH ... SELECT) statement. No semicolons, no comments, no DDL, no DML.
 - The runtime wraps your query as \`SELECT * FROM (<your query>) t LIMIT 1000\` — write the query as a subquery-safe SELECT. Your own LIMIT is still allowed.
-- PostGIS is enabled. For "near X" queries prefer ST_DWithin(geom, ST_MakePoint(lon, lat)::geography, meters).
+- PostGIS is enabled. For "near X" queries prefer ST_DWithin(geom, ST_MakePoint(lon, lat)::geography, meters). ALWAYS add LIMIT 200 to spatial queries — large result sets with ST_DWithin are expensive and will time out.
 - communityname is UPPERCASE — use ILIKE or upper() when matching user input.
+- IMPORTANT: Never use leading-wildcard ILIKE (e.g. '%residential%') on permittype or workclass — it prevents index usage and causes timeouts on large tables. Instead use IN with exact values. Known permittype values: 'Residential Improvement Project', 'Single Construction Permit', 'Commercial / Multi Family Project', 'Demolition', 'Sign'. Known workclass values: 'New', 'Alteration', 'Addition', 'Repair', 'Demolition', 'Fire/ Security Alarm'. There is NO 'New Residential' permittype. For "residential" queries use: permittype IN ('Residential Improvement Project', 'Single Construction Permit'). For "new residential construction" queries, filter by workclass = 'New' AND permitclassmapped = 'Residential' (or use permitclass values like '1106 - Single Family House', '1407 - Two Family Semi-Detached (1 Unit)', '1706 - Rhs Rowhouse'). Multi-family residential permits use permittype = 'Commercial / Multi Family Project' with residential permitclass values.
 - For "issued" questions filter issueddate IS NOT NULL. Sort by issueddate DESC by default.
 - Prefer applieddate over issueddate when the user says "applied" or "submitted".
 - Dollar amounts are in CAD and live in estprojectcost.

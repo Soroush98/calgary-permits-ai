@@ -16,6 +16,7 @@ declare
   trimmed text := btrim(q);
   cleaned text;
   result  jsonb;
+  total   bigint;
 begin
   -- strip a single trailing semicolon if present
   cleaned := regexp_replace(trimmed, ';\s*$', '');
@@ -28,16 +29,20 @@ begin
     raise exception 'Only SELECT or WITH queries allowed';
   end if;
 
-  -- per-call timeout, auto-reset at end of statement
-  perform set_config('statement_timeout', '15s', true);
+  -- per-call timeout, auto-reset at end of transaction
+  perform set_config('statement_timeout', '30s', true);
 
+  -- get total row count
+  execute 'select count(*) from (' || cleaned || ') _cnt' into total;
+
+  -- get capped rows
   execute
-    'select coalesce(jsonb_agg(row_to_json(t)), ''[]''::jsonb) from ('
+    'select coalesce(jsonb_agg(row_to_json(t)), ''[]''::jsonb) from (select * from ('
     || cleaned
-    || ') t limit 1000'
+    || ') _inner limit 1000) t'
   into result;
 
-  return result;
+  return jsonb_build_object('rows', result, 'total', total);
 end;
 $$;
 

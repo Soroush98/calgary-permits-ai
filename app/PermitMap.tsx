@@ -82,6 +82,51 @@ function popupHTML(p: Record<string, unknown>): string {
   </div>`;
 }
 
+const SPIDER_SRC = 'spider';
+const SPIDER_LEGS = 'spider-legs';
+const SPIDER_POINTS = 'spider-points';
+
+function clearSpider(map: maplibregl.Map) {
+  const src = map.getSource(SPIDER_SRC) as maplibregl.GeoJSONSource | undefined;
+  if (src) src.setData({ type: 'FeatureCollection', features: [] });
+  const legSrc = map.getSource(SPIDER_LEGS) as maplibregl.GeoJSONSource | undefined;
+  if (legSrc) legSrc.setData({ type: 'FeatureCollection', features: [] });
+}
+
+function spiderfy(map: maplibregl.Map, center: [number, number], leaves: GeoJSON.Feature[]) {
+  const count = leaves.length;
+  // Radius in pixels, converted to degrees roughly at current zoom
+  const pixelRadius = Math.min(40 + count * 3, 120);
+  const zoom = map.getZoom();
+  const metersPerPixel = (40075016.686 * Math.cos((center[1] * Math.PI) / 180)) / (256 * Math.pow(2, zoom));
+  const degPerPixel = metersPerPixel / 111320;
+  const radius = pixelRadius * degPerPixel;
+
+  const spiderFeatures: GeoJSON.Feature[] = [];
+  const legFeatures: GeoJSON.Feature[] = [];
+
+  for (let i = 0; i < count; i++) {
+    const angle = (2 * Math.PI * i) / count - Math.PI / 2;
+    const lng = center[0] + radius * Math.cos(angle);
+    const lat = center[1] + radius * Math.sin(angle) * 1.5; // stretch vertically since lng degrees are smaller
+    spiderFeatures.push({
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [lng, lat] },
+      properties: leaves[i].properties,
+    });
+    legFeatures.push({
+      type: 'Feature',
+      geometry: { type: 'LineString', coordinates: [center, [lng, lat]] },
+      properties: {},
+    });
+  }
+
+  const legSrc = map.getSource(SPIDER_LEGS) as maplibregl.GeoJSONSource;
+  legSrc.setData({ type: 'FeatureCollection', features: legFeatures });
+  const src = map.getSource(SPIDER_SRC) as maplibregl.GeoJSONSource;
+  src.setData({ type: 'FeatureCollection', features: spiderFeatures });
+}
+
 export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
@@ -98,6 +143,7 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
             type: 'raster',
             tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
             tileSize: 256,
+            maxzoom: 18,
             attribution: '© OpenStreetMap contributors',
           },
         },
@@ -105,6 +151,7 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
       },
       center: CALGARY,
       zoom: 10,
+      maxZoom: 19,
     });
     mapRef.current = map;
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
@@ -114,8 +161,8 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         type: 'geojson',
         data: { type: 'FeatureCollection', features: [] },
         cluster: true,
-        clusterMaxZoom: 14,
-        clusterRadius: 50,
+        clusterMaxZoom: 17,
+        clusterRadius: 20,
       });
 
       map.addLayer({
@@ -125,8 +172,8 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         filter: ['has', 'point_count'],
         paint: {
           'circle-color': ['step', ['get', 'point_count'], '#93c5fd', 25, '#60a5fa', 100, '#2563eb'],
-          'circle-radius': ['step', ['get', 'point_count'], 16, 25, 22, 100, 28],
-          'circle-stroke-width': 2,
+          'circle-radius': ['step', ['get', 'point_count'], 14, 25, 18, 100, 24],
+          'circle-stroke-width': 1.5,
           'circle-stroke-color': '#ffffff',
         },
       });
@@ -138,7 +185,7 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         filter: ['has', 'point_count'],
         layout: {
           'text-field': ['get', 'point_count_abbreviated'],
-          'text-size': 13,
+          'text-size': 11,
           'text-font': ['Noto Sans Bold'],
         },
         paint: { 'text-color': '#ffffff' },
@@ -151,20 +198,75 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         filter: ['!', ['has', 'point_count']],
         paint: {
           'circle-color': typeColor,
-          'circle-radius': 7,
+          'circle-radius': 4,
+          'circle-stroke-width': 1,
+          'circle-stroke-color': '#ffffff',
+        },
+      });
+
+      // Spider sources + layers for co-located permits.
+      map.addSource(SPIDER_LEGS, {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+      });
+      map.addLayer({
+        id: 'spider-leg-lines',
+        type: 'line',
+        source: SPIDER_LEGS,
+        paint: { 'line-color': '#94a3b8', 'line-width': 1 },
+      });
+      map.addSource(SPIDER_SRC, {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+      });
+      map.addLayer({
+        id: SPIDER_POINTS,
+        type: 'circle',
+        source: SPIDER_SRC,
+        paint: {
+          'circle-color': typeColor,
+          'circle-radius': 6,
           'circle-stroke-width': 1.5,
           'circle-stroke-color': '#ffffff',
         },
       });
 
-      // Click a cluster to zoom in.
+      // Click a cluster: zoom if possible, spiderfy if not.
       map.on('click', 'clusters', async (e) => {
+        clearSpider(map);
         const feat = map.queryRenderedFeatures(e.point, { layers: ['clusters'] })[0];
         const clusterId = feat?.properties?.cluster_id;
+        const pointCount = feat?.properties?.point_count;
         if (clusterId == null) return;
         const src = map.getSource(SRC) as maplibregl.GeoJSONSource;
-        const zoom = await src.getClusterExpansionZoom(clusterId);
-        map.easeTo({ center: (feat.geometry as GeoJSON.Point).coordinates as [number, number], zoom });
+        const expansionZoom = await src.getClusterExpansionZoom(clusterId);
+        const center = (feat.geometry as GeoJSON.Point).coordinates as [number, number];
+
+        if (expansionZoom >= 19 || map.getZoom() >= 17) {
+          // Can't zoom further — spiderfy
+          const leaves = await src.getClusterLeaves(clusterId, pointCount ?? 100, 0);
+          map.easeTo({ center, zoom: Math.max(map.getZoom(), 17), duration: 300 });
+          setTimeout(() => spiderfy(map, center, leaves as GeoJSON.Feature[]), 350);
+        } else {
+          map.easeTo({ center, zoom: Math.min(expansionZoom + 2, 19) });
+        }
+      });
+
+      // Popup on spider point.
+      map.on('click', SPIDER_POINTS, (e) => {
+        const feat = e.features?.[0];
+        if (!feat) return;
+        const coords = (feat.geometry as GeoJSON.Point).coordinates.slice() as [number, number];
+        new maplibregl.Popup({ offset: 8, maxWidth: '320px' })
+          .setLngLat(coords)
+          .setHTML(popupHTML(feat.properties ?? {}))
+          .addTo(map);
+      });
+
+      // Clear spider on map click elsewhere.
+      map.on('click', (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ['clusters', SPIDER_POINTS, 'unclustered-point'] });
+        if (features.length === 0) clearSpider(map);
       });
 
       // Popup on individual point.
@@ -172,14 +274,14 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         const feat = e.features?.[0];
         if (!feat) return;
         const coords = (feat.geometry as GeoJSON.Point).coordinates.slice() as [number, number];
-        new maplibregl.Popup({ offset: 12, maxWidth: '320px' })
+        new maplibregl.Popup({ offset: 8, maxWidth: '320px' })
           .setLngLat(coords)
           .setHTML(popupHTML(feat.properties ?? {}))
           .addTo(map);
       });
 
       // Cursor feedback.
-      for (const layer of ['clusters', 'unclustered-point']) {
+      for (const layer of ['clusters', 'unclustered-point', SPIDER_POINTS]) {
         map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
         map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
       }
@@ -198,6 +300,7 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
     const apply = () => {
       const src = map.getSource(SRC) as maplibregl.GeoJSONSource | undefined;
       if (!src) return;
+      clearSpider(map);
       const fc = toFeatureCollection(rows);
       src.setData(fc);
       if (fc.features.length === 0) return;
@@ -207,7 +310,7 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         const c = (fc.features[0].geometry as GeoJSON.Point).coordinates as [number, number];
         map.flyTo({ center: c, zoom: 14, duration: 600 });
       } else {
-        map.fitBounds(bounds, { padding: 50, maxZoom: 14, duration: 600 });
+        map.fitBounds(bounds, { padding: 50, maxZoom: 17, duration: 600 });
       }
     };
     if (map.isStyleLoaded() && map.getSource(SRC)) apply();
