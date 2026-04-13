@@ -1,7 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import PermitMap, { type PermitFeature } from './PermitMap';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import PermitMap, { type Anchor, type PermitFeature } from './PermitMap';
+
+const ANCHOR_COLS = new Set(['anchor_latitude', 'anchor_longitude', 'search_radius_m']);
 
 type Row = Record<string, unknown>;
 type Response = { sql?: string; explanation?: string; rows?: Row[]; error?: string; total?: number; truncated?: boolean };
@@ -17,6 +19,8 @@ export default function QueryApp() {
   const [q, setQ] = useState('');
   const [loading, setLoading] = useState(false);
   const [resp, setResp] = useState<Response | null>(null);
+  const [selected, setSelected] = useState<string | null>(null);
+  const rowRefs = useRef<Record<string, HTMLTableRowElement | null>>({});
 
   async function run(question: string) {
     if (!question.trim() || loading) return;
@@ -37,10 +41,29 @@ export default function QueryApp() {
   }
 
   const rows = resp?.rows ?? [];
-  const cols = rows.length ? Object.keys(rows[0]) : [];
+  const allCols = rows.length ? Object.keys(rows[0]) : [];
+  const cols = allCols.filter((c) => !ANCHOR_COLS.has(c));
   const mapRows: PermitFeature[] = rows
     .filter((r) => Number.isFinite(Number(r.latitude)) && Number.isFinite(Number(r.longitude)))
     .map((r) => ({ ...r, latitude: Number(r.latitude), longitude: Number(r.longitude) }));
+
+  const anchor: Anchor | null = useMemo(() => {
+    if (!rows.length) return null;
+    const r0 = rows[0];
+    const lat = Number(r0.anchor_latitude);
+    const lng = Number(r0.anchor_longitude);
+    const rad = Number(r0.search_radius_m);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+    return { latitude: lat, longitude: lng, radiusM: Number.isFinite(rad) ? rad : 0 };
+  }, [rows]);
+
+  useEffect(() => { setSelected(null); }, [resp]);
+
+  const goToRow = (pn: string) => {
+    setSelected(pn);
+    const el = rowRefs.current[pn];
+    if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  };
 
   return (
     <div className="flex flex-col gap-4">
@@ -96,7 +119,7 @@ export default function QueryApp() {
 
       {mapRows.length > 0 && (
         <div className="rounded-md overflow-hidden border border-zinc-300 dark:border-zinc-700">
-          <PermitMap rows={mapRows} />
+          <PermitMap rows={mapRows} anchor={anchor} selectedPermitnum={selected} onSelect={setSelected} onGoToRow={goToRow} />
         </div>
       )}
 
@@ -113,15 +136,25 @@ export default function QueryApp() {
               </tr>
             </thead>
             <tbody>
-              {rows.map((r, i) => (
-                <tr key={i} className="border-b border-zinc-200 dark:border-zinc-800">
-                  {cols.map((c) => (
-                    <td key={c} className="px-3 py-2 font-mono whitespace-nowrap">
-                      {formatCell(r[c])}
-                    </td>
-                  ))}
-                </tr>
-              ))}
+              {rows.map((r, i) => {
+                const pn = typeof r.permitnum === 'string' ? r.permitnum : null;
+                const isSelected = pn !== null && pn === selected;
+                return (
+                  <tr
+                    key={pn ?? i}
+                    ref={(el) => { if (pn) rowRefs.current[pn] = el; }}
+                    onMouseEnter={() => pn && setSelected(pn)}
+                    onClick={() => pn && setSelected(pn)}
+                    className={`border-b border-zinc-200 dark:border-zinc-800 cursor-pointer ${isSelected ? 'bg-amber-100 dark:bg-amber-900/30' : 'hover:bg-zinc-50 dark:hover:bg-zinc-900'}`}
+                  >
+                    {cols.map((c) => (
+                      <td key={c} className="px-3 py-2 font-mono whitespace-nowrap">
+                        {formatCell(r[c])}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
           <div className="px-3 py-2 text-xs text-zinc-500 bg-zinc-50 dark:bg-zinc-900">

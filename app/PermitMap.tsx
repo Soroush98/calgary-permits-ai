@@ -9,6 +9,20 @@ export type PermitFeature = Record<string, unknown> & {
   longitude: number;
 };
 
+export type Anchor = { latitude: number; longitude: number; radiusM: number };
+
+function circlePolygon(center: [number, number], radiusM: number, steps = 64): GeoJSON.Feature {
+  const [lng, lat] = center;
+  const coords: [number, number][] = [];
+  const latDeg = radiusM / 110574;
+  const lngDeg = radiusM / (111320 * Math.cos((lat * Math.PI) / 180));
+  for (let i = 0; i <= steps; i++) {
+    const a = (i / steps) * 2 * Math.PI;
+    coords.push([lng + lngDeg * Math.cos(a), lat + latDeg * Math.sin(a)]);
+  }
+  return { type: 'Feature', properties: {}, geometry: { type: 'Polygon', coordinates: [coords] } };
+}
+
 const CALGARY: [number, number] = [-114.0719, 51.0447];
 const SRC = 'permits';
 
@@ -75,8 +89,11 @@ function popupHTML(p: Record<string, unknown>): string {
     p.applicantname ? row('Applicant', esc(p.applicantname)) : '',
     p.housingunits ? row('Units', esc(p.housingunits)) : '',
   ].join('');
-  return `<div class="text-xs min-w-[260px]">
-    <div class="font-mono font-semibold text-sm mb-1">${permitnum}</div>
+  return `<div class="text-xs w-[240px] max-h-[260px] overflow-y-auto">
+    <div class="flex items-center justify-between gap-2 mb-1">
+      <div class="font-mono font-semibold text-sm truncate">${permitnum}</div>
+      <button data-action="goto-row" class="shrink-0 text-[11px] text-blue-600 hover:text-blue-800 underline underline-offset-2">Go to row ↓</button>
+    </div>
     ${desc}
     <div class="mt-2 space-y-0 border-t border-zinc-200 pt-2">${rows}</div>
   </div>`;
@@ -105,10 +122,11 @@ function spiderfy(map: maplibregl.Map, center: [number, number], leaves: GeoJSON
   const spiderFeatures: GeoJSON.Feature[] = [];
   const legFeatures: GeoJSON.Feature[] = [];
 
+  const lngStretch = 1 / Math.cos((center[1] * Math.PI) / 180);
   for (let i = 0; i < count; i++) {
     const angle = (2 * Math.PI * i) / count - Math.PI / 2;
-    const lng = center[0] + radius * Math.cos(angle);
-    const lat = center[1] + radius * Math.sin(angle) * 1.5; // stretch vertically since lng degrees are smaller
+    const lng = center[0] + radius * Math.cos(angle) * lngStretch;
+    const lat = center[1] + radius * Math.sin(angle);
     spiderFeatures.push({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [lng, lat] },
@@ -127,9 +145,28 @@ function spiderfy(map: maplibregl.Map, center: [number, number], leaves: GeoJSON
   src.setData({ type: 'FeatureCollection', features: spiderFeatures });
 }
 
-export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
+const ANCHOR_SRC = 'anchor';
+const RADIUS_SRC = 'radius';
+
+export default function PermitMap({
+  rows,
+  anchor,
+  selectedPermitnum,
+  onSelect,
+  onGoToRow,
+}: {
+  rows: PermitFeature[];
+  anchor?: Anchor | null;
+  selectedPermitnum?: string | null;
+  onSelect?: (permitnum: string | null) => void;
+  onGoToRow?: (permitnum: string) => void;
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
+  const onSelectRef = useRef(onSelect);
+  const onGoToRowRef = useRef(onGoToRow);
+  onSelectRef.current = onSelect;
+  onGoToRowRef.current = onGoToRow;
 
   // Initialize once.
   useEffect(() => {
@@ -204,6 +241,61 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         },
       });
 
+      // Highlight ring for selected permit (updated via filter).
+      map.addLayer({
+        id: 'unclustered-point-selected',
+        type: 'circle',
+        source: SRC,
+        filter: ['==', ['get', 'permitnum'], '__none__'],
+        paint: {
+          'circle-radius': 9,
+          'circle-color': 'rgba(0,0,0,0)',
+          'circle-stroke-width': 3,
+          'circle-stroke-color': '#fbbf24',
+        },
+      });
+
+      // Radius ring (below markers).
+      map.addSource(RADIUS_SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+      map.addLayer({
+        id: 'radius-fill',
+        type: 'fill',
+        source: RADIUS_SRC,
+        paint: { 'fill-color': '#3b82f6', 'fill-opacity': 0.06 },
+      }, 'clusters');
+      map.addLayer({
+        id: 'radius-line',
+        type: 'line',
+        source: RADIUS_SRC,
+        paint: { 'line-color': '#3b82f6', 'line-width': 1.5, 'line-dasharray': [2, 2], 'line-opacity': 0.7 },
+      }, 'clusters');
+
+      // Anchor marker (above everything).
+      map.addSource(ANCHOR_SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+      map.addLayer({
+        id: 'anchor-halo',
+        type: 'circle',
+        source: ANCHOR_SRC,
+        paint: {
+          'circle-radius': 14,
+          'circle-color': '#fbbf24',
+          'circle-opacity': 0.25,
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#f59e0b',
+        },
+      });
+      map.addLayer({
+        id: 'anchor-point',
+        type: 'circle',
+        source: ANCHOR_SRC,
+        paint: {
+          'circle-radius': 6,
+          'circle-color': '#f59e0b',
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#ffffff',
+        },
+      });
+
       // Spider sources + layers for co-located permits.
       map.addSource(SPIDER_LEGS, {
         type: 'geojson',
@@ -252,15 +344,25 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         }
       });
 
+      const openPopup = (coords: [number, number], props: Record<string, unknown>) => {
+        const pn = typeof props.permitnum === 'string' ? props.permitnum : null;
+        if (pn) onSelectRef.current?.(pn);
+        const popup = new maplibregl.Popup({ offset: 8, maxWidth: '260px' })
+          .setLngLat(coords)
+          .setHTML(popupHTML(props))
+          .addTo(map);
+        if (pn) {
+          const el = popup.getElement().querySelector<HTMLButtonElement>('[data-action="goto-row"]');
+          el?.addEventListener('click', () => onGoToRowRef.current?.(pn));
+        }
+      };
+
       // Popup on spider point.
       map.on('click', SPIDER_POINTS, (e) => {
         const feat = e.features?.[0];
         if (!feat) return;
         const coords = (feat.geometry as GeoJSON.Point).coordinates.slice() as [number, number];
-        new maplibregl.Popup({ offset: 8, maxWidth: '320px' })
-          .setLngLat(coords)
-          .setHTML(popupHTML(feat.properties ?? {}))
-          .addTo(map);
+        openPopup(coords, feat.properties ?? {});
       });
 
       // Clear spider on map click elsewhere.
@@ -274,10 +376,7 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
         const feat = e.features?.[0];
         if (!feat) return;
         const coords = (feat.geometry as GeoJSON.Point).coordinates.slice() as [number, number];
-        new maplibregl.Popup({ offset: 8, maxWidth: '320px' })
-          .setLngLat(coords)
-          .setHTML(popupHTML(feat.properties ?? {}))
-          .addTo(map);
+        openPopup(coords, feat.properties ?? {});
       });
 
       // Cursor feedback.
@@ -303,19 +402,54 @@ export default function PermitMap({ rows }: { rows: PermitFeature[] }) {
       clearSpider(map);
       const fc = toFeatureCollection(rows);
       src.setData(fc);
-      if (fc.features.length === 0) return;
+
+      const anchorSrc = map.getSource(ANCHOR_SRC) as maplibregl.GeoJSONSource | undefined;
+      const radiusSrc = map.getSource(RADIUS_SRC) as maplibregl.GeoJSONSource | undefined;
+      if (anchor && Number.isFinite(anchor.latitude) && Number.isFinite(anchor.longitude)) {
+        const c: [number, number] = [anchor.longitude, anchor.latitude];
+        anchorSrc?.setData({
+          type: 'FeatureCollection',
+          features: [{ type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: c } }],
+        });
+        if (Number.isFinite(anchor.radiusM) && anchor.radiusM > 0) {
+          radiusSrc?.setData({ type: 'FeatureCollection', features: [circlePolygon(c, anchor.radiusM)] });
+        } else {
+          radiusSrc?.setData({ type: 'FeatureCollection', features: [] });
+        }
+      } else {
+        anchorSrc?.setData({ type: 'FeatureCollection', features: [] });
+        radiusSrc?.setData({ type: 'FeatureCollection', features: [] });
+      }
+
+      if (fc.features.length === 0 && !anchor) return;
       const bounds = new maplibregl.LngLatBounds();
       for (const f of fc.features) bounds.extend((f.geometry as GeoJSON.Point).coordinates as [number, number]);
-      if (fc.features.length === 1) {
-        const c = (fc.features[0].geometry as GeoJSON.Point).coordinates as [number, number];
-        map.flyTo({ center: c, zoom: 14, duration: 600 });
+      if (anchor) bounds.extend([anchor.longitude, anchor.latitude]);
+      if (fc.features.length + (anchor ? 1 : 0) === 1) {
+        const c = anchor ? [anchor.longitude, anchor.latitude] as [number, number]
+          : (fc.features[0].geometry as GeoJSON.Point).coordinates as [number, number];
+        map.flyTo({ center: c, zoom: 15, duration: 600 });
       } else {
-        map.fitBounds(bounds, { padding: 50, maxZoom: 17, duration: 600 });
+        map.fitBounds(bounds, { padding: 60, maxZoom: 17, duration: 600 });
       }
     };
     if (map.isStyleLoaded() && map.getSource(SRC)) apply();
     else map.once('load', apply);
-  }, [rows]);
+  }, [rows, anchor]);
+
+  // Selection highlight.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const apply = () => {
+      if (!map.getLayer('unclustered-point-selected')) return;
+      map.setFilter('unclustered-point-selected', [
+        '==', ['get', 'permitnum'], selectedPermitnum ?? '__none__',
+      ]);
+    };
+    if (map.isStyleLoaded()) apply();
+    else map.once('load', apply);
+  }, [selectedPermitnum]);
 
   return (
     <div className="relative">

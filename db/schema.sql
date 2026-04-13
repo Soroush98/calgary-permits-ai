@@ -2,6 +2,7 @@
 -- Safe to re-run (idempotent).
 
 create extension if not exists postgis;
+create extension if not exists pg_trgm;
 
 create table if not exists permits (
   permitnum          text primary key,
@@ -48,6 +49,9 @@ create index if not exists permits_workclass_idx     on permits (workclass);
 create index if not exists permits_contractor_idx    on permits (contractorname);
 create index if not exists permits_estcost_idx       on permits (estprojectcost);
 create index if not exists permits_geom_gix          on permits using gist (geom);
+create index if not exists permits_address_trgm_idx    on permits using gin (originaladdress gin_trgm_ops);
+create index if not exists permits_applicant_trgm_idx  on permits using gin (applicantname gin_trgm_ops);
+create index if not exists permits_contractor_trgm_idx on permits using gin (contractorname gin_trgm_ops);
 
 -- Row Level Security: keep table locked down. Server uses service_role which bypasses RLS.
 alter table permits enable row level security;

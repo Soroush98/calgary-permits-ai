@@ -1,6 +1,47 @@
 -- Run in Supabase → SQL Editor → New query → Run. Idempotent.
 -- Creates a restricted read-only RPC for text-to-SQL.
 
+-- 0. Address normalizer: uppercases, strips punctuation, collapses whitespace,
+--    and contracts common Calgary street/quadrant words to their abbreviated form
+--    as stored in permits.originaladdress (e.g. '3524 31 Street Northwest' -> '3524 31 ST NW').
+--    IMMUTABLE so it can be used under the pg_trgm GIN index with `%`.
+create or replace function normalize_address(addr text)
+returns text
+language sql
+immutable
+as $$
+  with tokens(from_word, to_word) as (
+    values
+      ('NORTHWEST','NW'),('NORTHEAST','NE'),('SOUTHWEST','SW'),('SOUTHEAST','SE'),
+      ('DRIVE','DR'),('STREET','ST'),('AVENUE','AV'),('ROAD','RD'),('BOULEVARD','BV'),
+      ('PLACE','PL'),('CRESCENT','CR'),('COURT','CO'),('LANE','LN'),('WAY','WY'),
+      ('CLOSE','CL'),('HEIGHTS','HT'),('MANOR','MR'),('PARKWAY','PY'),('PARK','PK'),
+      ('TERRACE','TC'),('TRAIL','TR'),('VIEW','VW'),('GARDENS','GD'),('GROVE','GV'),
+      ('GREEN','GR'),('LANDING','LD'),('LINK','LI'),('POINTE','PT'),('POINT','PT'),
+      ('PLAZA','PZ'),('RISE','RI'),('SQUARE','SQ'),('MEWS','ME'),
+      ('NORTH','N'),('SOUTH','S'),('EAST','E'),('WEST','W')
+  ),
+  cleaned as (
+    select regexp_replace(
+             regexp_replace(upper(coalesce(addr,'')), '[^A-Z0-9 ]', ' ', 'g'),
+             '\s+', ' ', 'g'
+           ) as s
+  ),
+  split as (
+    select w, ord
+    from cleaned,
+         regexp_split_to_table(btrim(cleaned.s), ' ') with ordinality as x(w, ord)
+  ),
+  replaced as (
+    select string_agg(
+             coalesce((select t.to_word from tokens t where t.from_word = s.w), s.w),
+             ' ' order by s.ord
+           ) as s
+    from split s
+  )
+  select btrim(s) from replaced;
+$$;
+
 -- 1. Allow anon to read permits (RLS stays on, we add a read-only policy).
 drop policy if exists "permits public read" on permits;
 create policy "permits public read" on permits for select to anon using (true);
