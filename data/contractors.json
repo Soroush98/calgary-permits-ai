@@ -1,0 +1,4502 @@
+[
+  {
+    "name": "JAYMAN BUILT",
+    "slug": "jayman-built",
+    "permitCount": 12157,
+    "totalCost": 2744335866.54,
+    "housingUnits": 12150,
+    "firstDate": "1999-06-22T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "SHANE HOMES",
+    "slug": "shane-homes",
+    "permitCount": 9531,
+    "totalCost": 2055298488.22,
+    "housingUnits": 8723,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "MORRISON HOMES (CALGARY)",
+    "slug": "morrison-homes-calgary",
+    "permitCount": 8837,
+    "totalCost": 1979974282.71,
+    "housingUnits": 8342,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "CEDARGLEN GROUP (THE)",
+    "slug": "cedarglen-group-the",
+    "permitCount": 8578,
+    "totalCost": 2162025482.86,
+    "housingUnits": 8452,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "CARDEL HOMES",
+    "slug": "cardel-homes",
+    "permitCount": 8090,
+    "totalCost": 1714604460.98,
+    "housingUnits": 7783,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "TRICO HOMES",
+    "slug": "trico-homes",
+    "permitCount": 7387,
+    "totalCost": 2154129789.88,
+    "housingUnits": 8660,
+    "firstDate": "1999-07-14T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "EXCEL HOMES LIMITED PARTNERSHIP",
+    "slug": "excel-homes-limited-partnership",
+    "permitCount": 7341,
+    "totalCost": 1732235365.74,
+    "housingUnits": 7023,
+    "firstDate": "2003-10-10T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "STERLING HOMES",
+    "slug": "sterling-homes",
+    "permitCount": 6626,
+    "totalCost": 1444275937.14,
+    "housingUnits": 6387,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "HOMES BY AVI (CANADA)",
+    "slug": "homes-by-avi-canada",
+    "permitCount": 5593,
+    "totalCost": 1171610846.66,
+    "housingUnits": 6590,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2024-03-13T00:00:00+00:00"
+  },
+  {
+    "name": "BROOKFIELD RESIDENTIAL (ALBERTA)",
+    "slug": "brookfield-residential-alberta",
+    "permitCount": 5578,
+    "totalCost": 1552682254.05,
+    "housingUnits": 7018,
+    "firstDate": "1999-11-02T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "BROADVIEW HOMES",
+    "slug": "broadview-homes",
+    "permitCount": 3044,
+    "totalCost": 601975523.67,
+    "housingUnits": 2849,
+    "firstDate": "1999-06-30T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "HOMES BY AVI (CALGARY)",
+    "slug": "homes-by-avi-calgary",
+    "permitCount": 2953,
+    "totalCost": 665656174.8,
+    "housingUnits": 2410,
+    "firstDate": "2011-03-10T00:00:00+00:00",
+    "lastDate": "2025-10-06T00:00:00+00:00"
+  },
+  {
+    "name": "SABAL HOMES",
+    "slug": "sabal-homes",
+    "permitCount": 2793,
+    "totalCost": 530424617.9,
+    "housingUnits": 2631,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2017-10-19T00:00:00+00:00"
+  },
+  {
+    "name": "NUVISTA HOMES",
+    "slug": "nuvista-homes",
+    "permitCount": 2685,
+    "totalCost": 559650405.72,
+    "housingUnits": 2404,
+    "firstDate": "1999-07-20T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "BEATTIE HOMES",
+    "slug": "beattie-homes",
+    "permitCount": 2614,
+    "totalCost": 405904959.51,
+    "housingUnits": 2503,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2012-09-24T00:00:00+00:00"
+  },
+  {
+    "name": "STEPPER HOMES",
+    "slug": "stepper-homes",
+    "permitCount": 2488,
+    "totalCost": 525780523.83,
+    "housingUnits": 2320,
+    "firstDate": "2002-03-08T00:00:00+00:00",
+    "lastDate": "2021-10-14T00:00:00+00:00"
+  },
+  {
+    "name": "TRUMAN HOMES 1995",
+    "slug": "truman-homes-1995",
+    "permitCount": 2465,
+    "totalCost": 2318651325.69,
+    "housingUnits": 10317,
+    "firstDate": "2000-05-23T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "HEARTLAND HOMES",
+    "slug": "heartland-homes",
+    "permitCount": 2446,
+    "totalCost": 213784893.25,
+    "housingUnits": 2373,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2009-05-22T00:00:00+00:00"
+  },
+  {
+    "name": "MATTAMY HOMES CALGARY",
+    "slug": "mattamy-homes-calgary",
+    "permitCount": 2332,
+    "totalCost": 799574253.4,
+    "housingUnits": 2619,
+    "firstDate": "2013-02-12T00:00:00+00:00",
+    "lastDate": "2026-03-23T00:00:00+00:00"
+  },
+  {
+    "name": "GENESIS BUILDERS GROUP",
+    "slug": "genesis-builders-group",
+    "permitCount": 2280,
+    "totalCost": 692227207.4,
+    "housingUnits": 2418,
+    "firstDate": "2005-03-30T00:00:00+00:00",
+    "lastDate": "2026-04-02T00:00:00+00:00"
+  },
+  {
+    "name": "BAYWEST HOMES",
+    "slug": "baywest-homes",
+    "permitCount": 2261,
+    "totalCost": 583865972.62,
+    "housingUnits": 2182,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "ALBI HOMES",
+    "slug": "albi-homes",
+    "permitCount": 2175,
+    "totalCost": 577316217.09,
+    "housingUnits": 2094,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2016-11-28T00:00:00+00:00"
+  },
+  {
+    "name": "CAROLINA HOMES",
+    "slug": "carolina-homes",
+    "permitCount": 1918,
+    "totalCost": 245247214.63,
+    "housingUnits": 2137,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2010-12-17T00:00:00+00:00"
+  },
+  {
+    "name": "HOPEWELL RESIDENTIAL MANAGEMENT",
+    "slug": "hopewell-residential-management",
+    "permitCount": 1754,
+    "totalCost": 523908446.98,
+    "housingUnits": 2128,
+    "firstDate": "2017-02-10T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "ELITE HOMES",
+    "slug": "elite-homes",
+    "permitCount": 1738,
+    "totalCost": 221624815.8,
+    "housingUnits": 1702,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2009-07-23T00:00:00+00:00"
+  },
+  {
+    "name": "EXCEL HOMES",
+    "slug": "excel-homes",
+    "permitCount": 1735,
+    "totalCost": 149497277.8,
+    "housingUnits": 1709,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2003-10-08T00:00:00+00:00"
+  },
+  {
+    "name": "PLANIT BUILDERS",
+    "slug": "planit-builders",
+    "permitCount": 1448,
+    "totalCost": 27996307.09,
+    "housingUnits": 10,
+    "firstDate": "2008-03-14T00:00:00+00:00",
+    "lastDate": "2018-03-23T00:00:00+00:00"
+  },
+  {
+    "name": "CARSHACKS",
+    "slug": "carshacks",
+    "permitCount": 1437,
+    "totalCost": 19645182.35,
+    "housingUnits": 0,
+    "firstDate": "1999-07-16T00:00:00+00:00",
+    "lastDate": "2015-05-01T00:00:00+00:00"
+  },
+  {
+    "name": "SHAW RENOVATION & CONSTRUCTION",
+    "slug": "shaw-renovation-construction",
+    "permitCount": 1349,
+    "totalCost": 22068898.88,
+    "housingUnits": 9,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2023-08-07T00:00:00+00:00"
+  },
+  {
+    "name": "CALBRIDGE HOMES",
+    "slug": "calbridge-homes",
+    "permitCount": 1275,
+    "totalCost": 502958610.15,
+    "housingUnits": 1214,
+    "firstDate": "2010-08-31T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "LANDMARK HOMES (CALGARY)",
+    "slug": "landmark-homes-calgary",
+    "permitCount": 1260,
+    "totalCost": 268768558.99,
+    "housingUnits": 1209,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2021-06-23T00:00:00+00:00"
+  },
+  {
+    "name": "UMBRELLA CONSTRUCTION BASEMENT BUILDERS",
+    "slug": "umbrella-construction-basement-builders",
+    "permitCount": 1216,
+    "totalCost": 38684290.22,
+    "housingUnits": 46,
+    "firstDate": "2015-01-22T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "V AAR EXTERIORS AND HOME IMPROVEMENTS",
+    "slug": "v-aar-exteriors-and-home-improvements",
+    "permitCount": 1075,
+    "totalCost": 39613698.59,
+    "housingUnits": 2,
+    "firstDate": "2013-04-08T00:00:00+00:00",
+    "lastDate": "2025-11-26T00:00:00+00:00"
+  },
+  {
+    "name": "GREENBORO ESTATE HOMES",
+    "slug": "greenboro-estate-homes",
+    "permitCount": 1041,
+    "totalCost": 247526232.26,
+    "housingUnits": 1007,
+    "firstDate": "1999-08-25T00:00:00+00:00",
+    "lastDate": "2016-04-15T00:00:00+00:00"
+  },
+  {
+    "name": "COUGAR CONTRACTORS",
+    "slug": "cougar-contractors",
+    "permitCount": 970,
+    "totalCost": 394416979.84,
+    "housingUnits": 1,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "ABSOLUTELY AFFORDABLE HOME IMPROVEMENTS",
+    "slug": "absolutely-affordable-home-improvements",
+    "permitCount": 945,
+    "totalCost": 15708973.19,
+    "housingUnits": 0,
+    "firstDate": "2001-05-08T00:00:00+00:00",
+    "lastDate": "2019-05-17T00:00:00+00:00"
+  },
+  {
+    "name": "TODAY'S HOMES",
+    "slug": "today-s-homes",
+    "permitCount": 891,
+    "totalCost": 117451659.02,
+    "housingUnits": 862,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2013-04-15T00:00:00+00:00"
+  },
+  {
+    "name": "CRYSTAL CREEK HOMES",
+    "slug": "crystal-creek-homes",
+    "permitCount": 890,
+    "totalCost": 334740517.11,
+    "housingUnits": 788,
+    "firstDate": "2004-11-04T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "LABBE-LEECH INTERIORS",
+    "slug": "labbe-leech-interiors",
+    "permitCount": 878,
+    "totalCost": 222650362.88,
+    "housingUnits": 0,
+    "firstDate": "1999-06-30T00:00:00+00:00",
+    "lastDate": "2026-03-30T00:00:00+00:00"
+  },
+  {
+    "name": "ALTA HOME",
+    "slug": "alta-home",
+    "permitCount": 873,
+    "totalCost": 35992785.63,
+    "housingUnits": 35,
+    "firstDate": "2015-09-14T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "PARTNERS DEVELOPMENT GROUP",
+    "slug": "partners-development-group",
+    "permitCount": 860,
+    "totalCost": 363072766.07,
+    "housingUnits": 1869,
+    "firstDate": "2006-03-09T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "BOB WALLACE EXCAVATING",
+    "slug": "bob-wallace-excavating",
+    "permitCount": 801,
+    "totalCost": 11550,
+    "housingUnits": 0,
+    "firstDate": "1999-08-20T00:00:00+00:00",
+    "lastDate": "2022-10-31T00:00:00+00:00"
+  },
+  {
+    "name": "C & J CONSTRUCTION",
+    "slug": "c-j-construction",
+    "permitCount": 784,
+    "totalCost": 16640677.39,
+    "housingUnits": 2,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2026-02-26T00:00:00+00:00"
+  },
+  {
+    "name": "DEEP GILL CONSTRUCTION",
+    "slug": "deep-gill-construction",
+    "permitCount": 765,
+    "totalCost": 28540782.26,
+    "housingUnits": 0,
+    "firstDate": "2010-09-27T00:00:00+00:00",
+    "lastDate": "2026-04-05T00:00:00+00:00"
+  },
+  {
+    "name": "PRIME PROJECTS",
+    "slug": "prime-projects",
+    "permitCount": 739,
+    "totalCost": 348818033.5,
+    "housingUnits": 0,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "CENTREX HOMES LIMITED PARTNERSHIP",
+    "slug": "centrex-homes-limited-partnership",
+    "permitCount": 728,
+    "totalCost": 130736485.12,
+    "housingUnits": 722,
+    "firstDate": "2003-02-28T00:00:00+00:00",
+    "lastDate": "2009-06-25T00:00:00+00:00"
+  },
+  {
+    "name": "ALLIANCE RENOVATIONS & CONCRETE",
+    "slug": "alliance-renovations-concrete",
+    "permitCount": 700,
+    "totalCost": 24571840.94,
+    "housingUnits": 9,
+    "firstDate": "2016-03-23T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "LIGNUM INTERIORS",
+    "slug": "lignum-interiors",
+    "permitCount": 697,
+    "totalCost": 290209236.54,
+    "housingUnits": 0,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "GECKO PROJECTS",
+    "slug": "gecko-projects",
+    "permitCount": 691,
+    "totalCost": 23886890.9,
+    "housingUnits": 0,
+    "firstDate": "2008-04-18T00:00:00+00:00",
+    "lastDate": "2026-03-23T00:00:00+00:00"
+  },
+  {
+    "name": "JAGER HOMES",
+    "slug": "jager-homes",
+    "permitCount": 657,
+    "totalCost": 133471497.2,
+    "housingUnits": 627,
+    "firstDate": "2002-08-28T00:00:00+00:00",
+    "lastDate": "2016-12-14T00:00:00+00:00"
+  },
+  {
+    "name": "FLINTSTONE CONCRETE BREAKERS & CONTRACTORS",
+    "slug": "flintstone-concrete-breakers-contractors",
+    "permitCount": 648,
+    "totalCost": 928411.3,
+    "housingUnits": 6,
+    "firstDate": "2000-04-11T00:00:00+00:00",
+    "lastDate": "2025-08-25T00:00:00+00:00"
+  },
+  {
+    "name": "ARTISAN HOMES",
+    "slug": "artisan-homes",
+    "permitCount": 644,
+    "totalCost": 34910621.09,
+    "housingUnits": 111,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2013-12-04T00:00:00+00:00"
+  },
+  {
+    "name": "REIMAGINE BUILDERS",
+    "slug": "reimagine-builders",
+    "permitCount": 622,
+    "totalCost": 18195833.82,
+    "housingUnits": 4,
+    "firstDate": "2012-01-13T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "JAGER INDUSTRIES",
+    "slug": "jager-industries",
+    "permitCount": 617,
+    "totalCost": 80651798.52,
+    "housingUnits": 596,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2003-01-31T00:00:00+00:00"
+  },
+  {
+    "name": "TRUE NORTH CONCRETE CUTTING AND CORING",
+    "slug": "true-north-concrete-cutting-and-coring",
+    "permitCount": 616,
+    "totalCost": 3999083.62,
+    "housingUnits": 24,
+    "firstDate": "2020-04-08T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "NATIONAL FENCE & DECK",
+    "slug": "national-fence-deck",
+    "permitCount": 587,
+    "totalCost": 4180816.25,
+    "housingUnits": 0,
+    "firstDate": "2011-04-26T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "PROMINENT HOMES",
+    "slug": "prominent-homes",
+    "permitCount": 577,
+    "totalCost": 148704656.4,
+    "housingUnits": 521,
+    "firstDate": "2001-07-09T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "SOUNDTEX INTERIORS",
+    "slug": "soundtex-interiors",
+    "permitCount": 569,
+    "totalCost": 162021528.68,
+    "housingUnits": 0,
+    "firstDate": "1999-06-30T00:00:00+00:00",
+    "lastDate": "2026-03-19T00:00:00+00:00"
+  },
+  {
+    "name": "TOY BOX GARAGE",
+    "slug": "toy-box-garage",
+    "permitCount": 562,
+    "totalCost": 14086555.15,
+    "housingUnits": 0,
+    "firstDate": "2006-05-08T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "STEPPER CONSTRUCTION",
+    "slug": "stepper-construction",
+    "permitCount": 561,
+    "totalCost": 71178532.93,
+    "housingUnits": 551,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2002-06-17T00:00:00+00:00"
+  },
+  {
+    "name": "P & G EXCAVATING TRUCKING",
+    "slug": "p-g-excavating-trucking",
+    "permitCount": 553,
+    "totalCost": 797253.02,
+    "housingUnits": 4,
+    "firstDate": "2006-05-11T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "PERSIMMON CONTRACTING",
+    "slug": "persimmon-contracting",
+    "permitCount": 543,
+    "totalCost": 102427856.65,
+    "housingUnits": 0,
+    "firstDate": "1999-09-14T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "HOMES BY US",
+    "slug": "homes-by-us",
+    "permitCount": 542,
+    "totalCost": 163551833,
+    "housingUnits": 453,
+    "firstDate": "1999-07-02T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "PCL CONSTRUCTION MANAGEMENT",
+    "slug": "pcl-construction-management",
+    "permitCount": 531,
+    "totalCost": 2452396552.93,
+    "housingUnits": 624,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "STEALTH HOMES",
+    "slug": "stealth-homes",
+    "permitCount": 488,
+    "totalCost": 123607062.43,
+    "housingUnits": 417,
+    "firstDate": "2004-03-15T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "MATTAMY (ABERDEEN HEIGHTS)",
+    "slug": "mattamy-aberdeen-heights",
+    "permitCount": 485,
+    "totalCost": 193534129.18,
+    "housingUnits": 672,
+    "firstDate": "2021-06-17T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "MATTAMY (NORTHPOINT)",
+    "slug": "mattamy-northpoint",
+    "permitCount": 481,
+    "totalCost": 180608145.2,
+    "housingUnits": 594,
+    "firstDate": "2021-06-30T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "WEARMOUTH CANADA",
+    "slug": "wearmouth-canada",
+    "permitCount": 466,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2004-02-12T00:00:00+00:00",
+    "lastDate": "2018-04-04T00:00:00+00:00"
+  },
+  {
+    "name": "HARJI CONSTRUCTION",
+    "slug": "harji-construction",
+    "permitCount": 459,
+    "totalCost": 11077284.79,
+    "housingUnits": 0,
+    "firstDate": "2006-04-21T00:00:00+00:00",
+    "lastDate": "2023-11-17T00:00:00+00:00"
+  },
+  {
+    "name": "REID BUILT HOMES",
+    "slug": "reid-built-homes",
+    "permitCount": 459,
+    "totalCost": 71443963.63,
+    "housingUnits": 448,
+    "firstDate": "1999-07-09T00:00:00+00:00",
+    "lastDate": "2015-01-27T00:00:00+00:00"
+  },
+  {
+    "name": "KLAIR CUSTOM HOMES",
+    "slug": "klair-custom-homes",
+    "permitCount": 457,
+    "totalCost": 120166413.14,
+    "housingUnits": 350,
+    "firstDate": "2008-08-25T00:00:00+00:00",
+    "lastDate": "2024-02-15T00:00:00+00:00"
+  },
+  {
+    "name": "WESTERN ONE EXCAVATION",
+    "slug": "western-one-excavation",
+    "permitCount": 451,
+    "totalCost": 1403224.5,
+    "housingUnits": 2,
+    "firstDate": "2018-01-31T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "ALBERT POTTER BOB CAT SERVICES",
+    "slug": "albert-potter-bob-cat-services",
+    "permitCount": 439,
+    "totalCost": 600634.05,
+    "housingUnits": 2,
+    "firstDate": "2005-05-16T00:00:00+00:00",
+    "lastDate": "2026-01-05T00:00:00+00:00"
+  },
+  {
+    "name": "CITY CORE DEVELOPMENTS",
+    "slug": "city-core-developments",
+    "permitCount": 436,
+    "totalCost": 75183781.13,
+    "housingUnits": 184,
+    "firstDate": "1999-08-25T00:00:00+00:00",
+    "lastDate": "2014-09-23T00:00:00+00:00"
+  },
+  {
+    "name": "SIFTON INTERLAKE CONSTRUCTION",
+    "slug": "sifton-interlake-construction",
+    "permitCount": 424,
+    "totalCost": 57603273.7,
+    "housingUnits": 0,
+    "firstDate": "1999-07-06T00:00:00+00:00",
+    "lastDate": "2026-02-17T00:00:00+00:00"
+  },
+  {
+    "name": "CIDEX DEVELOPMENT",
+    "slug": "cidex-development",
+    "permitCount": 409,
+    "totalCost": 433963824.63,
+    "housingUnits": 2078,
+    "firstDate": "1999-07-07T00:00:00+00:00",
+    "lastDate": "2026-02-25T00:00:00+00:00"
+  },
+  {
+    "name": "GROUND SHAKERS EXCAVATING",
+    "slug": "ground-shakers-excavating",
+    "permitCount": 405,
+    "totalCost": 57719.18,
+    "housingUnits": 0,
+    "firstDate": "2008-09-16T00:00:00+00:00",
+    "lastDate": "2026-03-25T00:00:00+00:00"
+  },
+  {
+    "name": "MOTHER EARTH EXCAVATING",
+    "slug": "mother-earth-excavating",
+    "permitCount": 404,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2010-12-28T00:00:00+00:00",
+    "lastDate": "2023-08-25T00:00:00+00:00"
+  },
+  {
+    "name": "VESTA PROPERTIES (COPPERFIELD)",
+    "slug": "vesta-properties-copperfield",
+    "permitCount": 402,
+    "totalCost": 127582591.4,
+    "housingUnits": 469,
+    "firstDate": "2018-01-23T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "OASIS HOMES",
+    "slug": "oasis-homes",
+    "permitCount": 395,
+    "totalCost": 56947955,
+    "housingUnits": 430,
+    "firstDate": "1999-07-20T00:00:00+00:00",
+    "lastDate": "2006-01-27T00:00:00+00:00"
+  },
+  {
+    "name": "HOMES BY AVI CALGARY LP",
+    "slug": "homes-by-avi-calgary-lp",
+    "permitCount": 394,
+    "totalCost": 125035581.65,
+    "housingUnits": 497,
+    "firstDate": "2021-07-23T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "MATTAMY (YORKVILLE)",
+    "slug": "mattamy-yorkville",
+    "permitCount": 376,
+    "totalCost": 151111073.15,
+    "housingUnits": 537,
+    "firstDate": "2021-07-20T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "DAYTONA HOMES CALGARY LP",
+    "slug": "daytona-homes-calgary-lp",
+    "permitCount": 375,
+    "totalCost": 116275286.01,
+    "housingUnits": 398,
+    "firstDate": "2017-12-14T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "HEARTH & HOME FIREPLACE SPECIALTIES",
+    "slug": "hearth-home-fireplace-specialties",
+    "permitCount": 370,
+    "totalCost": 2196141.52,
+    "housingUnits": 0,
+    "firstDate": "2004-06-01T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "LIFESTYLE HOMES",
+    "slug": "lifestyle-homes",
+    "permitCount": 369,
+    "totalCost": 76163356.97,
+    "housingUnits": 348,
+    "firstDate": "1999-07-20T00:00:00+00:00",
+    "lastDate": "2019-09-03T00:00:00+00:00"
+  },
+  {
+    "name": "WEST CREEK HOMES",
+    "slug": "west-creek-homes",
+    "permitCount": 365,
+    "totalCost": 92076261.67,
+    "housingUnits": 332,
+    "firstDate": "2014-01-29T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "LUPI LUXURY HOMES",
+    "slug": "lupi-luxury-homes",
+    "permitCount": 362,
+    "totalCost": 99680257.72,
+    "housingUnits": 316,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2026-02-18T00:00:00+00:00"
+  },
+  {
+    "name": "RAVENVIEW HOMES",
+    "slug": "ravenview-homes",
+    "permitCount": 359,
+    "totalCost": 62141409.94,
+    "housingUnits": 344,
+    "firstDate": "1999-11-03T00:00:00+00:00",
+    "lastDate": "2016-10-26T00:00:00+00:00"
+  },
+  {
+    "name": "APACON INTERIOR CONSTRUCTION",
+    "slug": "apacon-interior-construction",
+    "permitCount": 354,
+    "totalCost": 45105477,
+    "housingUnits": 2,
+    "firstDate": "1999-07-12T00:00:00+00:00",
+    "lastDate": "2017-11-17T00:00:00+00:00"
+  },
+  {
+    "name": "CALBRIDGE DEVELOPMENTS CALBRIDGE FINE HOMES",
+    "slug": "calbridge-developments-calbridge-fine-homes",
+    "permitCount": 354,
+    "totalCost": 66081585.96,
+    "housingUnits": 368,
+    "firstDate": "1999-07-21T00:00:00+00:00",
+    "lastDate": "2010-02-11T00:00:00+00:00"
+  },
+  {
+    "name": "PARKGREEN HOMES",
+    "slug": "parkgreen-homes",
+    "permitCount": 352,
+    "totalCost": 46337877.94,
+    "housingUnits": 341,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2009-01-13T00:00:00+00:00"
+  },
+  {
+    "name": "ARCURI DEVELOPMENTS",
+    "slug": "arcuri-developments",
+    "permitCount": 351,
+    "totalCost": 98482360.63,
+    "housingUnits": 335,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2023-02-02T00:00:00+00:00"
+  },
+  {
+    "name": "ULTIMATE RENOVATIONS",
+    "slug": "ultimate-renovations",
+    "permitCount": 343,
+    "totalCost": 12588765.32,
+    "housingUnits": 5,
+    "firstDate": "2006-10-19T00:00:00+00:00",
+    "lastDate": "2026-02-18T00:00:00+00:00"
+  },
+  {
+    "name": "TRIBUILD CONTRACTING",
+    "slug": "tribuild-contracting",
+    "permitCount": 343,
+    "totalCost": 125349798.1,
+    "housingUnits": 0,
+    "firstDate": "1999-07-30T00:00:00+00:00",
+    "lastDate": "2026-03-19T00:00:00+00:00"
+  },
+  {
+    "name": "JANSSEN HOMES",
+    "slug": "janssen-homes",
+    "permitCount": 339,
+    "totalCost": 75671095.36,
+    "housingUnits": 366,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2023-06-13T00:00:00+00:00"
+  },
+  {
+    "name": "AVALON MASTER BUILDER",
+    "slug": "avalon-master-builder",
+    "permitCount": 338,
+    "totalCost": 167168554.17,
+    "housingUnits": 1122,
+    "firstDate": "1999-07-05T00:00:00+00:00",
+    "lastDate": "2022-12-14T00:00:00+00:00"
+  },
+  {
+    "name": "FOUR SEASONS SUNROOMS",
+    "slug": "four-seasons-sunrooms",
+    "permitCount": 336,
+    "totalCost": 6845304.79,
+    "housingUnits": 0,
+    "firstDate": "1999-07-26T00:00:00+00:00",
+    "lastDate": "2026-02-02T00:00:00+00:00"
+  },
+  {
+    "name": "GLENWOOD HOMES",
+    "slug": "glenwood-homes",
+    "permitCount": 333,
+    "totalCost": 37096364.57,
+    "housingUnits": 326,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2005-07-15T00:00:00+00:00"
+  },
+  {
+    "name": "BUSY BEAVER CONSTRUCTION",
+    "slug": "busy-beaver-construction",
+    "permitCount": 322,
+    "totalCost": 2603052.98,
+    "housingUnits": 0,
+    "firstDate": "2006-05-30T00:00:00+00:00",
+    "lastDate": "2025-10-06T00:00:00+00:00"
+  },
+  {
+    "name": "BURNTWOOD HOLDINGS GENERAL GENERAL CONTRACTOR",
+    "slug": "burntwood-holdings-general-general-contractor",
+    "permitCount": 320,
+    "totalCost": 35195827.43,
+    "housingUnits": 300,
+    "firstDate": "1999-09-03T00:00:00+00:00",
+    "lastDate": "2014-11-14T00:00:00+00:00"
+  },
+  {
+    "name": "PROFESSIONAL CUSTOM HOMES",
+    "slug": "professional-custom-homes",
+    "permitCount": 319,
+    "totalCost": 79035812.63,
+    "housingUnits": 432,
+    "firstDate": "2013-03-07T00:00:00+00:00",
+    "lastDate": "2025-12-12T00:00:00+00:00"
+  },
+  {
+    "name": "RENOVA HOMES & RENOVATIONS",
+    "slug": "renova-homes-renovations",
+    "permitCount": 316,
+    "totalCost": 25366567.69,
+    "housingUnits": 36,
+    "firstDate": "1999-08-20T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "CALIFORNIA HOMES",
+    "slug": "california-homes",
+    "permitCount": 313,
+    "totalCost": 83364048.35,
+    "housingUnits": 276,
+    "firstDate": "1999-07-22T00:00:00+00:00",
+    "lastDate": "2022-05-13T00:00:00+00:00"
+  },
+  {
+    "name": "ELLISDON CONSTRUCTION",
+    "slug": "ellisdon-construction",
+    "permitCount": 308,
+    "totalCost": 4055186706.31,
+    "housingUnits": 218,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2024-05-27T00:00:00+00:00"
+  },
+  {
+    "name": "CHANDAN HOMES",
+    "slug": "chandan-homes",
+    "permitCount": 308,
+    "totalCost": 65886184.13,
+    "housingUnits": 209,
+    "firstDate": "2016-10-05T00:00:00+00:00",
+    "lastDate": "2025-09-24T00:00:00+00:00"
+  },
+  {
+    "name": "POINT GREY HOMES",
+    "slug": "point-grey-homes",
+    "permitCount": 305,
+    "totalCost": 37086116.84,
+    "housingUnits": 300,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2006-06-05T00:00:00+00:00"
+  },
+  {
+    "name": "CALGARY EGRESS WINDOWS",
+    "slug": "calgary-egress-windows",
+    "permitCount": 305,
+    "totalCost": 1237679.81,
+    "housingUnits": 2,
+    "firstDate": "2018-07-18T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "STREETSIDE DEVELOPMENT",
+    "slug": "streetside-development",
+    "permitCount": 304,
+    "totalCost": 308121541.39,
+    "housingUnits": 1592,
+    "firstDate": "2000-03-27T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "DOUGLAS HOMES",
+    "slug": "douglas-homes",
+    "permitCount": 304,
+    "totalCost": 55776283.64,
+    "housingUnits": 283,
+    "firstDate": "2000-03-27T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "WESTVIEW BUILDERS",
+    "slug": "westview-builders",
+    "permitCount": 300,
+    "totalCost": 102577457.51,
+    "housingUnits": 275,
+    "firstDate": "2006-08-10T00:00:00+00:00",
+    "lastDate": "2016-07-28T00:00:00+00:00"
+  },
+  {
+    "name": "ASSURED DEVELOPMENTS",
+    "slug": "assured-developments",
+    "permitCount": 292,
+    "totalCost": 60050841.68,
+    "housingUnits": 362,
+    "firstDate": "1999-09-09T00:00:00+00:00",
+    "lastDate": "2014-10-21T00:00:00+00:00"
+  },
+  {
+    "name": "CONCRETE CUTTING GEEKS",
+    "slug": "concrete-cutting-geeks",
+    "permitCount": 291,
+    "totalCost": 1078939.3,
+    "housingUnits": 6,
+    "firstDate": "2015-08-14T00:00:00+00:00",
+    "lastDate": "2026-03-13T00:00:00+00:00"
+  },
+  {
+    "name": "BRAVEHOMES",
+    "slug": "bravehomes",
+    "permitCount": 290,
+    "totalCost": 14380321.73,
+    "housingUnits": 5,
+    "firstDate": "2021-05-31T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "ELEGANT HOMES",
+    "slug": "elegant-homes",
+    "permitCount": 287,
+    "totalCost": 93657549.77,
+    "housingUnits": 276,
+    "firstDate": "1999-06-30T00:00:00+00:00",
+    "lastDate": "2024-08-22T00:00:00+00:00"
+  },
+  {
+    "name": "BIRCHWOOD PROPERTIES",
+    "slug": "birchwood-properties",
+    "permitCount": 285,
+    "totalCost": 51547046.79,
+    "housingUnits": 210,
+    "firstDate": "2007-11-28T00:00:00+00:00",
+    "lastDate": "2021-10-28T00:00:00+00:00"
+  },
+  {
+    "name": "DESERT SUN PATIOS",
+    "slug": "desert-sun-patios",
+    "permitCount": 284,
+    "totalCost": 7904135.35,
+    "housingUnits": 201,
+    "firstDate": "2011-05-03T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "ROCKY CROSS CONSTRUCTION (NORTH)",
+    "slug": "rocky-cross-construction-north",
+    "permitCount": 283,
+    "totalCost": 16214339.21,
+    "housingUnits": 0,
+    "firstDate": "2002-09-20T00:00:00+00:00",
+    "lastDate": "2026-01-19T00:00:00+00:00"
+  },
+  {
+    "name": "MAPELAND HOMES",
+    "slug": "mapeland-homes",
+    "permitCount": 278,
+    "totalCost": 48080153.07,
+    "housingUnits": 260,
+    "firstDate": "1999-07-05T00:00:00+00:00",
+    "lastDate": "2016-08-11T00:00:00+00:00"
+  },
+  {
+    "name": "DA VINCI ESTATE HOMES",
+    "slug": "da-vinci-estate-homes",
+    "permitCount": 276,
+    "totalCost": 38191727.26,
+    "housingUnits": 262,
+    "firstDate": "1999-06-30T00:00:00+00:00",
+    "lastDate": "2022-01-15T00:00:00+00:00"
+  },
+  {
+    "name": "GOOD TIME PARTY RENTALS",
+    "slug": "good-time-party-rentals",
+    "permitCount": 271,
+    "totalCost": 3012259.98,
+    "housingUnits": 0,
+    "firstDate": "2001-07-11T00:00:00+00:00",
+    "lastDate": "2023-06-23T00:00:00+00:00"
+  },
+  {
+    "name": "HANS PROFESSIONAL CONSTRUCTION",
+    "slug": "hans-professional-construction",
+    "permitCount": 269,
+    "totalCost": 8119056.35,
+    "housingUnits": 2,
+    "firstDate": "2013-07-31T00:00:00+00:00",
+    "lastDate": "2025-10-22T00:00:00+00:00"
+  },
+  {
+    "name": "SIGNATURE RENOVATION PROJECTS",
+    "slug": "signature-renovation-projects",
+    "permitCount": 267,
+    "totalCost": 3958726.12,
+    "housingUnits": 0,
+    "firstDate": "1999-07-06T00:00:00+00:00",
+    "lastDate": "2011-07-19T00:00:00+00:00"
+  },
+  {
+    "name": "XEMEX CONTRACTING",
+    "slug": "xemex-contracting",
+    "permitCount": 267,
+    "totalCost": 17343318.25,
+    "housingUnits": 1,
+    "firstDate": "2000-04-20T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "WILLIAM BLAKE HOMES",
+    "slug": "william-blake-homes",
+    "permitCount": 266,
+    "totalCost": 72995385.5,
+    "housingUnits": 108,
+    "firstDate": "2015-08-12T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "ROYAL CONSTRUCTION",
+    "slug": "royal-construction",
+    "permitCount": 263,
+    "totalCost": 61511084,
+    "housingUnits": 1,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2025-11-11T00:00:00+00:00"
+  },
+  {
+    "name": "BAKERVIEW GARAGES & CONSTRUCTION",
+    "slug": "bakerview-garages-construction",
+    "permitCount": 262,
+    "totalCost": 11664276.21,
+    "housingUnits": 1,
+    "firstDate": "2018-10-10T00:00:00+00:00",
+    "lastDate": "2023-05-05T00:00:00+00:00"
+  },
+  {
+    "name": "AFFORDABLE BASEMENT AND HOME RENO",
+    "slug": "affordable-basement-and-home-reno",
+    "permitCount": 260,
+    "totalCost": 8050388.92,
+    "housingUnits": 7,
+    "firstDate": "2009-08-05T00:00:00+00:00",
+    "lastDate": "2026-04-03T00:00:00+00:00"
+  },
+  {
+    "name": "CLOVERHILL CONSTRUCTION",
+    "slug": "cloverhill-construction",
+    "permitCount": 259,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2018-06-01T00:00:00+00:00",
+    "lastDate": "2026-03-27T00:00:00+00:00"
+  },
+  {
+    "name": "LEDCOR CONSTRUCTION",
+    "slug": "ledcor-construction",
+    "permitCount": 256,
+    "totalCost": 1093020075.75,
+    "housingUnits": 385,
+    "firstDate": "1999-07-21T00:00:00+00:00",
+    "lastDate": "2026-02-20T00:00:00+00:00"
+  },
+  {
+    "name": "WADE'S HOUSE MOVING & HEAVY HAULING",
+    "slug": "wade-s-house-moving-heavy-hauling",
+    "permitCount": 255,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2011-09-23T00:00:00+00:00",
+    "lastDate": "2024-07-18T00:00:00+00:00"
+  },
+  {
+    "name": "STEPHENS FINE HOMES",
+    "slug": "stephens-fine-homes",
+    "permitCount": 255,
+    "totalCost": 40399108.22,
+    "housingUnits": 128,
+    "firstDate": "2009-01-30T00:00:00+00:00",
+    "lastDate": "2021-03-04T00:00:00+00:00"
+  },
+  {
+    "name": "ROCKFORD DEVELOPMENTS",
+    "slug": "rockford-developments",
+    "permitCount": 255,
+    "totalCost": 60182627.98,
+    "housingUnits": 660,
+    "firstDate": "2000-04-27T00:00:00+00:00",
+    "lastDate": "2020-02-06T00:00:00+00:00"
+  },
+  {
+    "name": "BROWN BOYS BUILDING DEVELOPERS",
+    "slug": "brown-boys-building-developers",
+    "permitCount": 254,
+    "totalCost": 14511054.37,
+    "housingUnits": 231,
+    "firstDate": "2023-10-07T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "BIRCHWOOD COUGAR RIDGE",
+    "slug": "birchwood-cougar-ridge",
+    "permitCount": 253,
+    "totalCost": 44203516.74,
+    "housingUnits": 294,
+    "firstDate": "2005-09-12T00:00:00+00:00",
+    "lastDate": "2010-07-26T00:00:00+00:00"
+  },
+  {
+    "name": "MAJESTIC TENT AND EVENT",
+    "slug": "majestic-tent-and-event",
+    "permitCount": 252,
+    "totalCost": 1400758.8,
+    "housingUnits": 0,
+    "firstDate": "2006-06-27T00:00:00+00:00",
+    "lastDate": "2017-02-17T00:00:00+00:00"
+  },
+  {
+    "name": "CHOICE SPECIALTY SERVICES",
+    "slug": "choice-specialty-services",
+    "permitCount": 250,
+    "totalCost": 19053309.89,
+    "housingUnits": 1,
+    "firstDate": "2000-04-05T00:00:00+00:00",
+    "lastDate": "2026-02-06T00:00:00+00:00"
+  },
+  {
+    "name": "JAGERHAUS",
+    "slug": "jagerhaus",
+    "permitCount": 247,
+    "totalCost": 68642478.79,
+    "housingUnits": 246,
+    "firstDate": "2009-03-31T00:00:00+00:00",
+    "lastDate": "2013-09-25T00:00:00+00:00"
+  },
+  {
+    "name": "ANDCO EXCAVATING",
+    "slug": "andco-excavating",
+    "permitCount": 246,
+    "totalCost": 291228.4,
+    "housingUnits": 1,
+    "firstDate": "2000-05-18T00:00:00+00:00",
+    "lastDate": "2026-03-31T00:00:00+00:00"
+  },
+  {
+    "name": "JAS GARAGE BUILDERS",
+    "slug": "jas-garage-builders",
+    "permitCount": 245,
+    "totalCost": 10769350.88,
+    "housingUnits": 0,
+    "firstDate": "2019-06-20T00:00:00+00:00",
+    "lastDate": "2025-11-12T00:00:00+00:00"
+  },
+  {
+    "name": "SUNROOMSDIRECT",
+    "slug": "sunroomsdirect",
+    "permitCount": 240,
+    "totalCost": 3294852.51,
+    "housingUnits": 0,
+    "firstDate": "2001-11-06T00:00:00+00:00",
+    "lastDate": "2011-03-15T00:00:00+00:00"
+  },
+  {
+    "name": "MCCANN'S BUILDING MOVERS",
+    "slug": "mccann-s-building-movers",
+    "permitCount": 239,
+    "totalCost": 750765.84,
+    "housingUnits": 4,
+    "firstDate": "2000-04-18T00:00:00+00:00",
+    "lastDate": "2026-03-18T00:00:00+00:00"
+  },
+  {
+    "name": "CRESTVIEW HOMES",
+    "slug": "crestview-homes",
+    "permitCount": 237,
+    "totalCost": 38066008.47,
+    "housingUnits": 265,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2006-09-12T00:00:00+00:00"
+  },
+  {
+    "name": "STANFORD HOMES",
+    "slug": "stanford-homes",
+    "permitCount": 233,
+    "totalCost": 34299757.23,
+    "housingUnits": 228,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2007-01-10T00:00:00+00:00"
+  },
+  {
+    "name": "KISMAT HOMES",
+    "slug": "kismat-homes",
+    "permitCount": 230,
+    "totalCost": 23108462.91,
+    "housingUnits": 205,
+    "firstDate": "1999-11-23T00:00:00+00:00",
+    "lastDate": "2004-02-20T00:00:00+00:00"
+  },
+  {
+    "name": "CAMBRIDGE HOMES",
+    "slug": "cambridge-homes",
+    "permitCount": 230,
+    "totalCost": 34210239.17,
+    "housingUnits": 194,
+    "firstDate": "1999-07-21T00:00:00+00:00",
+    "lastDate": "2024-09-13T00:00:00+00:00"
+  },
+  {
+    "name": "ABLE DEMOLITION SERVICES",
+    "slug": "able-demolition-services",
+    "permitCount": 229,
+    "totalCost": 349000,
+    "housingUnits": 0,
+    "firstDate": "1999-08-23T00:00:00+00:00",
+    "lastDate": "2025-11-26T00:00:00+00:00"
+  },
+  {
+    "name": "ABBY RENOVATIONS",
+    "slug": "abby-renovations",
+    "permitCount": 228,
+    "totalCost": 7383060.14,
+    "housingUnits": 11,
+    "firstDate": "2009-04-30T00:00:00+00:00",
+    "lastDate": "2026-03-25T00:00:00+00:00"
+  },
+  {
+    "name": "KASCO CONSTRUCTION",
+    "slug": "kasco-construction",
+    "permitCount": 227,
+    "totalCost": 0,
+    "housingUnits": 2,
+    "firstDate": "2000-05-02T00:00:00+00:00",
+    "lastDate": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "name": "LIONSWORTHE HOMES",
+    "slug": "lionsworthe-homes",
+    "permitCount": 225,
+    "totalCost": 44418834.12,
+    "housingUnits": 219,
+    "firstDate": "2006-12-13T00:00:00+00:00",
+    "lastDate": "2013-07-12T00:00:00+00:00"
+  },
+  {
+    "name": "BOND CONTRACTING AND CONSTRUCTION",
+    "slug": "bond-contracting-and-construction",
+    "permitCount": 222,
+    "totalCost": 4248229.85,
+    "housingUnits": 4,
+    "firstDate": "2003-01-07T00:00:00+00:00",
+    "lastDate": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "name": "TRICKLE CREEK CUSTOM HOMES",
+    "slug": "trickle-creek-custom-homes",
+    "permitCount": 219,
+    "totalCost": 53626858.95,
+    "housingUnits": 109,
+    "firstDate": "2010-09-29T00:00:00+00:00",
+    "lastDate": "2026-02-26T00:00:00+00:00"
+  },
+  {
+    "name": "ALANRIDGE HOMES",
+    "slug": "alanridge-homes",
+    "permitCount": 219,
+    "totalCost": 41281614.4,
+    "housingUnits": 202,
+    "firstDate": "2002-06-12T00:00:00+00:00",
+    "lastDate": "2006-01-23T00:00:00+00:00"
+  },
+  {
+    "name": "TERVITA",
+    "slug": "tervita",
+    "permitCount": 218,
+    "totalCost": 1530071.77,
+    "housingUnits": 0,
+    "firstDate": "2002-11-01T00:00:00+00:00",
+    "lastDate": "2019-10-03T00:00:00+00:00"
+  },
+  {
+    "name": "E & P ENTERPRISES",
+    "slug": "e-p-enterprises",
+    "permitCount": 218,
+    "totalCost": 22612657.13,
+    "housingUnits": 1,
+    "firstDate": "1999-09-01T00:00:00+00:00",
+    "lastDate": "2025-11-28T00:00:00+00:00"
+  },
+  {
+    "name": "CHANDOS CONSTRUCTION",
+    "slug": "chandos-construction",
+    "permitCount": 218,
+    "totalCost": 278292729.04,
+    "housingUnits": 196,
+    "firstDate": "2000-03-29T00:00:00+00:00",
+    "lastDate": "2026-01-15T00:00:00+00:00"
+  },
+  {
+    "name": "KEYSTONE EXCAVATING",
+    "slug": "keystone-excavating",
+    "permitCount": 216,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "1999-07-26T00:00:00+00:00",
+    "lastDate": "2016-10-14T00:00:00+00:00"
+  },
+  {
+    "name": "ALFA CONSTRUCTION",
+    "slug": "alfa-construction",
+    "permitCount": 216,
+    "totalCost": 4931312.82,
+    "housingUnits": 4,
+    "firstDate": "2003-05-15T00:00:00+00:00",
+    "lastDate": "2019-01-29T00:00:00+00:00"
+  },
+  {
+    "name": "ROCKWOOD CUSTOM HOMES",
+    "slug": "rockwood-custom-homes",
+    "permitCount": 216,
+    "totalCost": 94828805.04,
+    "housingUnits": 150,
+    "firstDate": "2010-05-26T00:00:00+00:00",
+    "lastDate": "2026-02-02T00:00:00+00:00"
+  },
+  {
+    "name": "HOUSEBRAND CONSTRUCTION",
+    "slug": "housebrand-construction",
+    "permitCount": 209,
+    "totalCost": 24812420.88,
+    "housingUnits": 68,
+    "firstDate": "1999-08-20T00:00:00+00:00",
+    "lastDate": "2026-01-09T00:00:00+00:00"
+  },
+  {
+    "name": "GREAT EVENTS RENTAL & SHOWROOM",
+    "slug": "great-events-rental-showroom",
+    "permitCount": 208,
+    "totalCost": 1937851.61,
+    "housingUnits": 0,
+    "firstDate": "2005-04-27T00:00:00+00:00",
+    "lastDate": "2021-06-08T00:00:00+00:00"
+  },
+  {
+    "name": "MAGNUS INTERIORS",
+    "slug": "magnus-interiors",
+    "permitCount": 208,
+    "totalCost": 58114286.27,
+    "housingUnits": 0,
+    "firstDate": "2007-06-26T00:00:00+00:00",
+    "lastDate": "2025-12-19T00:00:00+00:00"
+  },
+  {
+    "name": "SUNSET HOMES",
+    "slug": "sunset-homes",
+    "permitCount": 208,
+    "totalCost": 46384914.84,
+    "housingUnits": 127,
+    "firstDate": "2013-02-04T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "VANITY HOMES",
+    "slug": "vanity-homes",
+    "permitCount": 208,
+    "totalCost": 49126284.39,
+    "housingUnits": 180,
+    "firstDate": "2001-02-28T00:00:00+00:00",
+    "lastDate": "2023-05-15T00:00:00+00:00"
+  },
+  {
+    "name": "SELECT SUNROOMS",
+    "slug": "select-sunrooms",
+    "permitCount": 207,
+    "totalCost": 4453029.13,
+    "housingUnits": 0,
+    "firstDate": "2002-06-04T00:00:00+00:00",
+    "lastDate": "2022-09-15T00:00:00+00:00"
+  },
+  {
+    "name": "HURST CONSTRUCTION",
+    "slug": "hurst-construction",
+    "permitCount": 207,
+    "totalCost": 40451078.05,
+    "housingUnits": 2,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2025-09-13T00:00:00+00:00"
+  },
+  {
+    "name": "YOUR PROPERTY",
+    "slug": "your-property",
+    "permitCount": 206,
+    "totalCost": 55987228.14,
+    "housingUnits": 177,
+    "firstDate": "2010-04-23T00:00:00+00:00",
+    "lastDate": "2026-03-13T00:00:00+00:00"
+  },
+  {
+    "name": "SUNDANCE CUSTOM HOMES",
+    "slug": "sundance-custom-homes",
+    "permitCount": 206,
+    "totalCost": 23182478.24,
+    "housingUnits": 128,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2008-03-19T00:00:00+00:00"
+  },
+  {
+    "name": "TITAN CONTRACTING AND DEMOLITION",
+    "slug": "titan-contracting-and-demolition",
+    "permitCount": 204,
+    "totalCost": 27983.16,
+    "housingUnits": 0,
+    "firstDate": "2009-05-13T00:00:00+00:00",
+    "lastDate": "2026-03-27T00:00:00+00:00"
+  },
+  {
+    "name": "EAGLE CREST CONSTRUCTION",
+    "slug": "eagle-crest-construction",
+    "permitCount": 204,
+    "totalCost": 257016080.8,
+    "housingUnits": 1399,
+    "firstDate": "2018-09-12T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "ALLISTON AT HOME",
+    "slug": "alliston-at-home",
+    "permitCount": 204,
+    "totalCost": 56721247.82,
+    "housingUnits": 195,
+    "firstDate": "2016-07-28T00:00:00+00:00",
+    "lastDate": "2025-10-16T00:00:00+00:00"
+  },
+  {
+    "name": "ULTIMATE \"THE EXTERIOR RENOVATOR\"",
+    "slug": "ultimate-the-exterior-renovator",
+    "permitCount": 203,
+    "totalCost": 3522264.18,
+    "housingUnits": 2,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2006-09-08T00:00:00+00:00"
+  },
+  {
+    "name": "WINDOW AND DOOR GUYS",
+    "slug": "window-and-door-guys",
+    "permitCount": 203,
+    "totalCost": 302279.8,
+    "housingUnits": 0,
+    "firstDate": "2014-06-19T00:00:00+00:00",
+    "lastDate": "2025-10-20T00:00:00+00:00"
+  },
+  {
+    "name": "LOOK MASTER BUILDER CALGARY",
+    "slug": "look-master-builder-calgary",
+    "permitCount": 200,
+    "totalCost": 60531020.2,
+    "housingUnits": 217,
+    "firstDate": "2020-02-19T00:00:00+00:00",
+    "lastDate": "2026-03-27T00:00:00+00:00"
+  },
+  {
+    "name": "WALLACE CONSTRUCTION",
+    "slug": "wallace-construction",
+    "permitCount": 198,
+    "totalCost": 694810.3,
+    "housingUnits": 2,
+    "firstDate": "2017-09-28T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "ASPEN DEMOLITION",
+    "slug": "aspen-demolition",
+    "permitCount": 196,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "1999-07-12T00:00:00+00:00",
+    "lastDate": "2013-10-23T00:00:00+00:00"
+  },
+  {
+    "name": "FIRST GENERAL SERVICES",
+    "slug": "first-general-services",
+    "permitCount": 195,
+    "totalCost": 10687676.45,
+    "housingUnits": 0,
+    "firstDate": "1999-10-08T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "PARK HAVEN DESIGNS",
+    "slug": "park-haven-designs",
+    "permitCount": 193,
+    "totalCost": 34616881.27,
+    "housingUnits": 154,
+    "firstDate": "1999-07-12T00:00:00+00:00",
+    "lastDate": "2014-01-28T00:00:00+00:00"
+  },
+  {
+    "name": "ECOLINE WINDOWS",
+    "slug": "ecoline-windows",
+    "permitCount": 193,
+    "totalCost": 1369511.21,
+    "housingUnits": 4,
+    "firstDate": "2014-10-27T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "ENG CAN CONTRACTING",
+    "slug": "eng-can-contracting",
+    "permitCount": 192,
+    "totalCost": 10443311.28,
+    "housingUnits": 1,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2015-07-30T00:00:00+00:00"
+  },
+  {
+    "name": "ON SIDE RESTORATION",
+    "slug": "on-side-restoration",
+    "permitCount": 192,
+    "totalCost": 11142656.42,
+    "housingUnits": 7,
+    "firstDate": "2005-04-29T00:00:00+00:00",
+    "lastDate": "2026-01-19T00:00:00+00:00"
+  },
+  {
+    "name": "ROHIT COMMUNITIES",
+    "slug": "rohit-communities",
+    "permitCount": 189,
+    "totalCost": 145814845.04,
+    "housingUnits": 849,
+    "firstDate": "2023-01-24T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "NEWCASTLE HOMES",
+    "slug": "newcastle-homes",
+    "permitCount": 187,
+    "totalCost": 29588484.6,
+    "housingUnits": 132,
+    "firstDate": "1999-10-22T00:00:00+00:00",
+    "lastDate": "2025-07-16T00:00:00+00:00"
+  },
+  {
+    "name": "CREATIVE SOLUTIONS CONTRACTING SERVICES",
+    "slug": "creative-solutions-contracting-services",
+    "permitCount": 186,
+    "totalCost": 834333.31,
+    "housingUnits": 2,
+    "firstDate": "2019-01-28T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "PARTNER'S EXCAVATION",
+    "slug": "partner-s-excavation",
+    "permitCount": 185,
+    "totalCost": 4473450.81,
+    "housingUnits": 15,
+    "firstDate": "2013-08-07T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "BLUEBIRD CONTRACTING SERVICES",
+    "slug": "bluebird-contracting-services",
+    "permitCount": 180,
+    "totalCost": 2952179.22,
+    "housingUnits": 57,
+    "firstDate": "2007-08-02T00:00:00+00:00",
+    "lastDate": "2020-03-23T00:00:00+00:00"
+  },
+  {
+    "name": "DUSTER CONSTRUCTION",
+    "slug": "duster-construction",
+    "permitCount": 179,
+    "totalCost": 5594996.47,
+    "housingUnits": 3,
+    "firstDate": "1999-07-07T00:00:00+00:00",
+    "lastDate": "2022-07-18T00:00:00+00:00"
+  },
+  {
+    "name": "ENGELHART REED",
+    "slug": "engelhart-reed",
+    "permitCount": 178,
+    "totalCost": 51231069.5,
+    "housingUnits": 0,
+    "firstDate": "2007-05-14T00:00:00+00:00",
+    "lastDate": "2024-05-15T00:00:00+00:00"
+  },
+  {
+    "name": "PRATTCO EXCAVATING",
+    "slug": "prattco-excavating",
+    "permitCount": 178,
+    "totalCost": 364141,
+    "housingUnits": 0,
+    "firstDate": "2001-08-31T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "ANTHEM CD HOMES LP",
+    "slug": "anthem-cd-homes-lp",
+    "permitCount": 178,
+    "totalCost": 55959801.21,
+    "housingUnits": 174,
+    "firstDate": "2022-03-02T00:00:00+00:00",
+    "lastDate": "2026-03-23T00:00:00+00:00"
+  },
+  {
+    "name": "RIGHT CHOICE CONSTRUCTION",
+    "slug": "right-choice-construction",
+    "permitCount": 177,
+    "totalCost": 11477905.31,
+    "housingUnits": 151,
+    "firstDate": "2022-11-28T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "HILLSON HOMES",
+    "slug": "hillson-homes",
+    "permitCount": 175,
+    "totalCost": 20158159.95,
+    "housingUnits": 70,
+    "firstDate": "2000-11-29T00:00:00+00:00",
+    "lastDate": "2023-01-06T00:00:00+00:00"
+  },
+  {
+    "name": "AIKAM HOMES",
+    "slug": "aikam-homes",
+    "permitCount": 175,
+    "totalCost": 27142598.11,
+    "housingUnits": 111,
+    "firstDate": "2010-04-13T00:00:00+00:00",
+    "lastDate": "2015-06-10T00:00:00+00:00"
+  },
+  {
+    "name": "JAILA CONSTRUCTION",
+    "slug": "jaila-construction",
+    "permitCount": 173,
+    "totalCost": 4310427.38,
+    "housingUnits": 0,
+    "firstDate": "2008-05-06T00:00:00+00:00",
+    "lastDate": "2025-09-15T00:00:00+00:00"
+  },
+  {
+    "name": "ROHIT COMMUNITIES CALGARY",
+    "slug": "rohit-communities-calgary",
+    "permitCount": 173,
+    "totalCost": 181218172.09,
+    "housingUnits": 956,
+    "firstDate": "2018-08-15T00:00:00+00:00",
+    "lastDate": "2025-03-20T00:00:00+00:00"
+  },
+  {
+    "name": "REBORN RENOVATIONS",
+    "slug": "reborn-renovations",
+    "permitCount": 171,
+    "totalCost": 16856361.97,
+    "housingUnits": 0,
+    "firstDate": "2012-06-18T00:00:00+00:00",
+    "lastDate": "2025-11-19T00:00:00+00:00"
+  },
+  {
+    "name": "PINNACLE GROUP RENOVATIONS BY DESIGN",
+    "slug": "pinnacle-group-renovations-by-design",
+    "permitCount": 168,
+    "totalCost": 8336668.33,
+    "housingUnits": 6,
+    "firstDate": "2004-06-17T00:00:00+00:00",
+    "lastDate": "2026-03-27T00:00:00+00:00"
+  },
+  {
+    "name": "CREATE",
+    "slug": "create",
+    "permitCount": 166,
+    "totalCost": 113039693.89,
+    "housingUnits": 123,
+    "firstDate": "2007-11-19T00:00:00+00:00",
+    "lastDate": "2026-03-12T00:00:00+00:00"
+  },
+  {
+    "name": "TAYLOR CONSTRUCTION",
+    "slug": "taylor-construction",
+    "permitCount": 166,
+    "totalCost": 54824152.62,
+    "housingUnits": 0,
+    "firstDate": "2006-11-09T00:00:00+00:00",
+    "lastDate": "2026-04-03T00:00:00+00:00"
+  },
+  {
+    "name": "CANWEST CONCRETE CUTTING & CORING",
+    "slug": "canwest-concrete-cutting-coring",
+    "permitCount": 166,
+    "totalCost": 799107.17,
+    "housingUnits": 5,
+    "firstDate": "2006-03-15T00:00:00+00:00",
+    "lastDate": "2026-03-17T00:00:00+00:00"
+  },
+  {
+    "name": "GOVAN BROWN & ASSOCIATES",
+    "slug": "govan-brown-associates",
+    "permitCount": 165,
+    "totalCost": 221931444.32,
+    "housingUnits": 0,
+    "firstDate": "2004-12-22T00:00:00+00:00",
+    "lastDate": "2026-03-20T00:00:00+00:00"
+  },
+  {
+    "name": "BRIDGEWOOD BUILDERS",
+    "slug": "bridgewood-builders",
+    "permitCount": 165,
+    "totalCost": 2385716.46,
+    "housingUnits": 0,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2017-08-22T00:00:00+00:00"
+  },
+  {
+    "name": "ROYAL MODEL HOMES",
+    "slug": "royal-model-homes",
+    "permitCount": 162,
+    "totalCost": 25086894.78,
+    "housingUnits": 87,
+    "firstDate": "2014-10-30T00:00:00+00:00",
+    "lastDate": "2023-03-17T00:00:00+00:00"
+  },
+  {
+    "name": "STONE WEST HOMES",
+    "slug": "stone-west-homes",
+    "permitCount": 161,
+    "totalCost": 27710766.32,
+    "housingUnits": 114,
+    "firstDate": "2009-11-24T00:00:00+00:00",
+    "lastDate": "2026-04-02T00:00:00+00:00"
+  },
+  {
+    "name": "INTREPID DEVELOPMENTS",
+    "slug": "intrepid-developments",
+    "permitCount": 161,
+    "totalCost": 8235200,
+    "housingUnits": 1,
+    "firstDate": "1999-07-08T00:00:00+00:00",
+    "lastDate": "2017-07-26T00:00:00+00:00"
+  },
+  {
+    "name": "W D CONSTRUCTION & MILLWORK",
+    "slug": "w-d-construction-millwork",
+    "permitCount": 160,
+    "totalCost": 33854778.35,
+    "housingUnits": 0,
+    "firstDate": "1999-10-28T00:00:00+00:00",
+    "lastDate": "2026-02-17T00:00:00+00:00"
+  },
+  {
+    "name": "DOMINION CONSTRUCTION COMPANY",
+    "slug": "dominion-construction-company",
+    "permitCount": 160,
+    "totalCost": 301392183.4,
+    "housingUnits": 0,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2010-10-27T00:00:00+00:00"
+  },
+  {
+    "name": "MERMAC CONSTRUCTION",
+    "slug": "mermac-construction",
+    "permitCount": 160,
+    "totalCost": 145660979.6,
+    "housingUnits": 0,
+    "firstDate": "1999-07-14T00:00:00+00:00",
+    "lastDate": "2023-02-27T00:00:00+00:00"
+  },
+  {
+    "name": "PRIDE CUSTOM HOMES CALGARY",
+    "slug": "pride-custom-homes-calgary",
+    "permitCount": 159,
+    "totalCost": 28452412.1,
+    "housingUnits": 81,
+    "firstDate": "2013-01-28T00:00:00+00:00",
+    "lastDate": "2025-05-26T00:00:00+00:00"
+  },
+  {
+    "name": "CENTRON CONSTRUCTION",
+    "slug": "centron-construction",
+    "permitCount": 159,
+    "totalCost": 477611570.04,
+    "housingUnits": 1423,
+    "firstDate": "1999-07-23T00:00:00+00:00",
+    "lastDate": "2026-01-22T00:00:00+00:00"
+  },
+  {
+    "name": "JIGSAW HOMES",
+    "slug": "jigsaw-homes",
+    "permitCount": 158,
+    "totalCost": 18219258.46,
+    "housingUnits": 72,
+    "firstDate": "2005-01-11T00:00:00+00:00",
+    "lastDate": "2015-07-10T00:00:00+00:00"
+  },
+  {
+    "name": "MAILLOT HOMES",
+    "slug": "maillot-homes",
+    "permitCount": 158,
+    "totalCost": 46369814.86,
+    "housingUnits": 90,
+    "firstDate": "1999-07-23T00:00:00+00:00",
+    "lastDate": "2025-11-26T00:00:00+00:00"
+  },
+  {
+    "name": "TALISMAN HOMES",
+    "slug": "talisman-homes",
+    "permitCount": 156,
+    "totalCost": 22646282.51,
+    "housingUnits": 146,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2007-10-26T00:00:00+00:00"
+  },
+  {
+    "name": "FOOTHILLS RENOVATION SERVICES",
+    "slug": "foothills-renovation-services",
+    "permitCount": 156,
+    "totalCost": 19439614.19,
+    "housingUnits": 38,
+    "firstDate": "1999-07-05T00:00:00+00:00",
+    "lastDate": "2015-09-24T00:00:00+00:00"
+  },
+  {
+    "name": "HOMES BY DREAM",
+    "slug": "homes-by-dream",
+    "permitCount": 156,
+    "totalCost": 44858333.88,
+    "housingUnits": 123,
+    "firstDate": "2015-11-23T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "ROMAN HOMES",
+    "slug": "roman-homes",
+    "permitCount": 155,
+    "totalCost": 18425449.85,
+    "housingUnits": 63,
+    "firstDate": "2004-11-02T00:00:00+00:00",
+    "lastDate": "2023-11-05T00:00:00+00:00"
+  },
+  {
+    "name": "CANA CONSTRUCTION",
+    "slug": "cana-construction",
+    "permitCount": 154,
+    "totalCost": 579166933.03,
+    "housingUnits": 1157,
+    "firstDate": "1999-11-26T00:00:00+00:00",
+    "lastDate": "2026-03-31T00:00:00+00:00"
+  },
+  {
+    "name": "ABM GENERAL CONTRACTING",
+    "slug": "abm-general-contracting",
+    "permitCount": 154,
+    "totalCost": 11207065.9,
+    "housingUnits": 0,
+    "firstDate": "1999-07-16T00:00:00+00:00",
+    "lastDate": "2025-06-20T00:00:00+00:00"
+  },
+  {
+    "name": "PARAGON CUSTOM HOMES",
+    "slug": "paragon-custom-homes",
+    "permitCount": 153,
+    "totalCost": 39972233.4,
+    "housingUnits": 121,
+    "firstDate": "2009-09-29T00:00:00+00:00",
+    "lastDate": "2025-10-28T00:00:00+00:00"
+  },
+  {
+    "name": "SAHI CONTRACTING",
+    "slug": "sahi-contracting",
+    "permitCount": 150,
+    "totalCost": 6393341.23,
+    "housingUnits": 1,
+    "firstDate": "2021-04-17T00:00:00+00:00",
+    "lastDate": "2026-02-23T00:00:00+00:00"
+  },
+  {
+    "name": "QUICKSILVER CONSTRUCTION",
+    "slug": "quicksilver-construction",
+    "permitCount": 149,
+    "totalCost": 1998943.89,
+    "housingUnits": 0,
+    "firstDate": "2004-06-02T00:00:00+00:00",
+    "lastDate": "2009-08-20T00:00:00+00:00"
+  },
+  {
+    "name": "CONKLIN DEVELOPMENTS",
+    "slug": "conklin-developments",
+    "permitCount": 149,
+    "totalCost": 3028302.21,
+    "housingUnits": 1,
+    "firstDate": "2006-09-29T00:00:00+00:00",
+    "lastDate": "2015-06-02T00:00:00+00:00"
+  },
+  {
+    "name": "SORORA CONSTRUCTION",
+    "slug": "sorora-construction",
+    "permitCount": 148,
+    "totalCost": 9014419.74,
+    "housingUnits": 0,
+    "firstDate": "2010-07-26T00:00:00+00:00",
+    "lastDate": "2026-02-09T00:00:00+00:00"
+  },
+  {
+    "name": "FARMBOY CONTRACTING",
+    "slug": "farmboy-contracting",
+    "permitCount": 147,
+    "totalCost": 16541681.24,
+    "housingUnits": 45,
+    "firstDate": "2009-08-26T00:00:00+00:00",
+    "lastDate": "2026-02-25T00:00:00+00:00"
+  },
+  {
+    "name": "STUART OLSON CONSTRUCTION",
+    "slug": "stuart-olson-construction",
+    "permitCount": 147,
+    "totalCost": 669971936.53,
+    "housingUnits": 480,
+    "firstDate": "1999-07-13T00:00:00+00:00",
+    "lastDate": "2026-03-30T00:00:00+00:00"
+  },
+  {
+    "name": "DREAM HOMES CREATION",
+    "slug": "dream-homes-creation",
+    "permitCount": 147,
+    "totalCost": 8504573.94,
+    "housingUnits": 127,
+    "firstDate": "2023-03-02T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "BLUEBIRD EXCAVATING",
+    "slug": "bluebird-excavating",
+    "permitCount": 147,
+    "totalCost": 462857,
+    "housingUnits": 0,
+    "firstDate": "1999-08-27T00:00:00+00:00",
+    "lastDate": "2007-05-10T00:00:00+00:00"
+  },
+  {
+    "name": "BUILT RITE CONSTRUCTION & ROOFING",
+    "slug": "built-rite-construction-roofing",
+    "permitCount": 146,
+    "totalCost": 3122285.57,
+    "housingUnits": 0,
+    "firstDate": "2015-07-17T00:00:00+00:00",
+    "lastDate": "2017-11-23T00:00:00+00:00"
+  },
+  {
+    "name": "CANA MANAGEMENT",
+    "slug": "cana-management",
+    "permitCount": 145,
+    "totalCost": 1384801185.27,
+    "housingUnits": 19,
+    "firstDate": "1999-09-29T00:00:00+00:00",
+    "lastDate": "2026-01-28T00:00:00+00:00"
+  },
+  {
+    "name": "ARK CONSTRUCTION",
+    "slug": "ark-construction",
+    "permitCount": 144,
+    "totalCost": 7483167.29,
+    "housingUnits": 104,
+    "firstDate": "2023-12-17T00:00:00+00:00",
+    "lastDate": "2026-03-22T00:00:00+00:00"
+  },
+  {
+    "name": "JAYMAN BUILT MULTI FAMILY",
+    "slug": "jayman-built-multi-family",
+    "permitCount": 143,
+    "totalCost": 144716279.27,
+    "housingUnits": 778,
+    "firstDate": "2014-08-13T00:00:00+00:00",
+    "lastDate": "2025-02-20T00:00:00+00:00"
+  },
+  {
+    "name": "BEYERSBERGEN INTERIORS",
+    "slug": "beyersbergen-interiors",
+    "permitCount": 142,
+    "totalCost": 14211370,
+    "housingUnits": 0,
+    "firstDate": "1999-08-10T00:00:00+00:00",
+    "lastDate": "2025-06-18T00:00:00+00:00"
+  },
+  {
+    "name": "TRADEMARK RENOVATIONS",
+    "slug": "trademark-renovations",
+    "permitCount": 141,
+    "totalCost": 10710071.52,
+    "housingUnits": 3,
+    "firstDate": "2003-06-10T00:00:00+00:00",
+    "lastDate": "2026-02-16T00:00:00+00:00"
+  },
+  {
+    "name": "HOLMES BUILDING MOVERS",
+    "slug": "holmes-building-movers",
+    "permitCount": 141,
+    "totalCost": 10000,
+    "housingUnits": 0,
+    "firstDate": "2002-02-27T00:00:00+00:00",
+    "lastDate": "2025-07-30T00:00:00+00:00"
+  },
+  {
+    "name": "SPECIAL EVENT RENTALS",
+    "slug": "special-event-rentals",
+    "permitCount": 141,
+    "totalCost": 1599902.55,
+    "housingUnits": 0,
+    "firstDate": "2005-05-31T00:00:00+00:00",
+    "lastDate": "2021-10-15T00:00:00+00:00"
+  },
+  {
+    "name": "DURI HOMES",
+    "slug": "duri-homes",
+    "permitCount": 140,
+    "totalCost": 54550432.02,
+    "housingUnits": 111,
+    "firstDate": "2002-03-05T00:00:00+00:00",
+    "lastDate": "2025-09-29T00:00:00+00:00"
+  },
+  {
+    "name": "CALISTA HOMES",
+    "slug": "calista-homes",
+    "permitCount": 140,
+    "totalCost": 22490514.71,
+    "housingUnits": 61,
+    "firstDate": "2003-02-25T00:00:00+00:00",
+    "lastDate": "2026-02-14T00:00:00+00:00"
+  },
+  {
+    "name": "NCI CONSTRUCTION",
+    "slug": "nci-construction",
+    "permitCount": 140,
+    "totalCost": 23234100,
+    "housingUnits": 0,
+    "firstDate": "2009-04-07T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "MONACO CONSTRUCTION GROUP",
+    "slug": "monaco-construction-group",
+    "permitCount": 139,
+    "totalCost": 12658800,
+    "housingUnits": 0,
+    "firstDate": "1999-07-07T00:00:00+00:00",
+    "lastDate": "2023-03-09T00:00:00+00:00"
+  },
+  {
+    "name": "E D M INTERIORS",
+    "slug": "e-d-m-interiors",
+    "permitCount": 139,
+    "totalCost": 14196784.12,
+    "housingUnits": 6,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2025-08-07T00:00:00+00:00"
+  },
+  {
+    "name": "MAXIMA HOMES",
+    "slug": "maxima-homes",
+    "permitCount": 138,
+    "totalCost": 23494257.78,
+    "housingUnits": 130,
+    "firstDate": "1999-07-27T00:00:00+00:00",
+    "lastDate": "2005-09-28T00:00:00+00:00"
+  },
+  {
+    "name": "RECTANGLE DESIGN",
+    "slug": "rectangle-design",
+    "permitCount": 138,
+    "totalCost": 15553757.3,
+    "housingUnits": 29,
+    "firstDate": "2005-10-05T00:00:00+00:00",
+    "lastDate": "2025-08-26T00:00:00+00:00"
+  },
+  {
+    "name": "ELAN CONSTRUCTION",
+    "slug": "elan-construction",
+    "permitCount": 138,
+    "totalCost": 242603135.17,
+    "housingUnits": 0,
+    "firstDate": "1999-10-15T00:00:00+00:00",
+    "lastDate": "2026-03-18T00:00:00+00:00"
+  },
+  {
+    "name": "H M P PROFESSIONAL CONSTRUCTION",
+    "slug": "h-m-p-professional-construction",
+    "permitCount": 138,
+    "totalCost": 2190132.83,
+    "housingUnits": 0,
+    "firstDate": "2004-07-21T00:00:00+00:00",
+    "lastDate": "2023-08-25T00:00:00+00:00"
+  },
+  {
+    "name": "COCO HOMES",
+    "slug": "coco-homes",
+    "permitCount": 138,
+    "totalCost": 34221302.52,
+    "housingUnits": 116,
+    "firstDate": "1999-08-17T00:00:00+00:00",
+    "lastDate": "2014-09-15T00:00:00+00:00"
+  },
+  {
+    "name": "GOLD HOMES",
+    "slug": "gold-homes",
+    "permitCount": 138,
+    "totalCost": 23230350.36,
+    "housingUnits": 76,
+    "firstDate": "2009-09-21T00:00:00+00:00",
+    "lastDate": "2025-08-11T00:00:00+00:00"
+  },
+  {
+    "name": "BLUE FLOWER SUNROOMS",
+    "slug": "blue-flower-sunrooms",
+    "permitCount": 137,
+    "totalCost": 4220526.02,
+    "housingUnits": 1,
+    "firstDate": "2015-05-19T00:00:00+00:00",
+    "lastDate": "2026-03-09T00:00:00+00:00"
+  },
+  {
+    "name": "CLARK BUILDERS",
+    "slug": "clark-builders",
+    "permitCount": 137,
+    "totalCost": 562044647.6,
+    "housingUnits": 806,
+    "firstDate": "1999-08-13T00:00:00+00:00",
+    "lastDate": "2026-01-26T00:00:00+00:00"
+  },
+  {
+    "name": "DS HOMES",
+    "slug": "ds-homes",
+    "permitCount": 137,
+    "totalCost": 34409196.73,
+    "housingUnits": 129,
+    "firstDate": "2000-06-16T00:00:00+00:00",
+    "lastDate": "2024-11-04T00:00:00+00:00"
+  },
+  {
+    "name": "INTEGRA CONTRACTING",
+    "slug": "integra-contracting",
+    "permitCount": 136,
+    "totalCost": 6086913.44,
+    "housingUnits": 2,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2019-11-01T00:00:00+00:00"
+  },
+  {
+    "name": "EMPIRE CUSTOM HOMES",
+    "slug": "empire-custom-homes",
+    "permitCount": 136,
+    "totalCost": 28581248.7,
+    "housingUnits": 44,
+    "firstDate": "2003-09-30T00:00:00+00:00",
+    "lastDate": "2026-02-11T00:00:00+00:00"
+  },
+  {
+    "name": "LUX WINDOWS AND GLASS",
+    "slug": "lux-windows-and-glass",
+    "permitCount": 135,
+    "totalCost": 1303889.58,
+    "housingUnits": 1,
+    "firstDate": "1999-11-22T00:00:00+00:00",
+    "lastDate": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "MEECH CREEK CONTRACTING",
+    "slug": "meech-creek-contracting",
+    "permitCount": 135,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2012-04-17T00:00:00+00:00",
+    "lastDate": "2025-12-30T00:00:00+00:00"
+  },
+  {
+    "name": "ACE HOMES",
+    "slug": "ace-homes",
+    "permitCount": 135,
+    "totalCost": 27906650.1,
+    "housingUnits": 100,
+    "firstDate": "2020-10-29T00:00:00+00:00",
+    "lastDate": "2026-02-25T00:00:00+00:00"
+  },
+  {
+    "name": "PALATIAL HOMES",
+    "slug": "palatial-homes",
+    "permitCount": 134,
+    "totalCost": 24291755.26,
+    "housingUnits": 67,
+    "firstDate": "2011-05-25T00:00:00+00:00",
+    "lastDate": "2026-01-12T00:00:00+00:00"
+  },
+  {
+    "name": "JAYMAN MASTER BUILDER INC",
+    "slug": "jayman-master-builder-inc",
+    "permitCount": 134,
+    "totalCost": 18572327.12,
+    "housingUnits": 130,
+    "firstDate": "2000-08-21T00:00:00+00:00",
+    "lastDate": "2002-08-26T00:00:00+00:00"
+  },
+  {
+    "name": "DOVETAIL P M",
+    "slug": "dovetail-p-m",
+    "permitCount": 134,
+    "totalCost": 19181196.2,
+    "housingUnits": 0,
+    "firstDate": "2016-08-22T00:00:00+00:00",
+    "lastDate": "2026-03-09T00:00:00+00:00"
+  },
+  {
+    "name": "ABOVE GRADE BASEMENTS",
+    "slug": "above-grade-basements",
+    "permitCount": 134,
+    "totalCost": 3470958.11,
+    "housingUnits": 1,
+    "firstDate": "2010-05-03T00:00:00+00:00",
+    "lastDate": "2026-01-20T00:00:00+00:00"
+  },
+  {
+    "name": "BELFOR RESTORATION SERVICES",
+    "slug": "belfor-restoration-services",
+    "permitCount": 133,
+    "totalCost": 11003498.93,
+    "housingUnits": 0,
+    "firstDate": "2000-02-16T00:00:00+00:00",
+    "lastDate": "2026-02-13T00:00:00+00:00"
+  },
+  {
+    "name": "LEONARD DEVELOPMENT GROUP",
+    "slug": "leonard-development-group",
+    "permitCount": 133,
+    "totalCost": 6489793.87,
+    "housingUnits": 6,
+    "firstDate": "2011-05-24T00:00:00+00:00",
+    "lastDate": "2025-11-26T00:00:00+00:00"
+  },
+  {
+    "name": "KING MAKER DEVELOPMENTS",
+    "slug": "king-maker-developments",
+    "permitCount": 133,
+    "totalCost": 37018.69,
+    "housingUnits": 0,
+    "firstDate": "2009-01-27T00:00:00+00:00",
+    "lastDate": "2026-01-07T00:00:00+00:00"
+  },
+  {
+    "name": "REMINGTON DEVELOPMENT",
+    "slug": "remington-development",
+    "permitCount": 132,
+    "totalCost": 302677321.36,
+    "housingUnits": 615,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2026-03-23T00:00:00+00:00"
+  },
+  {
+    "name": "OXFORD HOMES",
+    "slug": "oxford-homes",
+    "permitCount": 132,
+    "totalCost": 21462642.6,
+    "housingUnits": 111,
+    "firstDate": "1999-08-06T00:00:00+00:00",
+    "lastDate": "2015-05-13T00:00:00+00:00"
+  },
+  {
+    "name": "MAVERICK DECKS",
+    "slug": "maverick-decks",
+    "permitCount": 132,
+    "totalCost": 796875.77,
+    "housingUnits": 0,
+    "firstDate": "2015-04-13T00:00:00+00:00",
+    "lastDate": "2023-10-04T00:00:00+00:00"
+  },
+  {
+    "name": "CALGARY HOME DESIGN & CONSTRUCTION",
+    "slug": "calgary-home-design-construction",
+    "permitCount": 131,
+    "totalCost": 5606814.88,
+    "housingUnits": 6,
+    "firstDate": "1999-12-07T00:00:00+00:00",
+    "lastDate": "2022-06-23T00:00:00+00:00"
+  },
+  {
+    "name": "SANDSTONE ASSOCIATES",
+    "slug": "sandstone-associates",
+    "permitCount": 131,
+    "totalCost": 6062106.73,
+    "housingUnits": 31,
+    "firstDate": "1999-07-21T00:00:00+00:00",
+    "lastDate": "2026-04-02T00:00:00+00:00"
+  },
+  {
+    "name": "SERVICEMASTER",
+    "slug": "servicemaster",
+    "permitCount": 131,
+    "totalCost": 5480038.12,
+    "housingUnits": 2,
+    "firstDate": "1999-10-28T00:00:00+00:00",
+    "lastDate": "2025-12-11T00:00:00+00:00"
+  },
+  {
+    "name": "BRAR ENTERPRISES",
+    "slug": "brar-enterprises",
+    "permitCount": 130,
+    "totalCost": 5125143.86,
+    "housingUnits": 0,
+    "firstDate": "2016-10-11T00:00:00+00:00",
+    "lastDate": "2025-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "BOURGEOIS CONSTRUCTION",
+    "slug": "bourgeois-construction",
+    "permitCount": 130,
+    "totalCost": 20346799,
+    "housingUnits": 0,
+    "firstDate": "2000-03-20T00:00:00+00:00",
+    "lastDate": "2025-06-10T00:00:00+00:00"
+  },
+  {
+    "name": "NVR CONSTRUCTION",
+    "slug": "nvr-construction",
+    "permitCount": 130,
+    "totalCost": 21013846.24,
+    "housingUnits": 0,
+    "firstDate": "1999-07-13T00:00:00+00:00",
+    "lastDate": "2022-11-17T00:00:00+00:00"
+  },
+  {
+    "name": "WINTER GREEN HOMES",
+    "slug": "winter-green-homes",
+    "permitCount": 130,
+    "totalCost": 39694792.23,
+    "housingUnits": 141,
+    "firstDate": "2002-08-30T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "ESTEEM HOMES",
+    "slug": "esteem-homes",
+    "permitCount": 129,
+    "totalCost": 22196994.28,
+    "housingUnits": 74,
+    "firstDate": "2010-04-08T00:00:00+00:00",
+    "lastDate": "2024-08-07T00:00:00+00:00"
+  },
+  {
+    "name": "BUILD-360",
+    "slug": "build-360",
+    "permitCount": 129,
+    "totalCost": 12314488.73,
+    "housingUnits": 0,
+    "firstDate": "2005-10-24T00:00:00+00:00",
+    "lastDate": "2026-02-09T00:00:00+00:00"
+  },
+  {
+    "name": "RIVERVIEW CUSTOM HOMES",
+    "slug": "riverview-custom-homes",
+    "permitCount": 129,
+    "totalCost": 48731240.27,
+    "housingUnits": 96,
+    "firstDate": "2011-06-14T00:00:00+00:00",
+    "lastDate": "2024-12-05T00:00:00+00:00"
+  },
+  {
+    "name": "BLUE KNIGHT DEVELOPMENTS",
+    "slug": "blue-knight-developments",
+    "permitCount": 128,
+    "totalCost": 1943001.36,
+    "housingUnits": 1,
+    "firstDate": "1999-07-12T00:00:00+00:00",
+    "lastDate": "2017-09-26T00:00:00+00:00"
+  },
+  {
+    "name": "AMIRI HOMES",
+    "slug": "amiri-homes",
+    "permitCount": 128,
+    "totalCost": 5431597.95,
+    "housingUnits": 2,
+    "firstDate": "2024-06-07T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "LINDNER BROS DEVELOPMENTS",
+    "slug": "lindner-bros-developments",
+    "permitCount": 128,
+    "totalCost": 20365883.66,
+    "housingUnits": 56,
+    "firstDate": "2001-03-09T00:00:00+00:00",
+    "lastDate": "2014-07-11T00:00:00+00:00"
+  },
+  {
+    "name": "ROCKYVIEW GARAGE BUILDERS",
+    "slug": "rockyview-garage-builders",
+    "permitCount": 127,
+    "totalCost": 5532379.93,
+    "housingUnits": 0,
+    "firstDate": "2020-04-27T00:00:00+00:00",
+    "lastDate": "2025-10-03T00:00:00+00:00"
+  },
+  {
+    "name": "VAN MANNA HOMES",
+    "slug": "van-manna-homes",
+    "permitCount": 127,
+    "totalCost": 17034453.51,
+    "housingUnits": 53,
+    "firstDate": "2006-03-10T00:00:00+00:00",
+    "lastDate": "2025-10-09T00:00:00+00:00"
+  },
+  {
+    "name": "FIRE ANT CONTRACTING",
+    "slug": "fire-ant-contracting",
+    "permitCount": 125,
+    "totalCost": 14809068.25,
+    "housingUnits": 4,
+    "firstDate": "2010-03-31T00:00:00+00:00",
+    "lastDate": "2025-10-21T00:00:00+00:00"
+  },
+  {
+    "name": "RESCON CONCRETE RESTORATIONS",
+    "slug": "rescon-concrete-restorations",
+    "permitCount": 125,
+    "totalCost": 11820805,
+    "housingUnits": 0,
+    "firstDate": "1999-10-15T00:00:00+00:00",
+    "lastDate": "2026-03-25T00:00:00+00:00"
+  },
+  {
+    "name": "TREEHOUSE DEVELOPMENTS",
+    "slug": "treehouse-developments",
+    "permitCount": 125,
+    "totalCost": 20896774.39,
+    "housingUnits": 56,
+    "firstDate": "2007-09-27T00:00:00+00:00",
+    "lastDate": "2025-07-07T00:00:00+00:00"
+  },
+  {
+    "name": "HOPEWELL DEVELOPMENT",
+    "slug": "hopewell-development",
+    "permitCount": 125,
+    "totalCost": 209284546.48,
+    "housingUnits": 44,
+    "firstDate": "1999-07-15T00:00:00+00:00",
+    "lastDate": "2025-08-05T00:00:00+00:00"
+  },
+  {
+    "name": "SCOTT BUILDERS",
+    "slug": "scott-builders",
+    "permitCount": 124,
+    "totalCost": 195529539.11,
+    "housingUnits": 0,
+    "firstDate": "1999-08-26T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "CHANDI CONSTRUCTION",
+    "slug": "chandi-construction",
+    "permitCount": 124,
+    "totalCost": 7287086.84,
+    "housingUnits": 86,
+    "firstDate": "2019-03-25T00:00:00+00:00",
+    "lastDate": "2025-12-04T00:00:00+00:00"
+  },
+  {
+    "name": "PASSION HOMES",
+    "slug": "passion-homes",
+    "permitCount": 124,
+    "totalCost": 32349767.88,
+    "housingUnits": 107,
+    "firstDate": "2007-05-18T00:00:00+00:00",
+    "lastDate": "2018-08-22T00:00:00+00:00"
+  },
+  {
+    "name": "CALCON CONSTRUCTION",
+    "slug": "calcon-construction",
+    "permitCount": 123,
+    "totalCost": 35527933.47,
+    "housingUnits": 1,
+    "firstDate": "1999-07-13T00:00:00+00:00",
+    "lastDate": "2025-11-21T00:00:00+00:00"
+  },
+  {
+    "name": "FRASER CONSTRUCTION",
+    "slug": "fraser-construction",
+    "permitCount": 123,
+    "totalCost": 4371332.72,
+    "housingUnits": 4,
+    "firstDate": "2000-01-03T00:00:00+00:00",
+    "lastDate": "2025-10-09T00:00:00+00:00"
+  },
+  {
+    "name": "SUNCOAST SCREEN ENCLOSURES",
+    "slug": "suncoast-screen-enclosures",
+    "permitCount": 123,
+    "totalCost": 3832453.67,
+    "housingUnits": 5,
+    "firstDate": "2011-09-28T00:00:00+00:00",
+    "lastDate": "2023-09-19T00:00:00+00:00"
+  },
+  {
+    "name": "GARAGE GUYS (THE)",
+    "slug": "garage-guys-the",
+    "permitCount": 123,
+    "totalCost": 1653860.59,
+    "housingUnits": 1,
+    "firstDate": "1999-07-06T00:00:00+00:00",
+    "lastDate": "2014-07-11T00:00:00+00:00"
+  },
+  {
+    "name": "ALLOY HOMES",
+    "slug": "alloy-homes",
+    "permitCount": 123,
+    "totalCost": 28224887.21,
+    "housingUnits": 68,
+    "firstDate": "2001-11-15T00:00:00+00:00",
+    "lastDate": "2025-06-24T00:00:00+00:00"
+  },
+  {
+    "name": "ELEGANT CONSTRUCTION",
+    "slug": "elegant-construction",
+    "permitCount": 122,
+    "totalCost": 4743796.08,
+    "housingUnits": 0,
+    "firstDate": "2022-04-13T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "CUBIT DESIGN GROUP",
+    "slug": "cubit-design-group",
+    "permitCount": 122,
+    "totalCost": 11298675.64,
+    "housingUnits": 66,
+    "firstDate": "2002-02-08T00:00:00+00:00",
+    "lastDate": "2017-05-17T00:00:00+00:00"
+  },
+  {
+    "name": "1824457 ALBERTA",
+    "slug": "1824457-alberta",
+    "permitCount": 122,
+    "totalCost": 24004246.85,
+    "housingUnits": 57,
+    "firstDate": "2014-12-04T00:00:00+00:00",
+    "lastDate": "2026-01-21T00:00:00+00:00"
+  },
+  {
+    "name": "NEW WEST CUSTOM HOMES",
+    "slug": "new-west-custom-homes",
+    "permitCount": 121,
+    "totalCost": 26175030.13,
+    "housingUnits": 70,
+    "firstDate": "2009-03-19T00:00:00+00:00",
+    "lastDate": "2018-12-05T00:00:00+00:00"
+  },
+  {
+    "name": "J R CONTRACT MANAGEMENT",
+    "slug": "j-r-contract-management",
+    "permitCount": 121,
+    "totalCost": 16367729.66,
+    "housingUnits": 2,
+    "firstDate": "2000-08-02T00:00:00+00:00",
+    "lastDate": "2021-07-07T00:00:00+00:00"
+  },
+  {
+    "name": "JANSEN CONTRACTING",
+    "slug": "jansen-contracting",
+    "permitCount": 120,
+    "totalCost": 2504049.65,
+    "housingUnits": 1,
+    "firstDate": "2009-04-14T00:00:00+00:00",
+    "lastDate": "2012-09-04T00:00:00+00:00"
+  },
+  {
+    "name": "KAY 2 CONTRACTING",
+    "slug": "kay-2-contracting",
+    "permitCount": 119,
+    "totalCost": 4289617.64,
+    "housingUnits": 6,
+    "firstDate": "2015-06-09T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "PDS FIRE PROTECTION",
+    "slug": "pds-fire-protection",
+    "permitCount": 117,
+    "totalCost": 2778394.14,
+    "housingUnits": 0,
+    "firstDate": "2002-05-31T00:00:00+00:00",
+    "lastDate": "2022-09-15T00:00:00+00:00"
+  },
+  {
+    "name": "DECK KING",
+    "slug": "deck-king",
+    "permitCount": 117,
+    "totalCost": 967987.64,
+    "housingUnits": 0,
+    "firstDate": "2021-10-18T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "DECK COMPANY (THE)",
+    "slug": "deck-company-the",
+    "permitCount": 116,
+    "totalCost": 497773.52,
+    "housingUnits": 0,
+    "firstDate": "2000-03-24T00:00:00+00:00",
+    "lastDate": "2014-10-01T00:00:00+00:00"
+  },
+  {
+    "name": "PRECISION BUILDERS",
+    "slug": "precision-builders",
+    "permitCount": 115,
+    "totalCost": 9989119.79,
+    "housingUnits": 7,
+    "firstDate": "2000-03-21T00:00:00+00:00",
+    "lastDate": "2026-02-23T00:00:00+00:00"
+  },
+  {
+    "name": "TOPS EXCAVATION",
+    "slug": "tops-excavation",
+    "permitCount": 114,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2014-03-17T00:00:00+00:00",
+    "lastDate": "2026-01-30T00:00:00+00:00"
+  },
+  {
+    "name": "SHEMSHO CONSTRUCTION",
+    "slug": "shemsho-construction",
+    "permitCount": 113,
+    "totalCost": 12916069.97,
+    "housingUnits": 43,
+    "firstDate": "2014-12-08T00:00:00+00:00",
+    "lastDate": "2026-03-25T00:00:00+00:00"
+  },
+  {
+    "name": "NIRO DEVELOPMENTS",
+    "slug": "niro-developments",
+    "permitCount": 113,
+    "totalCost": 22632862.17,
+    "housingUnits": 49,
+    "firstDate": "2010-01-14T00:00:00+00:00",
+    "lastDate": "2026-03-24T00:00:00+00:00"
+  },
+  {
+    "name": "TOP NOTCH GARAGE BUILDERS AND CEMENT CONTRACTORS",
+    "slug": "top-notch-garage-builders-and-cement-contractors",
+    "permitCount": 112,
+    "totalCost": 1446061.4,
+    "housingUnits": 0,
+    "firstDate": "2005-03-24T00:00:00+00:00",
+    "lastDate": "2009-09-30T00:00:00+00:00"
+  },
+  {
+    "name": "STATESMAN",
+    "slug": "statesman",
+    "permitCount": 112,
+    "totalCost": 132690182.11,
+    "housingUnits": 1117,
+    "firstDate": "1999-06-30T00:00:00+00:00",
+    "lastDate": "2022-09-07T00:00:00+00:00"
+  },
+  {
+    "name": "TROYBUILT HOMES",
+    "slug": "troybuilt-homes",
+    "permitCount": 112,
+    "totalCost": 11235567.26,
+    "housingUnits": 42,
+    "firstDate": "2004-06-02T00:00:00+00:00",
+    "lastDate": "2024-06-07T00:00:00+00:00"
+  },
+  {
+    "name": "VERANDA ESTATE HOMES",
+    "slug": "veranda-estate-homes",
+    "permitCount": 112,
+    "totalCost": 32846044.17,
+    "housingUnits": 63,
+    "firstDate": "2005-05-09T00:00:00+00:00",
+    "lastDate": "2026-03-30T00:00:00+00:00"
+  },
+  {
+    "name": "PREET HOMES",
+    "slug": "preet-homes",
+    "permitCount": 111,
+    "totalCost": 24416474.98,
+    "housingUnits": 76,
+    "firstDate": "2008-11-13T00:00:00+00:00",
+    "lastDate": "2024-04-15T00:00:00+00:00"
+  },
+  {
+    "name": "STARCRAFT CONSTRUCTION",
+    "slug": "starcraft-construction",
+    "permitCount": 111,
+    "totalCost": 25126593.35,
+    "housingUnits": 2,
+    "firstDate": "1999-11-23T00:00:00+00:00",
+    "lastDate": "2025-12-16T00:00:00+00:00"
+  },
+  {
+    "name": "ICE-HOUSE ENTERPRISES",
+    "slug": "ice-house-enterprises",
+    "permitCount": 111,
+    "totalCost": 6848662.83,
+    "housingUnits": 0,
+    "firstDate": "1999-08-19T00:00:00+00:00",
+    "lastDate": "2026-02-19T00:00:00+00:00"
+  },
+  {
+    "name": "DREAM RIDGE HOMES",
+    "slug": "dream-ridge-homes",
+    "permitCount": 111,
+    "totalCost": 28935419.72,
+    "housingUnits": 54,
+    "firstDate": "2010-03-11T00:00:00+00:00",
+    "lastDate": "2026-02-17T00:00:00+00:00"
+  },
+  {
+    "name": "CNJ DEVELOPMENTS",
+    "slug": "cnj-developments",
+    "permitCount": 110,
+    "totalCost": 31635985.86,
+    "housingUnits": 105,
+    "firstDate": "2019-06-27T00:00:00+00:00",
+    "lastDate": "2026-03-17T00:00:00+00:00"
+  },
+  {
+    "name": "DAYTONA HOMES",
+    "slug": "daytona-homes",
+    "permitCount": 110,
+    "totalCost": 10583003.86,
+    "housingUnits": 107,
+    "firstDate": "1999-07-07T00:00:00+00:00",
+    "lastDate": "2004-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "SPACEMAKERS CONSTRUCTION SERVICES",
+    "slug": "spacemakers-construction-services",
+    "permitCount": 109,
+    "totalCost": 76555828.53,
+    "housingUnits": 0,
+    "firstDate": "1999-07-13T00:00:00+00:00",
+    "lastDate": "2017-06-27T00:00:00+00:00"
+  },
+  {
+    "name": "COREFRONT CUSTOM RENOVATIONS",
+    "slug": "corefront-custom-renovations",
+    "permitCount": 108,
+    "totalCost": 4538653.14,
+    "housingUnits": 4,
+    "firstDate": "2010-03-03T00:00:00+00:00",
+    "lastDate": "2021-12-15T00:00:00+00:00"
+  },
+  {
+    "name": "ALTA INTERIOR CONTRACTING SERVICES",
+    "slug": "alta-interior-contracting-services",
+    "permitCount": 108,
+    "totalCost": 16630163,
+    "housingUnits": 0,
+    "firstDate": "2004-03-31T00:00:00+00:00",
+    "lastDate": "2015-12-24T00:00:00+00:00"
+  },
+  {
+    "name": "HBC CUSTOM HOMES",
+    "slug": "hbc-custom-homes",
+    "permitCount": 108,
+    "totalCost": 19120132.98,
+    "housingUnits": 55,
+    "firstDate": "2022-09-14T00:00:00+00:00",
+    "lastDate": "2026-02-18T00:00:00+00:00"
+  },
+  {
+    "name": "WESTCOR CONSTRUCTION",
+    "slug": "westcor-construction",
+    "permitCount": 107,
+    "totalCost": 80084710.24,
+    "housingUnits": 47,
+    "firstDate": "2004-05-28T00:00:00+00:00",
+    "lastDate": "2026-03-18T00:00:00+00:00"
+  },
+  {
+    "name": "CANTERRA CUSTOM HOMES",
+    "slug": "canterra-custom-homes",
+    "permitCount": 107,
+    "totalCost": 23537762.26,
+    "housingUnits": 63,
+    "firstDate": "2005-10-20T00:00:00+00:00",
+    "lastDate": "2018-03-14T00:00:00+00:00"
+  },
+  {
+    "name": "REMODELERS (THE)",
+    "slug": "remodelers-the",
+    "permitCount": 106,
+    "totalCost": 2817276.46,
+    "housingUnits": 0,
+    "firstDate": "2004-08-31T00:00:00+00:00",
+    "lastDate": "2014-07-29T00:00:00+00:00"
+  },
+  {
+    "name": "KEN HOMES",
+    "slug": "ken-homes",
+    "permitCount": 106,
+    "totalCost": 22199196.2,
+    "housingUnits": 73,
+    "firstDate": "2017-04-20T00:00:00+00:00",
+    "lastDate": "2026-01-20T00:00:00+00:00"
+  },
+  {
+    "name": "LOGEL HOMES",
+    "slug": "logel-homes",
+    "permitCount": 105,
+    "totalCost": 356819460.77,
+    "housingUnits": 2231,
+    "firstDate": "2017-12-15T00:00:00+00:00",
+    "lastDate": "2026-03-18T00:00:00+00:00"
+  },
+  {
+    "name": "ECONO DECKS",
+    "slug": "econo-decks",
+    "permitCount": 105,
+    "totalCost": 652586.19,
+    "housingUnits": 3,
+    "firstDate": "2013-04-22T00:00:00+00:00",
+    "lastDate": "2024-06-03T00:00:00+00:00"
+  },
+  {
+    "name": "TOTAL HOME",
+    "slug": "total-home",
+    "permitCount": 104,
+    "totalCost": 1978564.82,
+    "housingUnits": 0,
+    "firstDate": "2007-11-21T00:00:00+00:00",
+    "lastDate": "2016-03-04T00:00:00+00:00"
+  },
+  {
+    "name": "VIP GENERAL CONTRACTORS",
+    "slug": "vip-general-contractors",
+    "permitCount": 104,
+    "totalCost": 2605933.2,
+    "housingUnits": 0,
+    "firstDate": "2000-04-07T00:00:00+00:00",
+    "lastDate": "2014-04-14T00:00:00+00:00"
+  },
+  {
+    "name": "MARKERT CONSTRUCTION",
+    "slug": "markert-construction",
+    "permitCount": 104,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2000-05-17T00:00:00+00:00",
+    "lastDate": "2026-03-13T00:00:00+00:00"
+  },
+  {
+    "name": "BAIDWAN CONSTRUCTION",
+    "slug": "baidwan-construction",
+    "permitCount": 104,
+    "totalCost": 19341555.77,
+    "housingUnits": 60,
+    "firstDate": "2019-04-04T00:00:00+00:00",
+    "lastDate": "2025-10-21T00:00:00+00:00"
+  },
+  {
+    "name": "MANOR RENOVATIONS",
+    "slug": "manor-renovations",
+    "permitCount": 104,
+    "totalCost": 4621648.3,
+    "housingUnits": 5,
+    "firstDate": "2004-06-17T00:00:00+00:00",
+    "lastDate": "2016-04-12T00:00:00+00:00"
+  },
+  {
+    "name": "A2Z BUILDING SOLUTIONS",
+    "slug": "a2z-building-solutions",
+    "permitCount": 103,
+    "totalCost": 5792778,
+    "housingUnits": 79,
+    "firstDate": "2019-11-01T00:00:00+00:00",
+    "lastDate": "2026-02-12T00:00:00+00:00"
+  },
+  {
+    "name": "UNIVERSAL REMODELING",
+    "slug": "universal-remodeling",
+    "permitCount": 103,
+    "totalCost": 4940867.6,
+    "housingUnits": 73,
+    "firstDate": "2022-01-27T00:00:00+00:00",
+    "lastDate": "2026-04-05T00:00:00+00:00"
+  },
+  {
+    "name": "TRILLIUM HOMES",
+    "slug": "trillium-homes",
+    "permitCount": 102,
+    "totalCost": 16448331.22,
+    "housingUnits": 95,
+    "firstDate": "1999-06-23T00:00:00+00:00",
+    "lastDate": "2006-02-24T00:00:00+00:00"
+  },
+  {
+    "name": "PANACHE HOMES",
+    "slug": "panache-homes",
+    "permitCount": 102,
+    "totalCost": 17474606.97,
+    "housingUnits": 50,
+    "firstDate": "2009-07-10T00:00:00+00:00",
+    "lastDate": "2021-03-22T00:00:00+00:00"
+  },
+  {
+    "name": "CNLC CONSTRUCTION",
+    "slug": "cnlc-construction",
+    "permitCount": 101,
+    "totalCost": 808856.72,
+    "housingUnits": 2,
+    "firstDate": "2015-09-22T00:00:00+00:00",
+    "lastDate": "2025-07-18T00:00:00+00:00"
+  },
+  {
+    "name": "PILLAR ENGINEERING & INSPECTION",
+    "slug": "pillar-engineering-inspection",
+    "permitCount": 101,
+    "totalCost": 2223217.1,
+    "housingUnits": 0,
+    "firstDate": "2006-03-02T00:00:00+00:00",
+    "lastDate": "2012-11-02T00:00:00+00:00"
+  },
+  {
+    "name": "KT EXCAVATING",
+    "slug": "kt-excavating",
+    "permitCount": 101,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2001-03-26T00:00:00+00:00",
+    "lastDate": "2023-11-22T00:00:00+00:00"
+  },
+  {
+    "name": "NEWGROWTH FINE HOMES",
+    "slug": "newgrowth-fine-homes",
+    "permitCount": 101,
+    "totalCost": 17015041.32,
+    "housingUnits": 45,
+    "firstDate": "2002-09-25T00:00:00+00:00",
+    "lastDate": "2017-09-23T00:00:00+00:00"
+  },
+  {
+    "name": "BEYOND HOMES",
+    "slug": "beyond-homes",
+    "permitCount": 101,
+    "totalCost": 15645402.85,
+    "housingUnits": 58,
+    "firstDate": "2007-06-07T00:00:00+00:00",
+    "lastDate": "2016-05-30T00:00:00+00:00"
+  },
+  {
+    "name": "COBALT DEVELOPMENTS",
+    "slug": "cobalt-developments",
+    "permitCount": 100,
+    "totalCost": 2449087.75,
+    "housingUnits": 0,
+    "firstDate": "2012-02-06T00:00:00+00:00",
+    "lastDate": "2018-03-21T00:00:00+00:00"
+  },
+  {
+    "name": "MCKINLEY MASTERS",
+    "slug": "mckinley-masters",
+    "permitCount": 100,
+    "totalCost": 24241839.6,
+    "housingUnits": 45,
+    "firstDate": "2001-03-06T00:00:00+00:00",
+    "lastDate": "2025-11-24T00:00:00+00:00"
+  },
+  {
+    "name": "UTOPIA CONSTRUCTION",
+    "slug": "utopia-construction",
+    "permitCount": 100,
+    "totalCost": 40769707.06,
+    "housingUnits": 158,
+    "firstDate": "2014-12-04T00:00:00+00:00",
+    "lastDate": "2026-03-17T00:00:00+00:00"
+  },
+  {
+    "name": "HOPEWELL  ARBOUR LAKE",
+    "slug": "hopewell-arbour-lake",
+    "permitCount": 99,
+    "totalCost": 34633343.48,
+    "housingUnits": 95,
+    "firstDate": "2020-09-09T00:00:00+00:00",
+    "lastDate": "2023-05-24T00:00:00+00:00"
+  },
+  {
+    "name": "NORCAL CONSTRUCTION",
+    "slug": "norcal-construction",
+    "permitCount": 98,
+    "totalCost": 8615599,
+    "housingUnits": 0,
+    "firstDate": "1999-12-09T00:00:00+00:00",
+    "lastDate": "2021-10-07T00:00:00+00:00"
+  },
+  {
+    "name": "PAMA HOMES",
+    "slug": "pama-homes",
+    "permitCount": 98,
+    "totalCost": 4346231.72,
+    "housingUnits": 0,
+    "firstDate": "2024-06-08T00:00:00+00:00",
+    "lastDate": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "name": "FUTURA DEVELOPMENTS",
+    "slug": "futura-developments",
+    "permitCount": 98,
+    "totalCost": 9425000,
+    "housingUnits": 0,
+    "firstDate": "2004-03-01T00:00:00+00:00",
+    "lastDate": "2026-02-26T00:00:00+00:00"
+  },
+  {
+    "name": "MAXGREEN WINDOWS, SIDING AND ROOFING",
+    "slug": "maxgreen-windows-siding-and-roofing",
+    "permitCount": 98,
+    "totalCost": 690421.34,
+    "housingUnits": 0,
+    "firstDate": "2010-06-25T00:00:00+00:00",
+    "lastDate": "2023-04-27T00:00:00+00:00"
+  },
+  {
+    "name": "MCNEDRA RENOVATIONS",
+    "slug": "mcnedra-renovations",
+    "permitCount": 98,
+    "totalCost": 3557459.71,
+    "housingUnits": 66,
+    "firstDate": "2018-04-05T00:00:00+00:00",
+    "lastDate": "2024-10-04T00:00:00+00:00"
+  },
+  {
+    "name": "MOUNTAIN VIEW SUN DECKS",
+    "slug": "mountain-view-sun-decks",
+    "permitCount": 97,
+    "totalCost": 662254.09,
+    "housingUnits": 0,
+    "firstDate": "2001-05-22T00:00:00+00:00",
+    "lastDate": "2025-08-12T00:00:00+00:00"
+  },
+  {
+    "name": "ALDEBARAN ENTERPRISES",
+    "slug": "aldebaran-enterprises",
+    "permitCount": 97,
+    "totalCost": 58182755.79,
+    "housingUnits": 373,
+    "firstDate": "1999-07-19T00:00:00+00:00",
+    "lastDate": "2025-07-24T00:00:00+00:00"
+  },
+  {
+    "name": "S I S SUPPLY INSTALL SERVICES",
+    "slug": "s-i-s-supply-install-services",
+    "permitCount": 97,
+    "totalCost": 3685838.18,
+    "housingUnits": 0,
+    "firstDate": "1999-06-24T00:00:00+00:00",
+    "lastDate": "2026-01-06T00:00:00+00:00"
+  },
+  {
+    "name": "KON-STRUX DEVELOPMENTS",
+    "slug": "kon-strux-developments",
+    "permitCount": 97,
+    "totalCost": 5571295.92,
+    "housingUnits": 3,
+    "firstDate": "2007-08-17T00:00:00+00:00",
+    "lastDate": "2020-11-05T00:00:00+00:00"
+  },
+  {
+    "name": "URBAN ABODE",
+    "slug": "urban-abode",
+    "permitCount": 97,
+    "totalCost": 2121798.69,
+    "housingUnits": 0,
+    "firstDate": "2007-03-06T00:00:00+00:00",
+    "lastDate": "2019-07-10T00:00:00+00:00"
+  },
+  {
+    "name": "HAYATI HOMES",
+    "slug": "hayati-homes",
+    "permitCount": 96,
+    "totalCost": 14428306.51,
+    "housingUnits": 45,
+    "firstDate": "2004-10-19T00:00:00+00:00",
+    "lastDate": "2025-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "MARYGOLD HOMES",
+    "slug": "marygold-homes",
+    "permitCount": 95,
+    "totalCost": 13184568.68,
+    "housingUnits": 41,
+    "firstDate": "2012-01-11T00:00:00+00:00",
+    "lastDate": "2023-04-11T00:00:00+00:00"
+  },
+  {
+    "name": "MISSION HOMES JV",
+    "slug": "mission-homes-jv",
+    "permitCount": 94,
+    "totalCost": 25610292.45,
+    "housingUnits": 49,
+    "firstDate": "2006-05-03T00:00:00+00:00",
+    "lastDate": "2025-08-06T00:00:00+00:00"
+  },
+  {
+    "name": "ASHWOOD HOMES",
+    "slug": "ashwood-homes",
+    "permitCount": 94,
+    "totalCost": 5103559.83,
+    "housingUnits": 4,
+    "firstDate": "2007-07-05T00:00:00+00:00",
+    "lastDate": "2026-03-13T00:00:00+00:00"
+  },
+  {
+    "name": "PRIMO MANAGEMENT",
+    "slug": "primo-management",
+    "permitCount": 93,
+    "totalCost": 10110990.49,
+    "housingUnits": 41,
+    "firstDate": "2001-08-23T00:00:00+00:00",
+    "lastDate": "2021-10-25T00:00:00+00:00"
+  },
+  {
+    "name": "NEWLOOK HOMES",
+    "slug": "newlook-homes",
+    "permitCount": 93,
+    "totalCost": 14639410.37,
+    "housingUnits": 47,
+    "firstDate": "2003-07-14T00:00:00+00:00",
+    "lastDate": "2025-11-14T00:00:00+00:00"
+  },
+  {
+    "name": "KALAMOIR CONSTRUCTION",
+    "slug": "kalamoir-construction",
+    "permitCount": 93,
+    "totalCost": 105288662.15,
+    "housingUnits": 581,
+    "firstDate": "2023-05-25T00:00:00+00:00",
+    "lastDate": "2026-03-28T00:00:00+00:00"
+  },
+  {
+    "name": "MOLYNEAUX INTERIORS",
+    "slug": "molyneaux-interiors",
+    "permitCount": 92,
+    "totalCost": 4520526.84,
+    "housingUnits": 0,
+    "firstDate": "1999-10-18T00:00:00+00:00",
+    "lastDate": "2019-11-15T00:00:00+00:00"
+  },
+  {
+    "name": "SHELBY HOMES",
+    "slug": "shelby-homes",
+    "permitCount": 92,
+    "totalCost": 10644333.74,
+    "housingUnits": 49,
+    "firstDate": "2002-04-05T00:00:00+00:00",
+    "lastDate": "2014-06-13T00:00:00+00:00"
+  },
+  {
+    "name": "MORRISON HOMES (CALGARY MULTI)",
+    "slug": "morrison-homes-calgary-multi",
+    "permitCount": 92,
+    "totalCost": 83075825.79,
+    "housingUnits": 396,
+    "firstDate": "2007-06-22T00:00:00+00:00",
+    "lastDate": "2025-11-28T00:00:00+00:00"
+  },
+  {
+    "name": "AKASH HOMES",
+    "slug": "akash-homes",
+    "permitCount": 92,
+    "totalCost": 27961712.79,
+    "housingUnits": 99,
+    "firstDate": "2020-08-11T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "BILL SAFEHOUSE",
+    "slug": "bill-safehouse",
+    "permitCount": 92,
+    "totalCost": 2037606.01,
+    "housingUnits": 26,
+    "firstDate": "2015-07-03T00:00:00+00:00",
+    "lastDate": "2023-03-31T00:00:00+00:00"
+  },
+  {
+    "name": "TIMBER WOLFF DESIGNS",
+    "slug": "timber-wolff-designs",
+    "permitCount": 91,
+    "totalCost": 11428865.92,
+    "housingUnits": 15,
+    "firstDate": "2008-07-18T00:00:00+00:00",
+    "lastDate": "2026-02-12T00:00:00+00:00"
+  },
+  {
+    "name": "LEAR CONSTRUCTION MANAGEMENT",
+    "slug": "lear-construction-management",
+    "permitCount": 91,
+    "totalCost": 183463780.33,
+    "housingUnits": 491,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "name": "BARHAM CONTRACTING",
+    "slug": "barham-contracting",
+    "permitCount": 91,
+    "totalCost": 19777843.27,
+    "housingUnits": 25,
+    "firstDate": "2000-03-29T00:00:00+00:00",
+    "lastDate": "2025-12-22T00:00:00+00:00"
+  },
+  {
+    "name": "SUNSTAR HOMES",
+    "slug": "sunstar-homes",
+    "permitCount": 90,
+    "totalCost": 62422640.77,
+    "housingUnits": 306,
+    "firstDate": "2018-02-22T00:00:00+00:00",
+    "lastDate": "2026-04-03T00:00:00+00:00"
+  },
+  {
+    "name": "DAWSON WALLACE CONSTRUCTION",
+    "slug": "dawson-wallace-construction",
+    "permitCount": 90,
+    "totalCost": 155574097.79,
+    "housingUnits": 422,
+    "firstDate": "1999-09-15T00:00:00+00:00",
+    "lastDate": "2026-01-30T00:00:00+00:00"
+  },
+  {
+    "name": "SUNDECK SOLUTIONS",
+    "slug": "sundeck-solutions",
+    "permitCount": 90,
+    "totalCost": 968266.38,
+    "housingUnits": 0,
+    "firstDate": "2007-04-25T00:00:00+00:00",
+    "lastDate": "2026-02-23T00:00:00+00:00"
+  },
+  {
+    "name": "T.A.K.E CONTRACTING",
+    "slug": "t-a-k-e-contracting",
+    "permitCount": 89,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2019-05-08T00:00:00+00:00",
+    "lastDate": "2026-01-30T00:00:00+00:00"
+  },
+  {
+    "name": "BEDROCK HOMES LIMITED",
+    "slug": "bedrock-homes-limited",
+    "permitCount": 89,
+    "totalCost": 29435552.1,
+    "housingUnits": 90,
+    "firstDate": "2024-11-08T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "BUCI'S HOMES & DEVELOPMENT",
+    "slug": "buci-s-homes-development",
+    "permitCount": 89,
+    "totalCost": 11159229.09,
+    "housingUnits": 33,
+    "firstDate": "2020-11-27T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "PARAMJIT HOMES",
+    "slug": "paramjit-homes",
+    "permitCount": 89,
+    "totalCost": 14956412.96,
+    "housingUnits": 47,
+    "firstDate": "2011-04-07T00:00:00+00:00",
+    "lastDate": "2024-01-25T00:00:00+00:00"
+  },
+  {
+    "name": "SELETECH ELECTRICAL*",
+    "slug": "seletech-electrical",
+    "permitCount": 88,
+    "totalCost": 3564223.75,
+    "housingUnits": 0,
+    "firstDate": "2008-11-18T00:00:00+00:00",
+    "lastDate": "2026-04-03T00:00:00+00:00"
+  },
+  {
+    "name": "DELTA EXCAVATING AND TRUCKING",
+    "slug": "delta-excavating-and-trucking",
+    "permitCount": 88,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2021-05-31T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "RESTORERS GROUP (THE)",
+    "slug": "restorers-group-the",
+    "permitCount": 88,
+    "totalCost": 21931221.03,
+    "housingUnits": 60,
+    "firstDate": "2010-06-18T00:00:00+00:00",
+    "lastDate": "2026-02-20T00:00:00+00:00"
+  },
+  {
+    "name": "BRAR HOMES",
+    "slug": "brar-homes",
+    "permitCount": 87,
+    "totalCost": 23474805.05,
+    "housingUnits": 60,
+    "firstDate": "2009-10-22T00:00:00+00:00",
+    "lastDate": "2025-08-05T00:00:00+00:00"
+  },
+  {
+    "name": "VICON HOMES",
+    "slug": "vicon-homes",
+    "permitCount": 87,
+    "totalCost": 11965975.59,
+    "housingUnits": 36,
+    "firstDate": "2006-05-24T00:00:00+00:00",
+    "lastDate": "2024-06-10T00:00:00+00:00"
+  },
+  {
+    "name": "BK GARAGE BUILDERS",
+    "slug": "bk-garage-builders",
+    "permitCount": 87,
+    "totalCost": 4018406.6,
+    "housingUnits": 1,
+    "firstDate": "2023-04-19T00:00:00+00:00",
+    "lastDate": "2025-11-05T00:00:00+00:00"
+  },
+  {
+    "name": "ASTORIA HOMES",
+    "slug": "astoria-homes",
+    "permitCount": 87,
+    "totalCost": 11140938.66,
+    "housingUnits": 44,
+    "firstDate": "2001-11-20T00:00:00+00:00",
+    "lastDate": "2017-02-27T00:00:00+00:00"
+  },
+  {
+    "name": "DEVITT & FORAND CONTRACTORS",
+    "slug": "devitt-forand-contractors",
+    "permitCount": 87,
+    "totalCost": 110563868.03,
+    "housingUnits": 53,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2022-08-23T00:00:00+00:00"
+  },
+  {
+    "name": "MCKEE HOMES",
+    "slug": "mckee-homes",
+    "permitCount": 85,
+    "totalCost": 22596717.59,
+    "housingUnits": 76,
+    "firstDate": "2010-11-17T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "CASTELLANO CUSTOM HOMES",
+    "slug": "castellano-custom-homes",
+    "permitCount": 85,
+    "totalCost": 16118395.83,
+    "housingUnits": 42,
+    "firstDate": "2005-10-31T00:00:00+00:00",
+    "lastDate": "2023-08-17T00:00:00+00:00"
+  },
+  {
+    "name": "ALBERTA FIRE & FLOOD",
+    "slug": "alberta-fire-flood",
+    "permitCount": 85,
+    "totalCost": 5744527.55,
+    "housingUnits": 2,
+    "firstDate": "2005-11-17T00:00:00+00:00",
+    "lastDate": "2025-05-23T00:00:00+00:00"
+  },
+  {
+    "name": "ARMOUR CONSTRUCTION",
+    "slug": "armour-construction",
+    "permitCount": 85,
+    "totalCost": 2171351.68,
+    "housingUnits": 0,
+    "firstDate": "2008-04-02T00:00:00+00:00",
+    "lastDate": "2021-05-31T00:00:00+00:00"
+  },
+  {
+    "name": "MADAROCH CONSTRUCTION",
+    "slug": "madaroch-construction",
+    "permitCount": 85,
+    "totalCost": 14110861,
+    "housingUnits": 0,
+    "firstDate": "1999-07-02T00:00:00+00:00",
+    "lastDate": "2017-11-16T00:00:00+00:00"
+  },
+  {
+    "name": "DATUM MILLWORK",
+    "slug": "datum-millwork",
+    "permitCount": 85,
+    "totalCost": 7325246.5,
+    "housingUnits": 17,
+    "firstDate": "2001-08-31T00:00:00+00:00",
+    "lastDate": "2026-02-23T00:00:00+00:00"
+  },
+  {
+    "name": "SPROUSE FIRE & SAFETY",
+    "slug": "sprouse-fire-safety",
+    "permitCount": 85,
+    "totalCost": 689144,
+    "housingUnits": 0,
+    "firstDate": "2001-11-09T00:00:00+00:00",
+    "lastDate": "2026-03-03T00:00:00+00:00"
+  },
+  {
+    "name": "BIG CITY DEVELOPMENTS",
+    "slug": "big-city-developments",
+    "permitCount": 85,
+    "totalCost": 1712813.74,
+    "housingUnits": 0,
+    "firstDate": "2008-05-01T00:00:00+00:00",
+    "lastDate": "2025-12-02T00:00:00+00:00"
+  },
+  {
+    "name": "BURKE BUILDERS",
+    "slug": "burke-builders",
+    "permitCount": 85,
+    "totalCost": 5327995.28,
+    "housingUnits": 18,
+    "firstDate": "1999-12-10T00:00:00+00:00",
+    "lastDate": "2017-03-02T00:00:00+00:00"
+  },
+  {
+    "name": "CROSSLEY CUSTOM HOMES",
+    "slug": "crossley-custom-homes",
+    "permitCount": 85,
+    "totalCost": 10190372.07,
+    "housingUnits": 79,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2006-09-26T00:00:00+00:00"
+  },
+  {
+    "name": "INLAND DEVELOPMENT",
+    "slug": "inland-development",
+    "permitCount": 84,
+    "totalCost": 15045776.66,
+    "housingUnits": 46,
+    "firstDate": "1999-06-29T00:00:00+00:00",
+    "lastDate": "2015-09-11T00:00:00+00:00"
+  },
+  {
+    "name": "KURMAK BUILDERS",
+    "slug": "kurmak-builders",
+    "permitCount": 84,
+    "totalCost": 5205017.26,
+    "housingUnits": 1,
+    "firstDate": "2006-01-17T00:00:00+00:00",
+    "lastDate": "2024-03-11T00:00:00+00:00"
+  },
+  {
+    "name": "ALEC WILLIAMS CONSTRUCTION",
+    "slug": "alec-williams-construction",
+    "permitCount": 84,
+    "totalCost": 8561573.29,
+    "housingUnits": 8,
+    "firstDate": "2011-07-11T00:00:00+00:00",
+    "lastDate": "2026-03-31T00:00:00+00:00"
+  },
+  {
+    "name": "MAYFIELD RENOVATIONS",
+    "slug": "mayfield-renovations",
+    "permitCount": 84,
+    "totalCost": 2029571.11,
+    "housingUnits": 3,
+    "firstDate": "2005-08-03T00:00:00+00:00",
+    "lastDate": "2022-08-17T00:00:00+00:00"
+  },
+  {
+    "name": "TREVI OUTDOOR LEISURE",
+    "slug": "trevi-outdoor-leisure",
+    "permitCount": 84,
+    "totalCost": 1985673.59,
+    "housingUnits": 0,
+    "firstDate": "2007-02-16T00:00:00+00:00",
+    "lastDate": "2015-06-26T00:00:00+00:00"
+  },
+  {
+    "name": "PRISM INTERIORS",
+    "slug": "prism-interiors",
+    "permitCount": 84,
+    "totalCost": 1179317.23,
+    "housingUnits": 0,
+    "firstDate": "2009-05-08T00:00:00+00:00",
+    "lastDate": "2025-09-29T00:00:00+00:00"
+  },
+  {
+    "name": "LEADING EDGE DEVELOPMENTS",
+    "slug": "leading-edge-developments",
+    "permitCount": 84,
+    "totalCost": 24048467.71,
+    "housingUnits": 0,
+    "firstDate": "2014-04-01T00:00:00+00:00",
+    "lastDate": "2026-03-13T00:00:00+00:00"
+  },
+  {
+    "name": "CHRISTINA HOMES",
+    "slug": "christina-homes",
+    "permitCount": 84,
+    "totalCost": 7372210.41,
+    "housingUnits": 51,
+    "firstDate": "2000-01-05T00:00:00+00:00",
+    "lastDate": "2011-05-05T00:00:00+00:00"
+  },
+  {
+    "name": "OVIS GROUP",
+    "slug": "ovis-group",
+    "permitCount": 84,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2022-10-28T00:00:00+00:00",
+    "lastDate": "2026-03-25T00:00:00+00:00"
+  },
+  {
+    "name": "WAVE HOMES",
+    "slug": "wave-homes",
+    "permitCount": 84,
+    "totalCost": 52871963.05,
+    "housingUnits": 241,
+    "firstDate": "2017-06-28T00:00:00+00:00",
+    "lastDate": "2025-10-20T00:00:00+00:00"
+  },
+  {
+    "name": "LOCK RENOVATIONS",
+    "slug": "lock-renovations",
+    "permitCount": 84,
+    "totalCost": 6322112.82,
+    "housingUnits": 0,
+    "firstDate": "2002-11-13T00:00:00+00:00",
+    "lastDate": "2024-12-10T00:00:00+00:00"
+  },
+  {
+    "name": "CEDARGLEN LIVING",
+    "slug": "cedarglen-living",
+    "permitCount": 83,
+    "totalCost": 516845338.33,
+    "housingUnits": 2497,
+    "firstDate": "2014-11-03T00:00:00+00:00",
+    "lastDate": "2025-07-16T00:00:00+00:00"
+  },
+  {
+    "name": "CHANNEL CUSTOM BUILDERS",
+    "slug": "channel-custom-builders",
+    "permitCount": 83,
+    "totalCost": 5088127.02,
+    "housingUnits": 3,
+    "firstDate": "1999-07-21T00:00:00+00:00",
+    "lastDate": "2026-01-23T00:00:00+00:00"
+  },
+  {
+    "name": "AK DESIGN AND DEVELOPMENT",
+    "slug": "ak-design-and-development",
+    "permitCount": 83,
+    "totalCost": 13358129.45,
+    "housingUnits": 38,
+    "firstDate": "2014-05-16T00:00:00+00:00",
+    "lastDate": "2025-11-28T00:00:00+00:00"
+  },
+  {
+    "name": "KAMEX CONSTRUCTION",
+    "slug": "kamex-construction",
+    "permitCount": 83,
+    "totalCost": 9734520,
+    "housingUnits": 0,
+    "firstDate": "2001-08-24T00:00:00+00:00",
+    "lastDate": "2026-03-17T00:00:00+00:00"
+  },
+  {
+    "name": "MTEC CORPORATE CONSTRUCTION",
+    "slug": "mtec-corporate-construction",
+    "permitCount": 82,
+    "totalCost": 14367500,
+    "housingUnits": 0,
+    "firstDate": "1999-07-09T00:00:00+00:00",
+    "lastDate": "2004-10-04T00:00:00+00:00"
+  },
+  {
+    "name": "KEEPSAKE HOMES",
+    "slug": "keepsake-homes",
+    "permitCount": 82,
+    "totalCost": 16701823.98,
+    "housingUnits": 52,
+    "firstDate": "2010-07-22T00:00:00+00:00",
+    "lastDate": "2022-10-24T00:00:00+00:00"
+  },
+  {
+    "name": "BURTON GENERAL CONTRACTING",
+    "slug": "burton-general-contracting",
+    "permitCount": 82,
+    "totalCost": 15144863.54,
+    "housingUnits": 0,
+    "firstDate": "1999-10-28T00:00:00+00:00",
+    "lastDate": "2025-04-01T00:00:00+00:00"
+  },
+  {
+    "name": "ALLISTON GC",
+    "slug": "alliston-gc",
+    "permitCount": 82,
+    "totalCost": 37285680.15,
+    "housingUnits": 149,
+    "firstDate": "2020-04-08T00:00:00+00:00",
+    "lastDate": "2024-07-17T00:00:00+00:00"
+  },
+  {
+    "name": "E3 CONSTRUCTION",
+    "slug": "e3-construction",
+    "permitCount": 81,
+    "totalCost": 1492970.37,
+    "housingUnits": 4,
+    "firstDate": "2008-08-12T00:00:00+00:00",
+    "lastDate": "2023-08-31T00:00:00+00:00"
+  },
+  {
+    "name": "C R GRANT BUILDERS",
+    "slug": "c-r-grant-builders",
+    "permitCount": 81,
+    "totalCost": 6012576.65,
+    "housingUnits": 1,
+    "firstDate": "1999-08-03T00:00:00+00:00",
+    "lastDate": "2017-11-20T00:00:00+00:00"
+  },
+  {
+    "name": "OVIATT CONTRACTING",
+    "slug": "oviatt-contracting",
+    "permitCount": 81,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2011-04-12T00:00:00+00:00",
+    "lastDate": "2025-11-13T00:00:00+00:00"
+  },
+  {
+    "name": "2123942 ALBERTA",
+    "slug": "2123942-alberta",
+    "permitCount": 81,
+    "totalCost": 13365005.29,
+    "housingUnits": 42,
+    "firstDate": "2019-10-18T00:00:00+00:00",
+    "lastDate": "2026-02-05T00:00:00+00:00"
+  },
+  {
+    "name": "BASE CONSTRUCTION",
+    "slug": "base-construction",
+    "permitCount": 81,
+    "totalCost": 16355300,
+    "housingUnits": 0,
+    "firstDate": "1999-08-17T00:00:00+00:00",
+    "lastDate": "2025-11-13T00:00:00+00:00"
+  },
+  {
+    "name": "MH CONSTRUCTION & CONCRETE CUTTING CORING",
+    "slug": "mh-construction-concrete-cutting-coring",
+    "permitCount": 81,
+    "totalCost": 1719145.45,
+    "housingUnits": 1,
+    "firstDate": "2008-05-20T00:00:00+00:00",
+    "lastDate": "2024-07-05T00:00:00+00:00"
+  },
+  {
+    "name": "DELNOR CONSTRUCTION",
+    "slug": "delnor-construction",
+    "permitCount": 81,
+    "totalCost": 109986655.52,
+    "housingUnits": 0,
+    "firstDate": "2012-02-09T00:00:00+00:00",
+    "lastDate": "2026-03-16T00:00:00+00:00"
+  },
+  {
+    "name": "SIGNATURE DEVELOPMENTS",
+    "slug": "signature-developments",
+    "permitCount": 81,
+    "totalCost": 2457546.39,
+    "housingUnits": 0,
+    "firstDate": "2002-04-03T00:00:00+00:00",
+    "lastDate": "2025-12-01T00:00:00+00:00"
+  },
+  {
+    "name": "TODAY'S COMMUNITIES",
+    "slug": "today-s-communities",
+    "permitCount": 80,
+    "totalCost": 19205528.5,
+    "housingUnits": 195,
+    "firstDate": "2003-02-19T00:00:00+00:00",
+    "lastDate": "2006-03-01T00:00:00+00:00"
+  },
+  {
+    "name": "VENKOR GROUP",
+    "slug": "venkor-group",
+    "permitCount": 79,
+    "totalCost": 3654861.81,
+    "housingUnits": 4,
+    "firstDate": "2022-04-27T00:00:00+00:00",
+    "lastDate": "2026-04-03T00:00:00+00:00"
+  },
+  {
+    "name": "HOMES BY SORENSEN",
+    "slug": "homes-by-sorensen",
+    "permitCount": 79,
+    "totalCost": 17823113.16,
+    "housingUnits": 48,
+    "firstDate": "2014-01-22T00:00:00+00:00",
+    "lastDate": "2025-12-09T00:00:00+00:00"
+  },
+  {
+    "name": "INDUS HOMES",
+    "slug": "indus-homes",
+    "permitCount": 79,
+    "totalCost": 17501701.37,
+    "housingUnits": 72,
+    "firstDate": "2002-01-23T00:00:00+00:00",
+    "lastDate": "2023-06-02T00:00:00+00:00"
+  },
+  {
+    "name": "CHOICE CONTRACTING PARTNERSHIP",
+    "slug": "choice-contracting-partnership",
+    "permitCount": 79,
+    "totalCost": 11895830,
+    "housingUnits": 0,
+    "firstDate": "2020-10-15T00:00:00+00:00",
+    "lastDate": "2026-02-09T00:00:00+00:00"
+  },
+  {
+    "name": "SERENITY CONSTRUCTION",
+    "slug": "serenity-construction",
+    "permitCount": 79,
+    "totalCost": 3289505.39,
+    "housingUnits": 7,
+    "firstDate": "2011-09-06T00:00:00+00:00",
+    "lastDate": "2026-04-02T00:00:00+00:00"
+  },
+  {
+    "name": "BASEMENT SYSTEMS CALGARY",
+    "slug": "basement-systems-calgary",
+    "permitCount": 79,
+    "totalCost": 3030224.04,
+    "housingUnits": 0,
+    "firstDate": "1999-09-01T00:00:00+00:00",
+    "lastDate": "2024-11-30T00:00:00+00:00"
+  },
+  {
+    "name": "OPUS CORPORATION",
+    "slug": "opus-corporation",
+    "permitCount": 78,
+    "totalCost": 88451561.21,
+    "housingUnits": 70,
+    "firstDate": "2010-01-07T00:00:00+00:00",
+    "lastDate": "2025-03-04T00:00:00+00:00"
+  },
+  {
+    "name": "TREVI POOLS",
+    "slug": "trevi-pools",
+    "permitCount": 78,
+    "totalCost": 4993862.56,
+    "housingUnits": 0,
+    "firstDate": "2015-08-26T00:00:00+00:00",
+    "lastDate": "2026-03-30T00:00:00+00:00"
+  },
+  {
+    "name": "GRAHAM CONSTRUCTION & ENGINEERING",
+    "slug": "graham-construction-engineering",
+    "permitCount": 78,
+    "totalCost": 349034702,
+    "housingUnits": 258,
+    "firstDate": "1999-07-02T00:00:00+00:00",
+    "lastDate": "2011-12-13T00:00:00+00:00"
+  },
+  {
+    "name": "DISTRICT HOMES / ELECTRIM DEVELOPMENT",
+    "slug": "district-homes-electrim-development",
+    "permitCount": 78,
+    "totalCost": 15977355.6,
+    "housingUnits": 45,
+    "firstDate": "2007-04-25T00:00:00+00:00",
+    "lastDate": "2025-06-23T00:00:00+00:00"
+  },
+  {
+    "name": "AG DEVELOPMENTS",
+    "slug": "ag-developments",
+    "permitCount": 78,
+    "totalCost": 17224585.96,
+    "housingUnits": 55,
+    "firstDate": "2018-02-14T00:00:00+00:00",
+    "lastDate": "2026-04-02T00:00:00+00:00"
+  },
+  {
+    "name": "ROCK CREEK BUILDERS",
+    "slug": "rock-creek-builders",
+    "permitCount": 78,
+    "totalCost": 9479638.1,
+    "housingUnits": 21,
+    "firstDate": "2003-01-06T00:00:00+00:00",
+    "lastDate": "2012-06-04T00:00:00+00:00"
+  },
+  {
+    "name": "HADDAD HOMES",
+    "slug": "haddad-homes",
+    "permitCount": 77,
+    "totalCost": 8484166.51,
+    "housingUnits": 30,
+    "firstDate": "2002-12-20T00:00:00+00:00",
+    "lastDate": "2024-06-14T00:00:00+00:00"
+  },
+  {
+    "name": "LOOMA HOMES",
+    "slug": "looma-homes",
+    "permitCount": 77,
+    "totalCost": 19800320.13,
+    "housingUnits": 63,
+    "firstDate": "2003-12-18T00:00:00+00:00",
+    "lastDate": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "name": "VISIONSCAPES LANDSCAPE MAINTENANCE SERVICES",
+    "slug": "visionscapes-landscape-maintenance-services",
+    "permitCount": 77,
+    "totalCost": 2446760.02,
+    "housingUnits": 0,
+    "firstDate": "2005-04-28T00:00:00+00:00",
+    "lastDate": "2026-01-28T00:00:00+00:00"
+  },
+  {
+    "name": "BLUE RIDGE EXCAVATING",
+    "slug": "blue-ridge-excavating",
+    "permitCount": 77,
+    "totalCost": 252409.7,
+    "housingUnits": 1,
+    "firstDate": "2003-05-01T00:00:00+00:00",
+    "lastDate": "2025-12-10T00:00:00+00:00"
+  },
+  {
+    "name": "STRONG RESIDENTIAL PROJECTS",
+    "slug": "strong-residential-projects",
+    "permitCount": 77,
+    "totalCost": 3007520.48,
+    "housingUnits": 4,
+    "firstDate": "2009-03-18T00:00:00+00:00",
+    "lastDate": "2026-03-26T00:00:00+00:00"
+  },
+  {
+    "name": "AURORA DEVELOPMENTS",
+    "slug": "aurora-developments",
+    "permitCount": 77,
+    "totalCost": 11012042.14,
+    "housingUnits": 27,
+    "firstDate": "2005-10-04T00:00:00+00:00",
+    "lastDate": "2026-02-18T00:00:00+00:00"
+  },
+  {
+    "name": "GENERIC BUILDING CUSTOMER",
+    "slug": "generic-building-customer",
+    "permitCount": 77,
+    "totalCost": 1297887.1,
+    "housingUnits": 8,
+    "firstDate": "2008-12-18T00:00:00+00:00",
+    "lastDate": "2025-04-24T00:00:00+00:00"
+  },
+  {
+    "name": "MELANSON HOMES & CONSTRUCTION",
+    "slug": "melanson-homes-construction",
+    "permitCount": 77,
+    "totalCost": 7685610.75,
+    "housingUnits": 8,
+    "firstDate": "2016-05-16T00:00:00+00:00",
+    "lastDate": "2025-12-03T00:00:00+00:00"
+  },
+  {
+    "name": "FAHRENHEIT 451 FIRE & SECURITY",
+    "slug": "fahrenheit-451-fire-security",
+    "permitCount": 76,
+    "totalCost": 1863358.09,
+    "housingUnits": 0,
+    "firstDate": "2008-03-25T00:00:00+00:00",
+    "lastDate": "2015-04-28T00:00:00+00:00"
+  },
+  {
+    "name": "GALAXY COTTAGE CONSTRUCTION",
+    "slug": "galaxy-cottage-construction",
+    "permitCount": 76,
+    "totalCost": 3317652.97,
+    "housingUnits": 0,
+    "firstDate": "2023-08-20T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "P N G CONSTRUCTION",
+    "slug": "p-n-g-construction",
+    "permitCount": 75,
+    "totalCost": 6205982.38,
+    "housingUnits": 1,
+    "firstDate": "2001-09-14T00:00:00+00:00",
+    "lastDate": "2024-09-06T00:00:00+00:00"
+  },
+  {
+    "name": "BENNETT PROPERTY DEVELOPMENTS",
+    "slug": "bennett-property-developments",
+    "permitCount": 75,
+    "totalCost": 3658367.07,
+    "housingUnits": 6,
+    "firstDate": "1999-06-25T00:00:00+00:00",
+    "lastDate": "2018-03-28T00:00:00+00:00"
+  },
+  {
+    "name": "GRANVILLE HOMES",
+    "slug": "granville-homes",
+    "permitCount": 75,
+    "totalCost": 13621796.46,
+    "housingUnits": 39,
+    "firstDate": "2002-03-27T00:00:00+00:00",
+    "lastDate": "2025-11-25T00:00:00+00:00"
+  },
+  {
+    "name": "DREAM DEVELOPMENTS",
+    "slug": "dream-developments",
+    "permitCount": 75,
+    "totalCost": 1759769.66,
+    "housingUnits": 4,
+    "firstDate": "2012-05-24T00:00:00+00:00",
+    "lastDate": "2018-12-10T00:00:00+00:00"
+  },
+  {
+    "name": "LE CHATEAU CUSTOM HOMES",
+    "slug": "le-chateau-custom-homes",
+    "permitCount": 75,
+    "totalCost": 10758739,
+    "housingUnits": 35,
+    "firstDate": "2005-10-19T00:00:00+00:00",
+    "lastDate": "2017-03-27T00:00:00+00:00"
+  },
+  {
+    "name": "WARNER SHELTER SYSTEMS",
+    "slug": "warner-shelter-systems",
+    "permitCount": 75,
+    "totalCost": 6640583.73,
+    "housingUnits": 0,
+    "firstDate": "2002-10-22T00:00:00+00:00",
+    "lastDate": "2025-09-23T00:00:00+00:00"
+  },
+  {
+    "name": "KESHVANI GROUP",
+    "slug": "keshvani-group",
+    "permitCount": 74,
+    "totalCost": 16510963.74,
+    "housingUnits": 38,
+    "firstDate": "2018-05-30T00:00:00+00:00",
+    "lastDate": "2026-03-18T00:00:00+00:00"
+  },
+  {
+    "name": "CALGARY CONSTRUCTION",
+    "slug": "calgary-construction",
+    "permitCount": 74,
+    "totalCost": 6742803.13,
+    "housingUnits": 30,
+    "firstDate": "2000-08-02T00:00:00+00:00",
+    "lastDate": "2023-11-07T00:00:00+00:00"
+  },
+  {
+    "name": "T JEPSEN TRUCKING",
+    "slug": "t-jepsen-trucking",
+    "permitCount": 74,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2008-07-15T00:00:00+00:00",
+    "lastDate": "2019-08-25T00:00:00+00:00"
+  },
+  {
+    "name": "ALEX EXCAVATING",
+    "slug": "alex-excavating",
+    "permitCount": 74,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2010-05-13T00:00:00+00:00",
+    "lastDate": "2025-06-27T00:00:00+00:00"
+  },
+  {
+    "name": "URBAN DOMUS DEVELOPMENT",
+    "slug": "urban-domus-development",
+    "permitCount": 74,
+    "totalCost": 12749280.72,
+    "housingUnits": 34,
+    "firstDate": "2003-05-12T00:00:00+00:00",
+    "lastDate": "2025-05-22T00:00:00+00:00"
+  },
+  {
+    "name": "POINTE OF VIEW DEVELOPMENTS",
+    "slug": "pointe-of-view-developments",
+    "permitCount": 74,
+    "totalCost": 214491390.41,
+    "housingUnits": 3582,
+    "firstDate": "1999-10-14T00:00:00+00:00",
+    "lastDate": "2007-09-17T00:00:00+00:00"
+  },
+  {
+    "name": "EPIC CONTRACTING",
+    "slug": "epic-contracting",
+    "permitCount": 73,
+    "totalCost": 6827039.06,
+    "housingUnits": 4,
+    "firstDate": "2017-07-16T00:00:00+00:00",
+    "lastDate": "2026-04-06T00:00:00+00:00"
+  },
+  {
+    "name": "CITY OF CALGARY PARKS - SPILLER ROAD",
+    "slug": "city-of-calgary-parks-spiller-road",
+    "permitCount": 73,
+    "totalCost": 565458.8,
+    "housingUnits": 0,
+    "firstDate": "2009-06-01T00:00:00+00:00",
+    "lastDate": "2014-07-18T00:00:00+00:00"
+  },
+  {
+    "name": "LIVESPACE DESIGNER HOMES",
+    "slug": "livespace-designer-homes",
+    "permitCount": 73,
+    "totalCost": 7115591.04,
+    "housingUnits": 52,
+    "firstDate": "2022-03-24T00:00:00+00:00",
+    "lastDate": "2026-01-21T00:00:00+00:00"
+  },
+  {
+    "name": "Q CONSTRUCTION MANAGEMENT",
+    "slug": "q-construction-management",
+    "permitCount": 73,
+    "totalCost": 75855584.86,
+    "housingUnits": 419,
+    "firstDate": "2018-09-20T00:00:00+00:00",
+    "lastDate": "2026-04-08T00:00:00+00:00"
+  },
+  {
+    "name": "MARITIME WEST CONSTRUCTION",
+    "slug": "maritime-west-construction",
+    "permitCount": 72,
+    "totalCost": 590199.24,
+    "housingUnits": 0,
+    "firstDate": "2013-06-12T00:00:00+00:00",
+    "lastDate": "2025-10-31T00:00:00+00:00"
+  },
+  {
+    "name": "TIMBERWOLF HEARTH PRODUCTS",
+    "slug": "timberwolf-hearth-products",
+    "permitCount": 72,
+    "totalCost": 157846.08,
+    "housingUnits": 0,
+    "firstDate": "2001-03-29T00:00:00+00:00",
+    "lastDate": "2025-09-12T00:00:00+00:00"
+  },
+  {
+    "name": "GOLDMARK HOMES",
+    "slug": "goldmark-homes",
+    "permitCount": 72,
+    "totalCost": 19232889.29,
+    "housingUnits": 44,
+    "firstDate": "1999-07-02T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "TIMBEROCK HOME DEVELOPMENTS",
+    "slug": "timberock-home-developments",
+    "permitCount": 71,
+    "totalCost": 10849564,
+    "housingUnits": 27,
+    "firstDate": "1999-07-16T00:00:00+00:00",
+    "lastDate": "2016-07-19T00:00:00+00:00"
+  },
+  {
+    "name": "HUGHES CONSTRUCTION SERVICES",
+    "slug": "hughes-construction-services",
+    "permitCount": 71,
+    "totalCost": 20470307.06,
+    "housingUnits": 0,
+    "firstDate": "1999-08-18T00:00:00+00:00",
+    "lastDate": "2013-09-20T00:00:00+00:00"
+  },
+  {
+    "name": "WHITE KNIGHT CONSTRUCTION",
+    "slug": "white-knight-construction",
+    "permitCount": 71,
+    "totalCost": 12331609.5,
+    "housingUnits": 0,
+    "firstDate": "2005-09-21T00:00:00+00:00",
+    "lastDate": "2026-02-17T00:00:00+00:00"
+  },
+  {
+    "name": "LITTLE JOE'S HOUSE MOVING",
+    "slug": "little-joe-s-house-moving",
+    "permitCount": 71,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2003-10-30T00:00:00+00:00",
+    "lastDate": "2012-04-17T00:00:00+00:00"
+  },
+  {
+    "name": "PHANTOM SCREENS",
+    "slug": "phantom-screens",
+    "permitCount": 71,
+    "totalCost": 2567568.56,
+    "housingUnits": 0,
+    "firstDate": "2018-05-30T00:00:00+00:00",
+    "lastDate": "2026-03-28T00:00:00+00:00"
+  },
+  {
+    "name": "3REX RENOVATIONS",
+    "slug": "3rex-renovations",
+    "permitCount": 70,
+    "totalCost": 1769407.62,
+    "housingUnits": 6,
+    "firstDate": "2010-04-22T00:00:00+00:00",
+    "lastDate": "2024-08-30T00:00:00+00:00"
+  },
+  {
+    "name": "MLI PROPERTY ENHANCEMENTS",
+    "slug": "mli-property-enhancements",
+    "permitCount": 70,
+    "totalCost": 1315549.67,
+    "housingUnits": 6,
+    "firstDate": "2013-03-18T00:00:00+00:00",
+    "lastDate": "2023-09-10T00:00:00+00:00"
+  },
+  {
+    "name": "NORWEGIAN WOOD HOMES",
+    "slug": "norwegian-wood-homes",
+    "permitCount": 70,
+    "totalCost": 8760502.76,
+    "housingUnits": 49,
+    "firstDate": "1999-11-04T00:00:00+00:00",
+    "lastDate": "2009-08-06T00:00:00+00:00"
+  },
+  {
+    "name": "HILLTOP DEVELOPMENTS",
+    "slug": "hilltop-developments",
+    "permitCount": 70,
+    "totalCost": 9416565.09,
+    "housingUnits": 52,
+    "firstDate": "1999-09-09T00:00:00+00:00",
+    "lastDate": "2009-08-06T00:00:00+00:00"
+  },
+  {
+    "name": "BOSSI CONSTRUCTION",
+    "slug": "bossi-construction",
+    "permitCount": 70,
+    "totalCost": 8808400.33,
+    "housingUnits": 0,
+    "firstDate": "2009-08-26T00:00:00+00:00",
+    "lastDate": "2021-04-05T00:00:00+00:00"
+  },
+  {
+    "name": "TAMSON DEVELOPMENTS",
+    "slug": "tamson-developments",
+    "permitCount": 70,
+    "totalCost": 22416462.52,
+    "housingUnits": 81,
+    "firstDate": "2013-11-15T00:00:00+00:00",
+    "lastDate": "2026-03-09T00:00:00+00:00"
+  },
+  {
+    "name": "BRIGHT CUSTOM HOMES",
+    "slug": "bright-custom-homes",
+    "permitCount": 70,
+    "totalCost": 11218643.43,
+    "housingUnits": 36,
+    "firstDate": "2015-04-02T00:00:00+00:00",
+    "lastDate": "2026-01-14T00:00:00+00:00"
+  },
+  {
+    "name": "SIENA SIGNATURE BUILDERS",
+    "slug": "siena-signature-builders",
+    "permitCount": 70,
+    "totalCost": 10005476.76,
+    "housingUnits": 30,
+    "firstDate": "2011-04-05T00:00:00+00:00",
+    "lastDate": "2025-08-12T00:00:00+00:00"
+  },
+  {
+    "name": "ARTISTIQUE HOMES",
+    "slug": "artistique-homes",
+    "permitCount": 70,
+    "totalCost": 19842349.66,
+    "housingUnits": 69,
+    "firstDate": "2008-02-07T00:00:00+00:00",
+    "lastDate": "2026-02-26T00:00:00+00:00"
+  },
+  {
+    "name": "MY HOME HANDYMAN",
+    "slug": "my-home-handyman",
+    "permitCount": 69,
+    "totalCost": 754858.99,
+    "housingUnits": 1,
+    "firstDate": "2018-03-21T00:00:00+00:00",
+    "lastDate": "2026-04-05T00:00:00+00:00"
+  },
+  {
+    "name": "GEORGIAN BAY INVESTMENTS",
+    "slug": "georgian-bay-investments",
+    "permitCount": 69,
+    "totalCost": 7717747.06,
+    "housingUnits": 41,
+    "firstDate": "1999-08-17T00:00:00+00:00",
+    "lastDate": "2003-09-09T00:00:00+00:00"
+  },
+  {
+    "name": "CRAFTED EDGE HOMES",
+    "slug": "crafted-edge-homes",
+    "permitCount": 69,
+    "totalCost": 6533404.84,
+    "housingUnits": 7,
+    "firstDate": "2012-03-16T00:00:00+00:00",
+    "lastDate": "2025-12-23T00:00:00+00:00"
+  },
+  {
+    "name": "FWD CONSTRUCTION",
+    "slug": "fwd-construction",
+    "permitCount": 69,
+    "totalCost": 15877566.31,
+    "housingUnits": 0,
+    "firstDate": "2019-02-15T00:00:00+00:00",
+    "lastDate": "2026-04-07T00:00:00+00:00"
+  },
+  {
+    "name": "RADARS RENTALS",
+    "slug": "radars-rentals",
+    "permitCount": 69,
+    "totalCost": 381787.07,
+    "housingUnits": 0,
+    "firstDate": "2010-08-06T00:00:00+00:00",
+    "lastDate": "2020-08-05T00:00:00+00:00"
+  },
+  {
+    "name": "CENTREX CONTRACTING",
+    "slug": "centrex-contracting",
+    "permitCount": 69,
+    "totalCost": 10239162.91,
+    "housingUnits": 2,
+    "firstDate": "2000-03-30T00:00:00+00:00",
+    "lastDate": "2013-04-19T00:00:00+00:00"
+  },
+  {
+    "name": "CARDEL LIFESTYLES",
+    "slug": "cardel-lifestyles",
+    "permitCount": 69,
+    "totalCost": 176509244.87,
+    "housingUnits": 1304,
+    "firstDate": "2005-01-21T00:00:00+00:00",
+    "lastDate": "2017-12-21T00:00:00+00:00"
+  },
+  {
+    "name": "SUPREME WINDOWS",
+    "slug": "supreme-windows",
+    "permitCount": 68,
+    "totalCost": 283189.72,
+    "housingUnits": 0,
+    "firstDate": "2015-03-09T00:00:00+00:00",
+    "lastDate": "2024-10-09T00:00:00+00:00"
+  },
+  {
+    "name": "SOLID SOLUTIONS",
+    "slug": "solid-solutions",
+    "permitCount": 68,
+    "totalCost": 3377188.39,
+    "housingUnits": 0,
+    "firstDate": "2014-07-09T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "KARTAR CONSTRUCTION",
+    "slug": "kartar-construction",
+    "permitCount": 68,
+    "totalCost": 2870904.99,
+    "housingUnits": 0,
+    "firstDate": "2024-06-06T00:00:00+00:00",
+    "lastDate": "2025-11-07T00:00:00+00:00"
+  },
+  {
+    "name": "AIM BUILDER & DEVELOPMENT",
+    "slug": "aim-builder-development",
+    "permitCount": 68,
+    "totalCost": 3908376.02,
+    "housingUnits": 45,
+    "firstDate": "2024-02-14T00:00:00+00:00",
+    "lastDate": "2026-03-31T00:00:00+00:00"
+  },
+  {
+    "name": "PEZZENTE BROTHERS CONSTRUCTION",
+    "slug": "pezzente-brothers-construction",
+    "permitCount": 68,
+    "totalCost": 0,
+    "housingUnits": 0,
+    "firstDate": "2002-08-09T00:00:00+00:00",
+    "lastDate": "2025-06-17T00:00:00+00:00"
+  },
+  {
+    "name": "DEVINE CUSTOM HOMES",
+    "slug": "devine-custom-homes",
+    "permitCount": 68,
+    "totalCost": 15260436.87,
+    "housingUnits": 44,
+    "firstDate": "2009-06-25T00:00:00+00:00",
+    "lastDate": "2024-11-29T00:00:00+00:00"
+  },
+  {
+    "name": "MS JYOTI ENTERPRISES",
+    "slug": "ms-jyoti-enterprises",
+    "permitCount": 67,
+    "totalCost": 3446831.94,
+    "housingUnits": 50,
+    "firstDate": "2024-03-18T00:00:00+00:00",
+    "lastDate": "2026-04-10T00:00:00+00:00"
+  },
+  {
+    "name": "3D HOMES",
+    "slug": "3d-homes",
+    "permitCount": 67,
+    "totalCost": 25446175.99,
+    "housingUnits": 70,
+    "firstDate": "2016-06-17T00:00:00+00:00",
+    "lastDate": "2021-10-22T00:00:00+00:00"
+  },
+  {
+    "name": "UNIQUE QUALITY HOMES",
+    "slug": "unique-quality-homes",
+    "permitCount": 67,
+    "totalCost": 8833077.97,
+    "housingUnits": 34,
+    "firstDate": "2013-07-15T00:00:00+00:00",
+    "lastDate": "2018-08-22T00:00:00+00:00"
+  },
+  {
+    "name": "STANLEY REGAN CONSTRUCTION",
+    "slug": "stanley-regan-construction",
+    "permitCount": 67,
+    "totalCost": 7191349.24,
+    "housingUnits": 13,
+    "firstDate": "1999-06-28T00:00:00+00:00",
+    "lastDate": "2025-10-28T00:00:00+00:00"
+  },
+  {
+    "name": "LELO CONTRACTING",
+    "slug": "lelo-contracting",
+    "permitCount": 67,
+    "totalCost": 5470162.27,
+    "housingUnits": 28,
+    "firstDate": "2012-06-07T00:00:00+00:00",
+    "lastDate": "2026-04-05T00:00:00+00:00"
+  },
+  {
+    "name": "GREEN CEDAR HOMES",
+    "slug": "green-cedar-homes",
+    "permitCount": 67,
+    "totalCost": 16726050.4,
+    "housingUnits": 54,
+    "firstDate": "2017-03-22T00:00:00+00:00",
+    "lastDate": "2026-02-24T00:00:00+00:00"
+  },
+  {
+    "name": "CASCADES IN ROYAL OAK (THE)",
+    "slug": "cascades-in-royal-oak-the",
+    "permitCount": 66,
+    "totalCost": 9347077.4,
+    "housingUnits": 66,
+    "firstDate": "1999-10-29T00:00:00+00:00",
+    "lastDate": "2001-02-12T00:00:00+00:00"
+  },
+  {
+    "name": "A-MAN HOMES",
+    "slug": "a-man-homes",
+    "permitCount": 66,
+    "totalCost": 8105673.71,
+    "housingUnits": 61,
+    "firstDate": "2000-03-07T00:00:00+00:00",
+    "lastDate": "2004-04-14T00:00:00+00:00"
+  },
+  {
+    "name": "RESTORE",
+    "slug": "restore",
+    "permitCount": 66,
+    "totalCost": 8309732.38,
+    "housingUnits": 79,
+    "firstDate": "2001-04-19T00:00:00+00:00",
+    "lastDate": "2014-04-22T00:00:00+00:00"
+  },
+  {
+    "name": "GORDON & SONS",
+    "slug": "gordon-sons",
+    "permitCount": 66,
+    "totalCost": 3605758.98,
+    "housingUnits": 17,
+    "firstDate": "2000-10-17T00:00:00+00:00",
+    "lastDate": "2008-09-19T00:00:00+00:00"
+  },
+  {
+    "name": "BOLDT BROTHERS CONSTRUCTION",
+    "slug": "boldt-brothers-construction",
+    "permitCount": 66,
+    "totalCost": 7244712.87,
+    "housingUnits": 35,
+    "firstDate": "1999-07-16T00:00:00+00:00",
+    "lastDate": "2017-08-08T00:00:00+00:00"
+  },
+  {
+    "name": "HOME COMPLETIONS",
+    "slug": "home-completions",
+    "permitCount": 66,
+    "totalCost": 1171658.32,
+    "housingUnits": 0,
+    "firstDate": "2005-10-12T00:00:00+00:00",
+    "lastDate": "2017-10-04T00:00:00+00:00"
+  }
+]

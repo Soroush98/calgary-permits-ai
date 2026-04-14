@@ -1,0 +1,2214 @@
+[
+  {
+    "name": "DOWNTOWN COMMERCIAL CORE",
+    "slug": "downtown-commercial-core",
+    "permitCount": 14568,
+    "totalCost": 9016230680.45,
+    "housingUnits": 3733
+  },
+  {
+    "name": "SADDLE RIDGE",
+    "slug": "saddle-ridge",
+    "permitCount": 11258,
+    "totalCost": 2093911289.64,
+    "housingUnits": 9418
+  },
+  {
+    "name": "CRANSTON",
+    "slug": "cranston",
+    "permitCount": 10657,
+    "totalCost": 1952222712.05,
+    "housingUnits": 8135
+  },
+  {
+    "name": "PANORAMA HILLS",
+    "slug": "panorama-hills",
+    "permitCount": 10356,
+    "totalCost": 1632636854.06,
+    "housingUnits": 8164
+  },
+  {
+    "name": "TUSCANY",
+    "slug": "tuscany",
+    "permitCount": 9601,
+    "totalCost": 965676429.74,
+    "housingUnits": 5610
+  },
+  {
+    "name": "MAHOGANY",
+    "slug": "mahogany",
+    "permitCount": 9573,
+    "totalCost": 2621141217.71,
+    "housingUnits": 8919
+  },
+  {
+    "name": "EVANSTON",
+    "slug": "evanston",
+    "permitCount": 9562,
+    "totalCost": 1842648165.9,
+    "housingUnits": 7113
+  },
+  {
+    "name": "EVERGREEN",
+    "slug": "evergreen",
+    "permitCount": 9410,
+    "totalCost": 1178620376.67,
+    "housingUnits": 7365
+  },
+  {
+    "name": "MCKENZIE TOWNE",
+    "slug": "mckenzie-towne",
+    "permitCount": 9290,
+    "totalCost": 1020796515.61,
+    "housingUnits": 6706
+  },
+  {
+    "name": "COVENTRY HILLS",
+    "slug": "coventry-hills",
+    "permitCount": 8099,
+    "totalCost": 639749275.85,
+    "housingUnits": 3976
+  },
+  {
+    "name": "AUBURN BAY",
+    "slug": "auburn-bay",
+    "permitCount": 7971,
+    "totalCost": 1647923234.75,
+    "housingUnits": 6738
+  },
+  {
+    "name": "CORNERSTONE",
+    "slug": "cornerstone",
+    "permitCount": 7442,
+    "totalCost": 1635568430.2,
+    "housingUnits": 7245
+  },
+  {
+    "name": "COPPERFIELD",
+    "slug": "copperfield",
+    "permitCount": 6767,
+    "totalCost": 1072784774.52,
+    "housingUnits": 5685
+  },
+  {
+    "name": "TARADALE",
+    "slug": "taradale",
+    "permitCount": 6425,
+    "totalCost": 576784026.95,
+    "housingUnits": 4354
+  },
+  {
+    "name": "BELTLINE",
+    "slug": "beltline",
+    "permitCount": 6014,
+    "totalCost": 6479309649.63,
+    "housingUnits": 17084
+  },
+  {
+    "name": "NEW BRIGHTON",
+    "slug": "new-brighton",
+    "permitCount": 5950,
+    "totalCost": 985010882.54,
+    "housingUnits": 4435
+  },
+  {
+    "name": "WEST SPRINGS",
+    "slug": "west-springs",
+    "permitCount": 5620,
+    "totalCost": 1710358916.65,
+    "housingUnits": 6059
+  },
+  {
+    "name": "LIVINGSTON",
+    "slug": "livingston",
+    "permitCount": 5527,
+    "totalCost": 1367410265.29,
+    "housingUnits": 5528
+  },
+  {
+    "name": "ROYAL OAK",
+    "slug": "royal-oak",
+    "permitCount": 5206,
+    "totalCost": 706931470.29,
+    "housingUnits": 4518
+  },
+  {
+    "name": "BRIDLEWOOD",
+    "slug": "bridlewood",
+    "permitCount": 5115,
+    "totalCost": 459941766.87,
+    "housingUnits": 3303
+  },
+  {
+    "name": "LEGACY",
+    "slug": "legacy",
+    "permitCount": 5091,
+    "totalCost": 1754217827.31,
+    "housingUnits": 5938
+  },
+  {
+    "name": "ALTADORE",
+    "slug": "altadore",
+    "permitCount": 5014,
+    "totalCost": 695229563.82,
+    "housingUnits": 2641
+  },
+  {
+    "name": "CHAPARRAL",
+    "slug": "chaparral",
+    "permitCount": 4875,
+    "totalCost": 645545168.68,
+    "housingUnits": 3052
+  },
+  {
+    "name": "SPRINGBANK HILL",
+    "slug": "springbank-hill",
+    "permitCount": 4869,
+    "totalCost": 1826387164.96,
+    "housingUnits": 6203
+  },
+  {
+    "name": "WALDEN",
+    "slug": "walden",
+    "permitCount": 4511,
+    "totalCost": 1033219305.42,
+    "housingUnits": 4281
+  },
+  {
+    "name": "SILVERADO",
+    "slug": "silverado",
+    "permitCount": 4453,
+    "totalCost": 941530671.57,
+    "housingUnits": 3661
+  },
+  {
+    "name": "SAGE HILL",
+    "slug": "sage-hill",
+    "permitCount": 4364,
+    "totalCost": 1754079407.31,
+    "housingUnits": 7903
+  },
+  {
+    "name": "KILLARNEY/GLENGARRY",
+    "slug": "killarney-glengarry",
+    "permitCount": 4239,
+    "totalCost": 509988478.22,
+    "housingUnits": 2221
+  },
+  {
+    "name": "MARTINDALE",
+    "slug": "martindale",
+    "permitCount": 4201,
+    "totalCost": 355988757.71,
+    "housingUnits": 1766
+  },
+  {
+    "name": "ASPEN WOODS",
+    "slug": "aspen-woods",
+    "permitCount": 4059,
+    "totalCost": 1332519685.05,
+    "housingUnits": 3822
+  },
+  {
+    "name": "REDSTONE",
+    "slug": "redstone",
+    "permitCount": 4056,
+    "totalCost": 958294281.18,
+    "housingUnits": 3984
+  },
+  {
+    "name": "MOUNT PLEASANT",
+    "slug": "mount-pleasant",
+    "permitCount": 3877,
+    "totalCost": 483930773.49,
+    "housingUnits": 1900
+  },
+  {
+    "name": "SKYVIEW RANCH",
+    "slug": "skyview-ranch",
+    "permitCount": 3864,
+    "totalCost": 1544810772.28,
+    "housingUnits": 7464
+  },
+  {
+    "name": "WEST HILLHURST",
+    "slug": "west-hillhurst",
+    "permitCount": 3819,
+    "totalCost": 548467257.6,
+    "housingUnits": 1779
+  },
+  {
+    "name": "BOWNESS",
+    "slug": "bowness",
+    "permitCount": 3717,
+    "totalCost": 472809228.56,
+    "housingUnits": 1645
+  },
+  {
+    "name": "NOLAN HILL",
+    "slug": "nolan-hill",
+    "permitCount": 3565,
+    "totalCost": 1258941556.17,
+    "housingUnits": 3547
+  },
+  {
+    "name": "COUGAR RIDGE",
+    "slug": "cougar-ridge",
+    "permitCount": 3440,
+    "totalCost": 444412432.83,
+    "housingUnits": 2277
+  },
+  {
+    "name": "ARBOUR LAKE",
+    "slug": "arbour-lake",
+    "permitCount": 3391,
+    "totalCost": 590922679.9,
+    "housingUnits": 2506
+  },
+  {
+    "name": "CARRINGTON",
+    "slug": "carrington",
+    "permitCount": 3371,
+    "totalCost": 1045439360,
+    "housingUnits": 4366
+  },
+  {
+    "name": "RICHMOND",
+    "slug": "richmond",
+    "permitCount": 3270,
+    "totalCost": 510178990.09,
+    "housingUnits": 1767
+  },
+  {
+    "name": "SETON",
+    "slug": "seton",
+    "permitCount": 3216,
+    "totalCost": 2619521179.55,
+    "housingUnits": 6887
+  },
+  {
+    "name": "SIGNAL HILL",
+    "slug": "signal-hill",
+    "permitCount": 3174,
+    "totalCost": 396948164.79,
+    "housingUnits": 1363
+  },
+  {
+    "name": "HILLHURST",
+    "slug": "hillhurst",
+    "permitCount": 3156,
+    "totalCost": 1274498668.4,
+    "housingUnits": 2640
+  },
+  {
+    "name": "ROCKY RIDGE",
+    "slug": "rocky-ridge",
+    "permitCount": 3129,
+    "totalCost": 527834507.87,
+    "housingUnits": 2989
+  },
+  {
+    "name": "VARSITY",
+    "slug": "varsity",
+    "permitCount": 3104,
+    "totalCost": 737904391.7,
+    "housingUnits": 917
+  },
+  {
+    "name": "CITADEL",
+    "slug": "citadel",
+    "permitCount": 3050,
+    "totalCost": 208258724.22,
+    "housingUnits": 1739
+  },
+  {
+    "name": "RENFREW",
+    "slug": "renfrew",
+    "permitCount": 2835,
+    "totalCost": 425924786.31,
+    "housingUnits": 1519
+  },
+  {
+    "name": "CITYSCAPE",
+    "slug": "cityscape",
+    "permitCount": 2812,
+    "totalCost": 830896178.46,
+    "housingUnits": 3291
+  },
+  {
+    "name": "PINE CREEK",
+    "slug": "pine-creek",
+    "permitCount": 2660,
+    "totalCost": 625155201.98,
+    "housingUnits": 2333
+  },
+  {
+    "name": "SHERWOOD",
+    "slug": "sherwood",
+    "permitCount": 2659,
+    "totalCost": 691516504.73,
+    "housingUnits": 2295
+  },
+  {
+    "name": "KINCORA",
+    "slug": "kincora",
+    "permitCount": 2657,
+    "totalCost": 778850091.3,
+    "housingUnits": 3422
+  },
+  {
+    "name": "HIDDEN VALLEY",
+    "slug": "hidden-valley",
+    "permitCount": 2642,
+    "totalCost": 140868579.91,
+    "housingUnits": 686
+  },
+  {
+    "name": "TUXEDO PARK",
+    "slug": "tuxedo-park",
+    "permitCount": 2642,
+    "totalCost": 362859378.67,
+    "housingUnits": 1622
+  },
+  {
+    "name": "DOUGLASDALE/GLEN",
+    "slug": "douglasdale-glen",
+    "permitCount": 2620,
+    "totalCost": 1086591337.2,
+    "housingUnits": 2175
+  },
+  {
+    "name": "MCKENZIE LAKE",
+    "slug": "mckenzie-lake",
+    "permitCount": 2590,
+    "totalCost": 102790987.77,
+    "housingUnits": 363
+  },
+  {
+    "name": "LAKE BONAVISTA",
+    "slug": "lake-bonavista",
+    "permitCount": 2573,
+    "totalCost": 260903547.65,
+    "housingUnits": 1190
+  },
+  {
+    "name": "MONTGOMERY",
+    "slug": "montgomery",
+    "permitCount": 2565,
+    "totalCost": 411983032.87,
+    "housingUnits": 1337
+  },
+  {
+    "name": "CAPITOL HILL",
+    "slug": "capitol-hill",
+    "permitCount": 2397,
+    "totalCost": 303871654.4,
+    "housingUnits": 1301
+  },
+  {
+    "name": "EDGEMONT",
+    "slug": "edgemont",
+    "permitCount": 2395,
+    "totalCost": 153435923.89,
+    "housingUnits": 468
+  },
+  {
+    "name": "ELBOW PARK",
+    "slug": "elbow-park",
+    "permitCount": 2207,
+    "totalCost": 296332747.69,
+    "housingUnits": 373
+  },
+  {
+    "name": "GLACIER RIDGE",
+    "slug": "glacier-ridge",
+    "permitCount": 2180,
+    "totalCost": 458592825.15,
+    "housingUnits": 1847
+  },
+  {
+    "name": "SOUTH CALGARY",
+    "slug": "south-calgary",
+    "permitCount": 2171,
+    "totalCost": 522118516.49,
+    "housingUnits": 1940
+  },
+  {
+    "name": "CRESCENT HEIGHTS",
+    "slug": "crescent-heights",
+    "permitCount": 2156,
+    "totalCost": 355937630.5,
+    "housingUnits": 1447
+  },
+  {
+    "name": "WILLOW PARK",
+    "slug": "willow-park",
+    "permitCount": 2151,
+    "totalCost": 357319331.2,
+    "housingUnits": 73
+  },
+  {
+    "name": "RANGEVIEW",
+    "slug": "rangeview",
+    "permitCount": 2128,
+    "totalCost": 568041774.37,
+    "housingUnits": 2449
+  },
+  {
+    "name": "BRIDGELAND/RIVERSIDE",
+    "slug": "bridgeland-riverside",
+    "permitCount": 2127,
+    "totalCost": 1070437431.97,
+    "housingUnits": 3623
+  },
+  {
+    "name": "SOMERSET",
+    "slug": "somerset",
+    "permitCount": 2096,
+    "totalCost": 139368845.65,
+    "housingUnits": 1411
+  },
+  {
+    "name": "BRENTWOOD",
+    "slug": "brentwood",
+    "permitCount": 2045,
+    "totalCost": 446554682.04,
+    "housingUnits": 1316
+  },
+  {
+    "name": "MANCHESTER INDUSTRIAL",
+    "slug": "manchester-industrial",
+    "permitCount": 2008,
+    "totalCost": 730657709.48,
+    "housingUnits": 621
+  },
+  {
+    "name": "VALLEY RIDGE",
+    "slug": "valley-ridge",
+    "permitCount": 2005,
+    "totalCost": 227248491.63,
+    "housingUnits": 1049
+  },
+  {
+    "name": "ACADIA",
+    "slug": "acadia",
+    "permitCount": 1999,
+    "totalCost": 285462691.64,
+    "housingUnits": 424
+  },
+  {
+    "name": "EAST SHEPARD INDUSTRIAL",
+    "slug": "east-shepard-industrial",
+    "permitCount": 1983,
+    "totalCost": 2423131225.06,
+    "housingUnits": 1
+  },
+  {
+    "name": "HASKAYNE",
+    "slug": "haskayne",
+    "permitCount": 1974,
+    "totalCost": 543802558.65,
+    "housingUnits": 1723
+  },
+  {
+    "name": "GLENBROOK",
+    "slug": "glenbrook",
+    "permitCount": 1950,
+    "totalCost": 214406092.12,
+    "housingUnits": 3287
+  },
+  {
+    "name": "HAYSBORO",
+    "slug": "haysboro",
+    "permitCount": 1932,
+    "totalCost": 486470013.96,
+    "housingUnits": 2129
+  },
+  {
+    "name": "BELMONT",
+    "slug": "belmont",
+    "permitCount": 1931,
+    "totalCost": 838943501.69,
+    "housingUnits": 2962
+  },
+  {
+    "name": "SHAWNESSY",
+    "slug": "shawnessy",
+    "permitCount": 1929,
+    "totalCost": 298676479.79,
+    "housingUnits": 674
+  },
+  {
+    "name": "WINSTON HEIGHTS/MOUNTVIEW",
+    "slug": "winston-heights-mountview",
+    "permitCount": 1901,
+    "totalCost": 291722040.01,
+    "housingUnits": 1243
+  },
+  {
+    "name": "DISCOVERY RIDGE",
+    "slug": "discovery-ridge",
+    "permitCount": 1840,
+    "totalCost": 283165613.73,
+    "housingUnits": 1711
+  },
+  {
+    "name": "BANFF TRAIL",
+    "slug": "banff-trail",
+    "permitCount": 1826,
+    "totalCost": 330833368.86,
+    "housingUnits": 1329
+  },
+  {
+    "name": "INGLEWOOD",
+    "slug": "inglewood",
+    "permitCount": 1823,
+    "totalCost": 455231311.55,
+    "housingUnits": 1514
+  },
+  {
+    "name": "OGDEN",
+    "slug": "ogden",
+    "permitCount": 1820,
+    "totalCost": 97432359.07,
+    "housingUnits": 466
+  },
+  {
+    "name": "FOOTHILLS",
+    "slug": "foothills",
+    "permitCount": 1795,
+    "totalCost": 428227996.83,
+    "housingUnits": 9
+  },
+  {
+    "name": "HUNTINGTON HILLS",
+    "slug": "huntington-hills",
+    "permitCount": 1787,
+    "totalCost": 100467930.97,
+    "housingUnits": 374
+  },
+  {
+    "name": "LAKEVIEW",
+    "slug": "lakeview",
+    "permitCount": 1720,
+    "totalCost": 155247065.28,
+    "housingUnits": 183
+  },
+  {
+    "name": "ALPINE PARK",
+    "slug": "alpine-park",
+    "permitCount": 1707,
+    "totalCost": 514573117.13,
+    "housingUnits": 1493
+  },
+  {
+    "name": "STRATHCONA PARK",
+    "slug": "strathcona-park",
+    "permitCount": 1653,
+    "totalCost": 152471819.99,
+    "housingUnits": 589
+  },
+  {
+    "name": "HIGHLAND PARK",
+    "slug": "highland-park",
+    "permitCount": 1644,
+    "totalCost": 249594705.05,
+    "housingUnits": 872
+  },
+  {
+    "name": "SILVER SPRINGS",
+    "slug": "silver-springs",
+    "permitCount": 1577,
+    "totalCost": 76114899.56,
+    "housingUnits": 123
+  },
+  {
+    "name": "WOLF WILLOW",
+    "slug": "wolf-willow",
+    "permitCount": 1571,
+    "totalCost": 505512289.34,
+    "housingUnits": 2316
+  },
+  {
+    "name": "RIVERBEND",
+    "slug": "riverbend",
+    "permitCount": 1534,
+    "totalCost": 177398796.64,
+    "housingUnits": 96
+  },
+  {
+    "name": "HAMPTONS",
+    "slug": "hamptons",
+    "permitCount": 1533,
+    "totalCost": 192935710.34,
+    "housingUnits": 839
+  },
+  {
+    "name": "EAU CLAIRE",
+    "slug": "eau-claire",
+    "permitCount": 1519,
+    "totalCost": 1417438084.98,
+    "housingUnits": 659
+  },
+  {
+    "name": "SUNRIDGE",
+    "slug": "sunridge",
+    "permitCount": 1514,
+    "totalCost": 813899666.38,
+    "housingUnits": 1
+  },
+  {
+    "name": "SOUTHWOOD",
+    "slug": "southwood",
+    "permitCount": 1508,
+    "totalCost": 311359995.8,
+    "housingUnits": 173
+  },
+  {
+    "name": "PARKDALE",
+    "slug": "parkdale",
+    "permitCount": 1506,
+    "totalCost": 288197396.05,
+    "housingUnits": 708
+  },
+  {
+    "name": "BEDDINGTON HEIGHTS",
+    "slug": "beddington-heights",
+    "permitCount": 1503,
+    "totalCost": 58539315.95,
+    "housingUnits": 272
+  },
+  {
+    "name": "DALHOUSIE",
+    "slug": "dalhousie",
+    "permitCount": 1474,
+    "totalCost": 211546886.41,
+    "housingUnits": 639
+  },
+  {
+    "name": "HARVEST HILLS",
+    "slug": "harvest-hills",
+    "permitCount": 1474,
+    "totalCost": 218382496.94,
+    "housingUnits": 948
+  },
+  {
+    "name": "THORNCLIFFE",
+    "slug": "thorncliffe",
+    "permitCount": 1467,
+    "totalCost": 69905272.75,
+    "housingUnits": 267
+  },
+  {
+    "name": "MONTEREY PARK",
+    "slug": "monterey-park",
+    "permitCount": 1424,
+    "totalCost": 59348883.09,
+    "housingUnits": 599
+  },
+  {
+    "name": "CRESTMONT",
+    "slug": "crestmont",
+    "permitCount": 1421,
+    "totalCost": 295674897.2,
+    "housingUnits": 1046
+  },
+  {
+    "name": "FOREST LAWN",
+    "slug": "forest-lawn",
+    "permitCount": 1404,
+    "totalCost": 239751391.46,
+    "housingUnits": 795
+  },
+  {
+    "name": "MIDNAPORE",
+    "slug": "midnapore",
+    "permitCount": 1390,
+    "totalCost": 223624700.42,
+    "housingUnits": 658
+  },
+  {
+    "name": "ROSSCARROCK",
+    "slug": "rosscarrock",
+    "permitCount": 1386,
+    "totalCost": 227126389.02,
+    "housingUnits": 614
+  },
+  {
+    "name": "DOVER",
+    "slug": "dover",
+    "permitCount": 1375,
+    "totalCost": 191955016.57,
+    "housingUnits": 846
+  },
+  {
+    "name": "SUNDANCE",
+    "slug": "sundance",
+    "permitCount": 1368,
+    "totalCost": 192858562.01,
+    "housingUnits": 68
+  },
+  {
+    "name": "HOMESTEAD",
+    "slug": "homestead",
+    "permitCount": 1361,
+    "totalCost": 322564677.87,
+    "housingUnits": 1211
+  },
+  {
+    "name": "GARRISON WOODS",
+    "slug": "garrison-woods",
+    "permitCount": 1319,
+    "totalCost": 209045358.33,
+    "housingUnits": 1209
+  },
+  {
+    "name": "MILLRISE",
+    "slug": "millrise",
+    "permitCount": 1318,
+    "totalCost": 141312021.12,
+    "housingUnits": 1068
+  },
+  {
+    "name": "NORTH GLENMORE PARK",
+    "slug": "north-glenmore-park",
+    "permitCount": 1286,
+    "totalCost": 155478390.85,
+    "housingUnits": 371
+  },
+  {
+    "name": "WHITEHORN",
+    "slug": "whitehorn",
+    "permitCount": 1277,
+    "totalCost": 41069518.62,
+    "housingUnits": 415
+  },
+  {
+    "name": "HOUNSFIELD HEIGHTS/BRIAR HILL",
+    "slug": "hounsfield-heights-briar-hill",
+    "permitCount": 1275,
+    "totalCost": 342110303.72,
+    "housingUnits": 446
+  },
+  {
+    "name": "WESTWINDS",
+    "slug": "westwinds",
+    "permitCount": 1264,
+    "totalCost": 394861213.18,
+    "housingUnits": 0
+  },
+  {
+    "name": "CANYON MEADOWS",
+    "slug": "canyon-meadows",
+    "permitCount": 1249,
+    "totalCost": 84045206.69,
+    "housingUnits": 134
+  },
+  {
+    "name": "MARLBOROUGH",
+    "slug": "marlborough",
+    "permitCount": 1237,
+    "totalCost": 96859625.1,
+    "housingUnits": 231
+  },
+  {
+    "name": "MEADOWLARK PARK",
+    "slug": "meadowlark-park",
+    "permitCount": 1232,
+    "totalCost": 488597190.7,
+    "housingUnits": 43
+  },
+  {
+    "name": "FALCONRIDGE",
+    "slug": "falconridge",
+    "permitCount": 1231,
+    "totalCost": 38681352.82,
+    "housingUnits": 296
+  },
+  {
+    "name": "WINDSOR PARK",
+    "slug": "windsor-park",
+    "permitCount": 1229,
+    "totalCost": 228181852.86,
+    "housingUnits": 754
+  },
+  {
+    "name": "CALGARY INTERNATIONAL AIRPORT",
+    "slug": "calgary-international-airport",
+    "permitCount": 1220,
+    "totalCost": 1805199374.01,
+    "housingUnits": 2
+  },
+  {
+    "name": "CHARLESWOOD",
+    "slug": "charleswood",
+    "permitCount": 1210,
+    "totalCost": 87373114.58,
+    "housingUnits": 153
+  },
+  {
+    "name": "UPPER MOUNT ROYAL",
+    "slug": "upper-mount-royal",
+    "permitCount": 1204,
+    "totalCost": 168954039.17,
+    "housingUnits": 256
+  },
+  {
+    "name": "WILDWOOD",
+    "slug": "wildwood",
+    "permitCount": 1179,
+    "totalCost": 97086899.44,
+    "housingUnits": 170
+  },
+  {
+    "name": "TEMPLE",
+    "slug": "temple",
+    "permitCount": 1171,
+    "totalCost": 58716429.13,
+    "housingUnits": 301
+  },
+  {
+    "name": "WOODBINE",
+    "slug": "woodbine",
+    "permitCount": 1145,
+    "totalCost": 39629707.54,
+    "housingUnits": 60
+  },
+  {
+    "name": "SCENIC ACRES",
+    "slug": "scenic-acres",
+    "permitCount": 1141,
+    "totalCost": 97703579.55,
+    "housingUnits": 323
+  },
+  {
+    "name": "ALBERT PARK/RADISSON HEIGHTS",
+    "slug": "albert-park-radisson-heights",
+    "permitCount": 1137,
+    "totalCost": 186196158.11,
+    "housingUnits": 895
+  },
+  {
+    "name": "HAWKWOOD",
+    "slug": "hawkwood",
+    "permitCount": 1120,
+    "totalCost": 24087810.8,
+    "housingUnits": 89
+  },
+  {
+    "name": "COUNTRY HILLS",
+    "slug": "country-hills",
+    "permitCount": 1115,
+    "totalCost": 94652832.59,
+    "housingUnits": 375
+  },
+  {
+    "name": "SOUTH AIRWAYS",
+    "slug": "south-airways",
+    "permitCount": 1113,
+    "totalCost": 198614638.49,
+    "housingUnits": 1
+  },
+  {
+    "name": "HOTCHKISS",
+    "slug": "hotchkiss",
+    "permitCount": 1104,
+    "totalCost": 263419630.59,
+    "housingUnits": 1072
+  },
+  {
+    "name": "GLENDALE",
+    "slug": "glendale",
+    "permitCount": 1092,
+    "totalCost": 108128045.92,
+    "housingUnits": 327
+  },
+  {
+    "name": "CORAL SPRINGS",
+    "slug": "coral-springs",
+    "permitCount": 1058,
+    "totalCost": 69115261.55,
+    "housingUnits": 456
+  },
+  {
+    "name": "PINERIDGE",
+    "slug": "pineridge",
+    "permitCount": 1030,
+    "totalCost": 134824299.83,
+    "housingUnits": 716
+  },
+  {
+    "name": "KINGSLAND",
+    "slug": "kingsland",
+    "permitCount": 1024,
+    "totalCost": 347307973.83,
+    "housingUnits": 1466
+  },
+  {
+    "name": "FRANKLIN",
+    "slug": "franklin",
+    "permitCount": 1021,
+    "totalCost": 167248705.17,
+    "housingUnits": 2
+  },
+  {
+    "name": "MORAINE",
+    "slug": "moraine",
+    "permitCount": 1015,
+    "totalCost": 202115197.91,
+    "housingUnits": 852
+  },
+  {
+    "name": "MISSION",
+    "slug": "mission",
+    "permitCount": 1015,
+    "totalCost": 458201283.93,
+    "housingUnits": 1537
+  },
+  {
+    "name": "GLAMORGAN",
+    "slug": "glamorgan",
+    "permitCount": 1012,
+    "totalCost": 177993082.15,
+    "housingUnits": 674
+  },
+  {
+    "name": "YORKVILLE",
+    "slug": "yorkville",
+    "permitCount": 1004,
+    "totalCost": 462440073.45,
+    "housingUnits": 2051
+  },
+  {
+    "name": "ERIN WOODS",
+    "slug": "erin-woods",
+    "permitCount": 1002,
+    "totalCost": 34073578.54,
+    "housingUnits": 243
+  },
+  {
+    "name": "RAMSAY",
+    "slug": "ramsay",
+    "permitCount": 993,
+    "totalCost": 124437217.66,
+    "housingUnits": 323
+  },
+  {
+    "name": "RUNDLE",
+    "slug": "rundle",
+    "permitCount": 992,
+    "totalCost": 47055443.22,
+    "housingUnits": 355
+  },
+  {
+    "name": "UNIVERSITY HEIGHTS",
+    "slug": "university-heights",
+    "permitCount": 981,
+    "totalCost": 1065812055.56,
+    "housingUnits": 830
+  },
+  {
+    "name": "MARLBOROUGH PARK",
+    "slug": "marlborough-park",
+    "permitCount": 976,
+    "totalCost": 42566420.49,
+    "housingUnits": 159
+  },
+  {
+    "name": "BANKVIEW",
+    "slug": "bankview",
+    "permitCount": 975,
+    "totalCost": 189300615.54,
+    "housingUnits": 979
+  },
+  {
+    "name": "OAKRIDGE",
+    "slug": "oakridge",
+    "permitCount": 963,
+    "totalCost": 81795230.27,
+    "housingUnits": 20
+  },
+  {
+    "name": "ST. ANDREWS HEIGHTS",
+    "slug": "st-andrews-heights",
+    "permitCount": 946,
+    "totalCost": 1837128122.13,
+    "housingUnits": 389
+  },
+  {
+    "name": "ROSEDALE",
+    "slug": "rosedale",
+    "permitCount": 945,
+    "totalCost": 98370697.71,
+    "housingUnits": 200
+  },
+  {
+    "name": "DEERFOOT BUSINESS CENTRE",
+    "slug": "deerfoot-business-centre",
+    "permitCount": 914,
+    "totalCost": 370211758.71,
+    "housingUnits": 4
+  },
+  {
+    "name": "HIGHFIELD",
+    "slug": "highfield",
+    "permitCount": 912,
+    "totalCost": 258255465.28,
+    "housingUnits": 1
+  },
+  {
+    "name": "SHAGANAPPI",
+    "slug": "shaganappi",
+    "permitCount": 890,
+    "totalCost": 291091640.04,
+    "housingUnits": 1093
+  },
+  {
+    "name": "HORIZON",
+    "slug": "horizon",
+    "permitCount": 857,
+    "totalCost": 295454048.35,
+    "housingUnits": 54
+  },
+  {
+    "name": "SUNNYSIDE",
+    "slug": "sunnyside",
+    "permitCount": 853,
+    "totalCost": 249779865.96,
+    "housingUnits": 1309
+  },
+  {
+    "name": "PARKLAND",
+    "slug": "parkland",
+    "permitCount": 851,
+    "totalCost": 47429190.23,
+    "housingUnits": 105
+  },
+  {
+    "name": "GARRISON GREEN",
+    "slug": "garrison-green",
+    "permitCount": 834,
+    "totalCost": 122959737.46,
+    "housingUnits": 661
+  },
+  {
+    "name": "HIGHWOOD",
+    "slug": "highwood",
+    "permitCount": 833,
+    "totalCost": 57636217.93,
+    "housingUnits": 230
+  },
+  {
+    "name": "FAIRVIEW INDUSTRIAL",
+    "slug": "fairview-industrial",
+    "permitCount": 831,
+    "totalCost": 166571921.23,
+    "housingUnits": 0
+  },
+  {
+    "name": "RANCHLANDS",
+    "slug": "ranchlands",
+    "permitCount": 826,
+    "totalCost": 27230574.64,
+    "housingUnits": 146
+  },
+  {
+    "name": "PENBROOKE MEADOWS",
+    "slug": "penbrooke-meadows",
+    "permitCount": 815,
+    "totalCost": 35723054.42,
+    "housingUnits": 235
+  },
+  {
+    "name": "ELBOYA",
+    "slug": "elboya",
+    "permitCount": 813,
+    "totalCost": 113071919.58,
+    "housingUnits": 247
+  },
+  {
+    "name": "BELVEDERE",
+    "slug": "belvedere",
+    "permitCount": 810,
+    "totalCost": 554184821.21,
+    "housingUnits": 2313
+  },
+  {
+    "name": "BRAESIDE",
+    "slug": "braeside",
+    "permitCount": 807,
+    "totalCost": 39080566.86,
+    "housingUnits": 37
+  },
+  {
+    "name": "MAYLAND HEIGHTS",
+    "slug": "mayland-heights",
+    "permitCount": 803,
+    "totalCost": 35746087.42,
+    "housingUnits": 171
+  },
+  {
+    "name": "CEDARBRAE",
+    "slug": "cedarbrae",
+    "permitCount": 800,
+    "totalCost": 32165858.63,
+    "housingUnits": 167
+  },
+  {
+    "name": "COLLINGWOOD",
+    "slug": "collingwood",
+    "permitCount": 795,
+    "totalCost": 87206362.91,
+    "housingUnits": 97
+  },
+  {
+    "name": "CURRIE BARRACKS",
+    "slug": "currie-barracks",
+    "permitCount": 793,
+    "totalCost": 587741828.77,
+    "housingUnits": 1529
+  },
+  {
+    "name": "FAIRVIEW",
+    "slug": "fairview",
+    "permitCount": 786,
+    "totalCost": 37418258.15,
+    "housingUnits": 86
+  },
+  {
+    "name": "SPRUCE CLIFF",
+    "slug": "spruce-cliff",
+    "permitCount": 768,
+    "totalCost": 234491338.1,
+    "housingUnits": 1329
+  },
+  {
+    "name": "SHEPARD INDUSTRIAL",
+    "slug": "shepard-industrial",
+    "permitCount": 768,
+    "totalCost": 394143491.49,
+    "housingUnits": 475
+  },
+  {
+    "name": "WESTGATE",
+    "slug": "westgate",
+    "permitCount": 760,
+    "totalCost": 42071056.05,
+    "housingUnits": 104
+  },
+  {
+    "name": "PARKHILL",
+    "slug": "parkhill",
+    "permitCount": 730,
+    "totalCost": 139662649.75,
+    "housingUnits": 470
+  },
+  {
+    "name": "CAMBRIAN HEIGHTS",
+    "slug": "cambrian-heights",
+    "permitCount": 717,
+    "totalCost": 50829625.23,
+    "housingUnits": 133
+  },
+  {
+    "name": "SUNALTA",
+    "slug": "sunalta",
+    "permitCount": 717,
+    "totalCost": 277067171.21,
+    "housingUnits": 625
+  },
+  {
+    "name": "WOODLANDS",
+    "slug": "woodlands",
+    "permitCount": 715,
+    "totalCost": 43909124.27,
+    "housingUnits": 42
+  },
+  {
+    "name": "GREAT PLAINS",
+    "slug": "great-plains",
+    "permitCount": 692,
+    "totalCost": 821127006.96,
+    "housingUnits": 1
+  },
+  {
+    "name": "CASTLERIDGE",
+    "slug": "castleridge",
+    "permitCount": 685,
+    "totalCost": 22949594.89,
+    "housingUnits": 164
+  },
+  {
+    "name": "EAST FAIRVIEW INDUSTRIAL",
+    "slug": "east-fairview-industrial",
+    "permitCount": 679,
+    "totalCost": 358302356.71,
+    "housingUnits": 0
+  },
+  {
+    "name": "ALYTH/BONNYBROOK",
+    "slug": "alyth-bonnybrook",
+    "permitCount": 663,
+    "totalCost": 526593844.74,
+    "housingUnits": 1
+  },
+  {
+    "name": "MACEWAN GLEN",
+    "slug": "macewan-glen",
+    "permitCount": 639,
+    "totalCost": 12461223.69,
+    "housingUnits": 44
+  },
+  {
+    "name": "LOWER MOUNT ROYAL",
+    "slug": "lower-mount-royal",
+    "permitCount": 637,
+    "totalCost": 183507342.76,
+    "housingUnits": 600
+  },
+  {
+    "name": "ABBEYDALE",
+    "slug": "abbeydale",
+    "permitCount": 636,
+    "totalCost": 13062535.68,
+    "housingUnits": 89
+  },
+  {
+    "name": "CLIFF BUNGALOW",
+    "slug": "cliff-bungalow",
+    "permitCount": 632,
+    "totalCost": 233624270.37,
+    "housingUnits": 781
+  },
+  {
+    "name": "AMBLETON",
+    "slug": "ambleton",
+    "permitCount": 629,
+    "totalCost": 157739706.8,
+    "housingUnits": 577
+  },
+  {
+    "name": "QUEENSLAND",
+    "slug": "queensland",
+    "permitCount": 629,
+    "totalCost": 17724401,
+    "housingUnits": 131
+  },
+  {
+    "name": "BURNS INDUSTRIAL",
+    "slug": "burns-industrial",
+    "permitCount": 625,
+    "totalCost": 135395269.32,
+    "housingUnits": 0
+  },
+  {
+    "name": "SHAWNEE SLOPES",
+    "slug": "shawnee-slopes",
+    "permitCount": 614,
+    "totalCost": 456889199.98,
+    "housingUnits": 1501
+  },
+  {
+    "name": "CHINATOWN",
+    "slug": "chinatown",
+    "permitCount": 614,
+    "totalCost": 577691919.31,
+    "housingUnits": 1528
+  },
+  {
+    "name": "MCCALL",
+    "slug": "mccall",
+    "permitCount": 609,
+    "totalCost": 91203202.33,
+    "housingUnits": 1
+  },
+  {
+    "name": "MERIDIAN",
+    "slug": "meridian",
+    "permitCount": 605,
+    "totalCost": 203387074.08,
+    "housingUnits": 0
+  },
+  {
+    "name": "DEER RUN",
+    "slug": "deer-run",
+    "permitCount": 593,
+    "totalCost": 97700363.72,
+    "housingUnits": 31
+  },
+  {
+    "name": "GREENVIEW INDUSTRIAL PARK",
+    "slug": "greenview-industrial-park",
+    "permitCount": 586,
+    "totalCost": 247311134.74,
+    "housingUnits": 231
+  },
+  {
+    "name": "DEER RIDGE",
+    "slug": "deer-ridge",
+    "permitCount": 570,
+    "totalCost": 45832562.17,
+    "housingUnits": 34
+  },
+  {
+    "name": "STONEY 3",
+    "slug": "stoney-3",
+    "permitCount": 567,
+    "totalCost": 215075697.97,
+    "housingUnits": 0
+  },
+  {
+    "name": "SANDSTONE VALLEY",
+    "slug": "sandstone-valley",
+    "permitCount": 558,
+    "totalCost": 19059813.1,
+    "housingUnits": 57
+  },
+  {
+    "name": "DOWNTOWN WEST END",
+    "slug": "downtown-west-end",
+    "permitCount": 551,
+    "totalCost": 518525712.47,
+    "housingUnits": 2094
+  },
+  {
+    "name": "KELVIN GROVE",
+    "slug": "kelvin-grove",
+    "permitCount": 544,
+    "totalCost": 135140096.99,
+    "housingUnits": 16
+  },
+  {
+    "name": "FOREST HEIGHTS",
+    "slug": "forest-heights",
+    "permitCount": 542,
+    "totalCost": 18933598.22,
+    "housingUnits": 105
+  },
+  {
+    "name": "APPLEWOOD PARK",
+    "slug": "applewood-park",
+    "permitCount": 540,
+    "totalCost": 104494773.31,
+    "housingUnits": 889
+  },
+  {
+    "name": "PATTERSON",
+    "slug": "patterson",
+    "permitCount": 538,
+    "totalCost": 123437614.27,
+    "housingUnits": 395
+  },
+  {
+    "name": "SOUTHVIEW",
+    "slug": "southview",
+    "permitCount": 526,
+    "totalCost": 76177924.85,
+    "housingUnits": 342
+  },
+  {
+    "name": "LEWISBURG",
+    "slug": "lewisburg",
+    "permitCount": 512,
+    "totalCost": 119912691.26,
+    "housingUnits": 437
+  },
+  {
+    "name": "MAPLE RIDGE",
+    "slug": "maple-ridge",
+    "permitCount": 511,
+    "totalCost": 23089108.91,
+    "housingUnits": 20
+  },
+  {
+    "name": "DOWNTOWN EAST VILLAGE",
+    "slug": "downtown-east-village",
+    "permitCount": 507,
+    "totalCost": 1093444849.32,
+    "housingUnits": 2752
+  },
+  {
+    "name": "NORTH HAVEN",
+    "slug": "north-haven",
+    "permitCount": 500,
+    "totalCost": 25770331.37,
+    "housingUnits": 77
+  },
+  {
+    "name": "RUTLAND PARK",
+    "slug": "rutland-park",
+    "permitCount": 496,
+    "totalCost": 75144792.27,
+    "housingUnits": 60
+  },
+  {
+    "name": "ROYAL VISTA",
+    "slug": "royal-vista",
+    "permitCount": 493,
+    "totalCost": 340751717.39,
+    "housingUnits": 0
+  },
+  {
+    "name": "NORTH AIRWAYS",
+    "slug": "north-airways",
+    "permitCount": 492,
+    "totalCost": 228727143.6,
+    "housingUnits": 0
+  },
+  {
+    "name": "RICARDO RANCH",
+    "slug": "ricardo-ranch",
+    "permitCount": 482,
+    "totalCost": 199564966.69,
+    "housingUnits": 645
+  },
+  {
+    "name": "ROSEMONT",
+    "slug": "rosemont",
+    "permitCount": 473,
+    "totalCost": 37642794.01,
+    "housingUnits": 99
+  },
+  {
+    "name": "LINCOLN PARK",
+    "slug": "lincoln-park",
+    "permitCount": 471,
+    "totalCost": 690986475.21,
+    "housingUnits": 812
+  },
+  {
+    "name": "PALLISER",
+    "slug": "palliser",
+    "permitCount": 470,
+    "totalCost": 71282302.07,
+    "housingUnits": 209
+  },
+  {
+    "name": "MANCHESTER",
+    "slug": "manchester",
+    "permitCount": 469,
+    "totalCost": 214266562.46,
+    "housingUnits": 973
+  },
+  {
+    "name": "COACH HILL",
+    "slug": "coach-hill",
+    "permitCount": 441,
+    "totalCost": 26196680.69,
+    "housingUnits": 65
+  },
+  {
+    "name": "STONEY 2",
+    "slug": "stoney-2",
+    "permitCount": 431,
+    "totalCost": 661002481.49,
+    "housingUnits": 1
+  },
+  {
+    "name": "BRITANNIA",
+    "slug": "britannia",
+    "permitCount": 429,
+    "totalCost": 78809223.29,
+    "housingUnits": 106
+  },
+  {
+    "name": "CHINOOK PARK",
+    "slug": "chinook-park",
+    "permitCount": 405,
+    "totalCost": 20823988.87,
+    "housingUnits": 13
+  },
+  {
+    "name": "COUNTRY HILLS VILLAGE",
+    "slug": "country-hills-village",
+    "permitCount": 399,
+    "totalCost": 266147184.95,
+    "housingUnits": 1956
+  },
+  {
+    "name": "SCARBORO",
+    "slug": "scarboro",
+    "permitCount": 396,
+    "totalCost": 46307178.59,
+    "housingUnits": 99
+  },
+  {
+    "name": "MAYLAND",
+    "slug": "mayland",
+    "permitCount": 387,
+    "totalCost": 151085183.01,
+    "housingUnits": 0
+  },
+  {
+    "name": "RIDEAU PARK",
+    "slug": "rideau-park",
+    "permitCount": 371,
+    "totalCost": 36460920.84,
+    "housingUnits": 34
+  },
+  {
+    "name": "SOUTH FOOTHILLS",
+    "slug": "south-foothills",
+    "permitCount": 367,
+    "totalCost": 207469493.98,
+    "housingUnits": 0
+  },
+  {
+    "name": "HUXLEY",
+    "slug": "huxley",
+    "permitCount": 363,
+    "totalCost": 85471578.35,
+    "housingUnits": 417
+  },
+  {
+    "name": "ERLTON",
+    "slug": "erlton",
+    "permitCount": 361,
+    "totalCost": 182959457.86,
+    "housingUnits": 504
+  },
+  {
+    "name": "EASTFIELD",
+    "slug": "eastfield",
+    "permitCount": 360,
+    "totalCost": 81510942.83,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 12 - SUB AREA 12A",
+    "slug": "residual-ward-12-sub-area-12a",
+    "permitCount": 349,
+    "totalCost": 230557204.25,
+    "housingUnits": 3
+  },
+  {
+    "name": "VALLEYFIELD",
+    "slug": "valleyfield",
+    "permitCount": 344,
+    "totalCost": 116291726.59,
+    "housingUnits": 1
+  },
+  {
+    "name": "ROXBORO",
+    "slug": "roxboro",
+    "permitCount": 338,
+    "totalCost": 38866143.03,
+    "housingUnits": 52
+  },
+  {
+    "name": "PUMP HILL",
+    "slug": "pump-hill",
+    "permitCount": 318,
+    "totalCost": 29879441.71,
+    "housingUnits": 14
+  },
+  {
+    "name": "FOREST LAWN INDUSTRIAL",
+    "slug": "forest-lawn-industrial",
+    "permitCount": 314,
+    "totalCost": 109903610.14,
+    "housingUnits": 0
+  },
+  {
+    "name": "STARFIELD",
+    "slug": "starfield",
+    "permitCount": 312,
+    "totalCost": 198305563.55,
+    "housingUnits": 715
+  },
+  {
+    "name": "VISTA HEIGHTS",
+    "slug": "vista-heights",
+    "permitCount": 290,
+    "totalCost": 90137611.95,
+    "housingUnits": 67
+  },
+  {
+    "name": "GLENMORE PARK",
+    "slug": "glenmore-park",
+    "permitCount": 288,
+    "totalCost": 273166425.96,
+    "housingUnits": 1
+  },
+  {
+    "name": "BAYVIEW",
+    "slug": "bayview",
+    "permitCount": 284,
+    "totalCost": 35711816.74,
+    "housingUnits": 9
+  },
+  {
+    "name": "CHRISTIE PARK",
+    "slug": "christie-park",
+    "permitCount": 279,
+    "totalCost": 32202020.05,
+    "housingUnits": 108
+  },
+  {
+    "name": "UNIVERSITY DISTRICT",
+    "slug": "university-district",
+    "permitCount": 258,
+    "totalCost": 1025656323.81,
+    "housingUnits": 3096
+  },
+  {
+    "name": "BEL-AIRE",
+    "slug": "bel-aire",
+    "permitCount": 246,
+    "totalCost": 49665114.02,
+    "housingUnits": 40
+  },
+  {
+    "name": "STONEGATE LANDING",
+    "slug": "stonegate-landing",
+    "permitCount": 240,
+    "totalCost": 419527624.01,
+    "housingUnits": 0
+  },
+  {
+    "name": "BONAVISTA DOWNS",
+    "slug": "bonavista-downs",
+    "permitCount": 220,
+    "totalCost": 8256292.86,
+    "housingUnits": 17
+  },
+  {
+    "name": "GREENWOOD/GREENBRIAR",
+    "slug": "greenwood-greenbriar",
+    "permitCount": 218,
+    "totalCost": 180694716.4,
+    "housingUnits": 665
+  },
+  {
+    "name": "SECTION 23",
+    "slug": "section-23",
+    "permitCount": 215,
+    "totalCost": 188580535.61,
+    "housingUnits": 0
+  },
+  {
+    "name": "STONEY 1",
+    "slug": "stoney-1",
+    "permitCount": 210,
+    "totalCost": 427105812.39,
+    "housingUnits": 0
+  },
+  {
+    "name": "SKYLINE EAST",
+    "slug": "skyline-east",
+    "permitCount": 198,
+    "totalCost": 68899409,
+    "housingUnits": 0
+  },
+  {
+    "name": "EAGLE RIDGE",
+    "slug": "eagle-ridge",
+    "permitCount": 194,
+    "totalCost": 252151716.93,
+    "housingUnits": 22
+  },
+  {
+    "name": "MAYFAIR",
+    "slug": "mayfair",
+    "permitCount": 189,
+    "totalCost": 15825194.94,
+    "housingUnits": 15
+  },
+  {
+    "name": "MEDICINE HILL",
+    "slug": "medicine-hill",
+    "permitCount": 189,
+    "totalCost": 580548329.19,
+    "housingUnits": 2432
+  },
+  {
+    "name": "GREENVIEW",
+    "slug": "greenview",
+    "permitCount": 183,
+    "totalCost": 14766860.33,
+    "housingUnits": 50
+  },
+  {
+    "name": "SCARBORO/SUNALTA WEST",
+    "slug": "scarboro-sunalta-west",
+    "permitCount": 177,
+    "totalCost": 23693484.73,
+    "housingUnits": 25
+  },
+  {
+    "name": "POINT MCKAY",
+    "slug": "point-mckay",
+    "permitCount": 175,
+    "totalCost": 21013793.89,
+    "housingUnits": 0
+  },
+  {
+    "name": "UNIVERSITY OF CALGARY",
+    "slug": "university-of-calgary",
+    "permitCount": 173,
+    "totalCost": 135677197.03,
+    "housingUnits": 692
+  },
+  {
+    "name": "Undefined",
+    "slug": "undefined",
+    "permitCount": 171,
+    "totalCost": 286164568.91,
+    "housingUnits": 1358
+  },
+  {
+    "name": "CANADA OLYMPIC PARK",
+    "slug": "canada-olympic-park",
+    "permitCount": 159,
+    "totalCost": 204343028.9,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 1 - SUB AREA 01F",
+    "slug": "residual-ward-1-sub-area-01f",
+    "permitCount": 141,
+    "totalCost": 31251267.57,
+    "housingUnits": 72
+  },
+  {
+    "name": "SKYLINE WEST",
+    "slug": "skyline-west",
+    "permitCount": 139,
+    "totalCost": 12929397.37,
+    "housingUnits": 0
+  },
+  {
+    "name": "GOLDEN TRIANGLE",
+    "slug": "golden-triangle",
+    "permitCount": 137,
+    "totalCost": 22454143.2,
+    "housingUnits": 0
+  },
+  {
+    "name": "SADDLE RIDGE INDUSTRIAL",
+    "slug": "saddle-ridge-industrial",
+    "permitCount": 128,
+    "totalCost": 103403116.49,
+    "housingUnits": 0
+  },
+  {
+    "name": "CFB - CURRIE",
+    "slug": "cfb-currie",
+    "permitCount": 107,
+    "totalCost": 5861170.11,
+    "housingUnits": 0
+  },
+  {
+    "name": "DIAMOND COVE",
+    "slug": "diamond-cove",
+    "permitCount": 107,
+    "totalCost": 2204725.35,
+    "housingUnits": 3
+  },
+  {
+    "name": "NORTH HAVEN UPPER",
+    "slug": "north-haven-upper",
+    "permitCount": 106,
+    "totalCost": 2808447.96,
+    "housingUnits": 5
+  },
+  {
+    "name": "PEGASUS",
+    "slug": "pegasus",
+    "permitCount": 104,
+    "totalCost": 19229488.4,
+    "housingUnits": 0
+  },
+  {
+    "name": "RED CARPET",
+    "slug": "red-carpet",
+    "permitCount": 103,
+    "totalCost": 89358650.54,
+    "housingUnits": 946
+  },
+  {
+    "name": "AURORA BUSINESS PARK",
+    "slug": "aurora-business-park",
+    "permitCount": 99,
+    "totalCost": 65370930,
+    "housingUnits": 0
+  },
+  {
+    "name": "CFB - LINCOLN PARK PMQ",
+    "slug": "cfb-lincoln-park-pmq",
+    "permitCount": 85,
+    "totalCost": 2415176,
+    "housingUnits": 13
+  },
+  {
+    "name": "OGDEN SHOPS",
+    "slug": "ogden-shops",
+    "permitCount": 80,
+    "totalCost": 24578042.76,
+    "housingUnits": 0
+  },
+  {
+    "name": "KEYSTONE HILLS",
+    "slug": "keystone-hills",
+    "permitCount": 66,
+    "totalCost": 16007238.16,
+    "housingUnits": 66
+  },
+  {
+    "name": "RESIDUAL WARD 2 - SUB AREA 2C",
+    "slug": "residual-ward-2-sub-area-2c",
+    "permitCount": 64,
+    "totalCost": 38539680,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 2 - SUB AREA 2F",
+    "slug": "residual-ward-2-sub-area-2f",
+    "permitCount": 63,
+    "totalCost": 14129912.76,
+    "housingUnits": 0
+  },
+  {
+    "name": "AMBLERIDGE",
+    "slug": "ambleridge",
+    "permitCount": 61,
+    "totalCost": 15677229.85,
+    "housingUnits": 56
+  },
+  {
+    "name": "RESIDUAL WARD 1 - (SUB AREA 1B)",
+    "slug": "residual-ward-1-sub-area-1b",
+    "permitCount": 58,
+    "totalCost": 91064819.25,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 9 - SUB AREA 9Q",
+    "slug": "residual-ward-9-sub-area-9q",
+    "permitCount": 51,
+    "totalCost": 29519114.5,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 2 - SUB AREA 2E",
+    "slug": "residual-ward-2-sub-area-2e",
+    "permitCount": 48,
+    "totalCost": 101202680.8,
+    "housingUnits": 0
+  },
+  {
+    "name": "GLENDEER BUSINESS PARK",
+    "slug": "glendeer-business-park",
+    "permitCount": 48,
+    "totalCost": 17588593.02,
+    "housingUnits": 0
+  },
+  {
+    "name": "OSPREY HILL",
+    "slug": "osprey-hill",
+    "permitCount": 39,
+    "totalCost": 17171191.43,
+    "housingUnits": 54
+  },
+  {
+    "name": "GREAT PLAINS EAST",
+    "slug": "great-plains-east",
+    "permitCount": 33,
+    "totalCost": 41238721.68,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 1 - SUB AREA 1K",
+    "slug": "residual-ward-1-sub-area-1k",
+    "permitCount": 31,
+    "totalCost": 203134800,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 12 - SUB AREA 12B",
+    "slug": "residual-ward-12-sub-area-12b",
+    "permitCount": 31,
+    "totalCost": 24780530.08,
+    "housingUnits": 1
+  },
+  {
+    "name": "FISH CREEK PARK",
+    "slug": "fish-creek-park",
+    "permitCount": 27,
+    "totalCost": 11377240,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 6",
+    "slug": "residual-ward-6",
+    "permitCount": 25,
+    "totalCost": 33657307.81,
+    "housingUnits": 2
+  },
+  {
+    "name": "RESIDUAL WARD 9 - SUB AREA 9P",
+    "slug": "residual-ward-9-sub-area-9p",
+    "permitCount": 25,
+    "totalCost": 4014572.18,
+    "housingUnits": 5
+  },
+  {
+    "name": "HARVEST HILLS BUSINESS PARK",
+    "slug": "harvest-hills-business-park",
+    "permitCount": 18,
+    "totalCost": 6363750,
+    "housingUnits": 0
+  },
+  {
+    "name": "NOSE HILL PARK",
+    "slug": "nose-hill-park",
+    "permitCount": 16,
+    "totalCost": 60628006,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 1 - CALGARY WEST",
+    "slug": "residual-ward-1-calgary-west",
+    "permitCount": 15,
+    "totalCost": 6283000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 9 - SUB AREA 09O",
+    "slug": "residual-ward-9-sub-area-09o",
+    "permitCount": 15,
+    "totalCost": 6287553.02,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 12 - SUB AREA 12C",
+    "slug": "residual-ward-12-sub-area-12c",
+    "permitCount": 15,
+    "totalCost": 1152911.55,
+    "housingUnits": 1
+  },
+  {
+    "name": "RESIDUAL WARD 10 - SUB AREA 10E",
+    "slug": "residual-ward-10-sub-area-10e",
+    "permitCount": 14,
+    "totalCost": 3388745.05,
+    "housingUnits": 1
+  },
+  {
+    "name": "STARFIELD EAST",
+    "slug": "starfield-east",
+    "permitCount": 12,
+    "totalCost": 687315,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 12 - SUB AREA 12J",
+    "slug": "residual-ward-12-sub-area-12j",
+    "permitCount": 12,
+    "totalCost": 8981232,
+    "housingUnits": 3
+  },
+  {
+    "name": "RESIDUAL WARD 5 - SUB AREA 5E",
+    "slug": "residual-ward-5-sub-area-5e",
+    "permitCount": 12,
+    "totalCost": 14383600,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 12 - SUB AREA 12L",
+    "slug": "residual-ward-12-sub-area-12l",
+    "permitCount": 11,
+    "totalCost": 415763.08,
+    "housingUnits": 2
+  },
+  {
+    "name": "RESIDUAL WARD 3 - SUB AREA 03W",
+    "slug": "residual-ward-3-sub-area-03w",
+    "permitCount": 11,
+    "totalCost": 4003302.71,
+    "housingUnits": 4
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13G",
+    "slug": "residual-ward-13-sub-area-13g",
+    "permitCount": 11,
+    "totalCost": 2906548.98,
+    "housingUnits": 3
+  },
+  {
+    "name": "QUEENS PARK VILLAGE",
+    "slug": "queens-park-village",
+    "permitCount": 10,
+    "totalCost": 11362648.77,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 9 - SUB AREA 9K",
+    "slug": "residual-ward-9-sub-area-9k",
+    "permitCount": 10,
+    "totalCost": 5698300,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13M",
+    "slug": "residual-ward-13-sub-area-13m",
+    "permitCount": 10,
+    "totalCost": 2841383.8,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 2 - SUB AREA 02K",
+    "slug": "residual-ward-2-sub-area-02k",
+    "permitCount": 10,
+    "totalCost": 17100000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 5 - SUB AREA 5D",
+    "slug": "residual-ward-5-sub-area-5d",
+    "permitCount": 9,
+    "totalCost": 4208220.01,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 2 - SUB AREA 02L",
+    "slug": "residual-ward-2-sub-area-02l",
+    "permitCount": 8,
+    "totalCost": 877413.5,
+    "housingUnits": 1
+  },
+  {
+    "name": "RESIDUAL WARD 1 - SUB AREA 01H",
+    "slug": "residual-ward-1-sub-area-01h",
+    "permitCount": 5,
+    "totalCost": 47000,
+    "housingUnits": 0
+  },
+  {
+    "name": "SYMONS VALLEY RANCH",
+    "slug": "symons-valley-ranch",
+    "permitCount": 5,
+    "totalCost": 79360.63,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 2 - SUB AREA 2B",
+    "slug": "residual-ward-2-sub-area-2b",
+    "permitCount": 4,
+    "totalCost": 5820132.75,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13F",
+    "slug": "residual-ward-13-sub-area-13f",
+    "permitCount": 3,
+    "totalCost": 503403.75,
+    "housingUnits": 1
+  },
+  {
+    "name": "RESIDUAL WARD 10 - SUB AREA 10D",
+    "slug": "residual-ward-10-sub-area-10d",
+    "permitCount": 3,
+    "totalCost": 267825.27,
+    "housingUnits": 0
+  },
+  {
+    "name": "STONEY 4",
+    "slug": "stoney-4",
+    "permitCount": 3,
+    "totalCost": 795000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 6 - CANADA OLYMPIC PARK",
+    "slug": "residual-ward-6-canada-olympic-park",
+    "permitCount": 3,
+    "totalCost": 100000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13J",
+    "slug": "residual-ward-13-sub-area-13j",
+    "permitCount": 2,
+    "totalCost": 190000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13D",
+    "slug": "residual-ward-13-sub-area-13d",
+    "permitCount": 2,
+    "totalCost": 55000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 6 - SUB AREA 6B",
+    "slug": "residual-ward-6-sub-area-6b",
+    "permitCount": 2,
+    "totalCost": 70000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 5 - SUB AREA 5F",
+    "slug": "residual-ward-5-sub-area-5f",
+    "permitCount": 2,
+    "totalCost": 40000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13H",
+    "slug": "residual-ward-13-sub-area-13h",
+    "permitCount": 1,
+    "totalCost": 0,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 12- SUB AREA 12K",
+    "slug": "residual-ward-12-sub-area-12k",
+    "permitCount": 1,
+    "totalCost": 0,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13K",
+    "slug": "residual-ward-13-sub-area-13k",
+    "permitCount": 1,
+    "totalCost": 344300,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13A",
+    "slug": "residual-ward-13-sub-area-13a",
+    "permitCount": 1,
+    "totalCost": 505751.5,
+    "housingUnits": 1
+  },
+  {
+    "name": "RESIDUAL WARD 9 - SUB AREA 9H",
+    "slug": "residual-ward-9-sub-area-9h",
+    "permitCount": 1,
+    "totalCost": 306385,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 1 - SUB AREA 01I",
+    "slug": "residual-ward-1-sub-area-01i",
+    "permitCount": 1,
+    "totalCost": 20000,
+    "housingUnits": 0
+  },
+  {
+    "name": "RESIDUAL WARD 13 - SUB AREA 13I",
+    "slug": "residual-ward-13-sub-area-13i",
+    "permitCount": 1,
+    "totalCost": 40000,
+    "housingUnits": 0
+  },
+  {
+    "name": "TWINHILLS",
+    "slug": "twinhills",
+    "permitCount": 1,
+    "totalCost": 66004.8,
+    "housingUnits": 0
+  }
+]
