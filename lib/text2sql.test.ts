@@ -55,6 +55,11 @@ test('rejects multi-statement', () => {
   bad('SELECT * FROM permits; SELECT * FROM profiles');
 });
 
+test('allows EXTRACT(YEAR FROM column)', () => {
+  ok("SELECT EXTRACT(YEAR FROM applieddate) AS yr, AVG(estprojectcost::numeric) FROM permits GROUP BY 1");
+  ok("SELECT EXTRACT(MONTH FROM issueddate), COUNT(*) FROM permits GROUP BY 1");
+});
+
 test('rejects references to other tables', () => {
   bad('SELECT * FROM profiles');
   bad('SELECT * FROM auth.users');

@@ -97,7 +97,14 @@ export function validateSql(sql: string): { ok: true } | { ok: false; error: str
   for (const re of FORBIDDEN_PATTERNS) {
     if (re.test(trimmed)) return { ok: false, error: 'Query contains disallowed keywords or patterns.' };
   }
-  const tableRefs = [...trimmed.matchAll(/\b(?:from|join)\s+([a-zA-Z_][a-zA-Z0-9_]*)/gi)].map((m) => m[1].toLowerCase());
+  // Extract table references from FROM/JOIN clauses, but skip EXTRACT(...FROM col) and similar SQL syntax
+  const tableRefs = [...trimmed.matchAll(/\b(?:from|join)\s+([a-zA-Z_][a-zA-Z0-9_]*)/gi)]
+    .filter((m) => {
+      // Skip "FROM" inside EXTRACT(... FROM col), OVERLAY(... FROM ...), TRIM(... FROM ...)
+      const before = trimmed.slice(Math.max(0, m.index! - 30), m.index!);
+      return !/\b(extract|overlay|trim|position)\s*\([^)]*$/i.test(before);
+    })
+    .map((m) => m[1].toLowerCase());
   for (const t of tableRefs) {
     if (!ALLOWED_TABLES.has(t)) {
       if (/^(addr|anchor|cte|tmp|t|sub|ranked|filtered|base|src|top|nearest|matches|results)$/i.test(t)) continue;
