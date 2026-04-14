@@ -81,18 +81,18 @@ export default function AuthDialog({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md p-4 fade-up"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-lg p-4 backdrop-fade"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md overflow-hidden rounded-3xl"
+        className="relative w-full max-w-md overflow-hidden rounded-3xl modal-pop"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Mesh-gradient accent blobs behind the card */}
-        <div className="absolute -top-24 -left-20 w-72 h-72 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-60 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-20 -right-16 w-72 h-72 rounded-full bg-gradient-to-br from-pink-400 to-fuchsia-600 opacity-50 blur-3xl pointer-events-none" />
+        {/* Mesh-gradient accent blobs clipped inside the card */}
+        <div className="absolute -top-24 -left-20 w-72 h-72 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-40 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-20 -right-16 w-72 h-72 rounded-full bg-gradient-to-br from-pink-400 to-fuchsia-600 opacity-35 blur-3xl pointer-events-none" />
 
-        <div className="relative glass rounded-3xl p-7 sm:p-8 fade-up delay-1">
+        <div className="relative glass-solid rounded-3xl p-7 sm:p-8">
           <div className="flex items-start justify-between">
             <div>
               <h2 className="hero-title text-2xl sm:text-3xl font-semibold tracking-tight">{heading}</h2>
