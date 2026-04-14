@@ -10,7 +10,7 @@ function required(name: string): string {
 }
 
 export function adminSlug(): string {
-  return required('ADMIN_PATH_SLUG');
+  return required('ADMIN_SLUG');
 }
 
 export function adminBasePath(): string {

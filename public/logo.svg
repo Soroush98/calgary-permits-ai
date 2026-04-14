@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized building icon -->
+  <g>
+    <!-- Tall tower -->
+    <rect x="8" y="8" width="8" height="32" rx="1.5" fill="url(#grad)"/>
+    <!-- Medium building -->
+    <rect x="19" y="16" width="8" height="24" rx="1.5" fill="url(#grad)" opacity="0.7"/>
+    <!-- Short building -->
+    <rect x="30" y="22" width="8" height="18" rx="1.5" fill="url(#grad)" opacity="0.45"/>
+  </g>
+  <!-- YYC text -->
+  <text x="50" y="33" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="#2563eb">YYC</tspan><tspan fill="#71717A" dx="4" font-weight="500" font-size="22">Permits</tspan>
+  </text>
+</svg>

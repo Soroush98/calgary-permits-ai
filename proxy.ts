@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   // Admin-slug rewrite: public URL /admin-<SLUG>/... maps to internal /admin/...
   // Direct /admin access is hidden (404 via redirect to home).
   const slug = process.env.ADMIN_SLUG;

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 export default function UpgradeDialog({
   open,
@@ -39,13 +40,13 @@ export default function UpgradeDialog({
     }
   }
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-lg p-4 backdrop-fade"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md overflow-hidden rounded-3xl modal-pop"
+        className="relative w-full max-w-md max-h-[calc(100vh-2rem)] overflow-y-auto overflow-x-hidden rounded-3xl modal-pop"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="absolute -top-24 -left-20 w-72 h-72 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-40 blur-3xl pointer-events-none" />
@@ -91,6 +92,7 @@ export default function UpgradeDialog({
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

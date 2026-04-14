@@ -1,15 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-
-type Row = Record<string, unknown>;
+import ResultsView, { type QueryResponse } from '../ResultsView';
 
 export default function AdminPanel() {
   const [question, setQuestion] = useState('');
   const [sql, setSql] = useState('');
-  const [explanation, setExplanation] = useState('');
-  const [rows, setRows] = useState<Row[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [resp, setResp] = useState<QueryResponse | null>(null);
   const [busy, setBusy] = useState(false);
 
   const base = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -17,10 +14,7 @@ export default function AdminPanel() {
 
   async function ask() {
     setBusy(true);
-    setError(null);
-    setRows([]);
-    setSql('');
-    setExplanation('');
+    setResp(null);
     const res = await fetch(`${apiBase}/query`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -29,19 +23,16 @@ export default function AdminPanel() {
     setBusy(false);
     const j = await res.json().catch(() => ({}));
     if (!res.ok) {
-      setError(j.error ?? `HTTP ${res.status}`);
+      setResp({ error: j.error ?? `HTTP ${res.status}` });
       return;
     }
-    if (j.sql) setSql(j.sql);
-    if (j.explanation) setExplanation(j.explanation);
-    if (j.error) setError(j.error);
-    if (Array.isArray(j.rows)) setRows(j.rows);
+    setSql(j.sql ?? '');
+    setResp(j);
   }
 
   async function runSql() {
     setBusy(true);
-    setError(null);
-    setRows([]);
+    setResp(null);
     const res = await fetch(`${apiBase}/sql`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -50,11 +41,10 @@ export default function AdminPanel() {
     setBusy(false);
     const j = await res.json().catch(() => ({}));
     if (!res.ok) {
-      setError(j.error ?? `HTTP ${res.status}`);
+      setResp({ error: j.error ?? `HTTP ${res.status}` });
       return;
     }
-    if (j.error) setError(j.error);
-    if (Array.isArray(j.rows)) setRows(j.rows);
+    setResp({ rows: j.rows, total: j.total, truncated: j.truncated });
   }
 
   async function logout() {
@@ -62,26 +52,24 @@ export default function AdminPanel() {
     window.location.reload();
   }
 
-  const cols = rows[0] ? Object.keys(rows[0]) : [];
-
   return (
-    <div className="space-y-6">
+    <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
-        <p className="text-sm text-zinc-500">
-          Full API access. No quota, no user binding. Arbitrary read-only SQL allowed.
+        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          Full API access · No quota · Arbitrary read-only SQL
         </p>
         <button
           onClick={logout}
-          className="text-sm rounded border border-zinc-300 dark:border-zinc-700 px-3 py-1"
+          className="text-sm rounded-lg border border-zinc-200/70 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur px-3 py-1.5 hover:bg-zinc-100 dark:hover:bg-white/10 transition"
         >
           Sign out
         </button>
       </div>
 
-      <section className="space-y-2">
-        <label className="text-sm font-medium">Ask (NL → SQL)</label>
+      <section className="space-y-3">
+        <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Ask (NL → SQL)</label>
         <textarea
-          className="w-full h-20 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2"
+          className="w-full h-20 rounded-xl border border-zinc-200/70 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur px-4 py-3 text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition resize-none"
           placeholder="e.g. top 10 communities by permit count in 2024"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
@@ -89,16 +77,16 @@ export default function AdminPanel() {
         <button
           onClick={ask}
           disabled={busy || !question.trim()}
-          className="rounded bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 px-4 py-2 disabled:opacity-50"
+          className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium px-5 py-2 text-sm disabled:opacity-50 hover:brightness-110 transition"
         >
           {busy ? 'Working…' : 'Ask'}
         </button>
       </section>
 
-      <section className="space-y-2">
-        <label className="text-sm font-medium">Raw SQL (SELECT only)</label>
+      <section className="space-y-3">
+        <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Raw SQL (SELECT only)</label>
         <textarea
-          className="w-full h-32 font-mono text-xs rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2"
+          className="w-full h-32 font-mono text-xs rounded-xl border border-zinc-200/70 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur px-4 py-3 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition resize-none"
           value={sql}
           onChange={(e) => setSql(e.target.value)}
           placeholder="SELECT ..."
@@ -106,43 +94,13 @@ export default function AdminPanel() {
         <button
           onClick={runSql}
           disabled={busy || !sql.trim()}
-          className="rounded bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 px-4 py-2 disabled:opacity-50"
+          className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium px-5 py-2 text-sm disabled:opacity-50 hover:brightness-110 transition"
         >
           {busy ? 'Running…' : 'Run SQL'}
         </button>
       </section>
 
-      {explanation && <p className="text-sm text-zinc-500">{explanation}</p>}
-      {error && (
-        <pre className="text-sm text-red-600 whitespace-pre-wrap bg-red-50 dark:bg-red-950/30 rounded p-3">
-          {error}
-        </pre>
-      )}
-
-      {rows.length > 0 && (
-        <div className="overflow-auto border border-zinc-200 dark:border-zinc-800 rounded">
-          <table className="text-xs w-full">
-            <thead className="bg-zinc-100 dark:bg-zinc-900">
-              <tr>
-                {cols.map((c) => (
-                  <th key={c} className="text-left px-2 py-1 font-medium">{c}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r, i) => (
-                <tr key={i} className="border-t border-zinc-200 dark:border-zinc-800">
-                  {cols.map((c) => (
-                    <td key={c} className="px-2 py-1 align-top">
-                      {typeof r[c] === 'object' ? JSON.stringify(r[c]) : String(r[c] ?? '')}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+      <ResultsView resp={resp} />
     </div>
   );
 }
