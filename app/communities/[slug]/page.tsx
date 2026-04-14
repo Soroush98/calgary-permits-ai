@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { PageShell } from "../../_components/SiteShell";
 import {
   getCommunityBySlug,
-  getTopCommunities,
   fmtCurrency,
   fmtNum,
   fmtDate,
@@ -12,11 +11,7 @@ import {
 import { toSlug } from "@/lib/slug";
 
 export const revalidate = 86400;
-
-export async function generateStaticParams() {
-  const top = await getTopCommunities(100);
-  return top.map((c) => ({ slug: c.slug }));
-}
+export const dynamicParams = true;
 
 export async function generateMetadata({
   params,

@@ -4,18 +4,13 @@ import { notFound } from "next/navigation";
 import { PageShell } from "../../_components/SiteShell";
 import {
   getContractorBySlug,
-  getTopContractors,
   fmtCurrency,
   fmtNum,
   fmtDate,
 } from "@/lib/seo-data";
 
 export const revalidate = 86400;
-
-export async function generateStaticParams() {
-  const top = await getTopContractors(50);
-  return top.map((c) => ({ slug: c.slug }));
-}
+export const dynamicParams = true;
 
 export async function generateMetadata({
   params,
