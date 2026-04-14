@@ -41,8 +41,12 @@ test('rejects dangerous functions', () => {
   bad("SELECT * FROM dblink('host=evil', 'SELECT 1') AS t(x int)");
 });
 
-test('rejects SQL comments', () => {
-  bad('SELECT 1 -- drop this');
+test('allows single-line SQL comments (stripped before validation)', () => {
+  ok('SELECT 1 -- drop this');
+  ok("SELECT permitnum FROM permits -- just a comment\nWHERE permittype = 'Demolition'");
+});
+
+test('rejects block comments', () => {
   bad('SELECT 1 /* comment */ FROM permits');
 });
 

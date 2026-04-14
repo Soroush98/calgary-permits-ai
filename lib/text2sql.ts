@@ -88,7 +88,8 @@ const FORBIDDEN_PATTERNS: RegExp[] = [
 const ALLOWED_TABLES = new Set(['permits']);
 
 export function validateSql(sql: string): { ok: true } | { ok: false; error: string } {
-  const trimmed = sql.trim().replace(/;$/, '');
+  // Strip SQL single-line comments the LLM sometimes adds (harmless in read-only SELECTs)
+  const trimmed = sql.trim().replace(/;$/, '').replace(/--[^\n]*/g, '').trim();
   if (!/^(select|with)\b/i.test(trimmed)) {
     return { ok: false, error: 'Only SELECT/WITH queries are allowed.' };
   }
@@ -145,10 +146,12 @@ export async function questionToSql(question: string): Promise<QuestionToSqlResu
     };
   }
 
-  const check = validateSql(input.sql);
+  const cleanedSql = input.sql.replace(/--[^\n]*/g, '').trim();
+
+  const check = validateSql(cleanedSql);
   if (!check.ok) {
     return { ok: false, reason: 'unsafe_sql', explanation: check.error };
   }
 
-  return { ok: true, sql: input.sql, explanation: input.explanation };
+  return { ok: true, sql: cleanedSql, explanation: input.explanation };
 }
