@@ -15,3 +15,4 @@ export const PRO_PRICE_ID = () => {
   if (!id) throw new Error('STRIPE_PRO_PRICE_ID is not set');
   return id;
 };
+ 
