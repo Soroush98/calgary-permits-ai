@@ -2,12 +2,21 @@
 -- Auth: profiles + plan + per-user query log for rate limiting.
 
 create table if not exists profiles (
-  id         uuid primary key references auth.users(id) on delete cascade,
-  email      text,
-  full_name  text,
-  plan       text not null default 'free' check (plan in ('free','pro')),
-  created_at timestamptz not null default now()
+  id                       uuid primary key references auth.users(id) on delete cascade,
+  email                    text,
+  full_name                text,
+  plan                     text not null default 'free' check (plan in ('free','pro')),
+  stripe_customer_id       text unique,
+  stripe_subscription_id   text unique,
+  subscription_status      text,
+  current_period_end       timestamptz,
+  created_at               timestamptz not null default now()
 );
+
+alter table profiles add column if not exists stripe_customer_id     text unique;
+alter table profiles add column if not exists stripe_subscription_id text unique;
+alter table profiles add column if not exists subscription_status    text;
+alter table profiles add column if not exists current_period_end     timestamptz;
 
 alter table profiles enable row level security;
 

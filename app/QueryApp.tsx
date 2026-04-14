@@ -1,7 +1,10 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import PermitMap, { type Anchor, type PermitFeature } from './PermitMap';
+import AuthDialog from './(auth)/AuthDialog';
+import UpgradeDialog from './(auth)/UpgradeDialog';
+import { supabaseBrowser } from '@/lib/supabase/browser';
 
 const ANCHOR_COLS = new Set(['anchor_latitude', 'anchor_longitude', 'search_radius_m']);
 
@@ -15,15 +18,43 @@ const EXAMPLES = [
   'Average project cost by community for new residential construction',
 ];
 
+type Me = {
+  authenticated: boolean;
+  email?: string;
+  plan?: 'free' | 'pro';
+  used?: number;
+  limit?: number;
+};
+
 export default function QueryApp() {
   const [q, setQ] = useState('');
   const [loading, setLoading] = useState(false);
   const [resp, setResp] = useState<Response | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const rowRefs = useRef<Record<string, HTMLTableRowElement | null>>({});
+  const [me, setMe] = useState<Me | null>(null);
+  const [authOpen, setAuthOpen] = useState(false);
+  const [upgradeOpen, setUpgradeOpen] = useState(false);
+  const [pending, setPending] = useState<string | null>(null);
+
+  const refreshMe = useCallback(async () => {
+    try {
+      const r = await fetch('/api/me', { cache: 'no-store' });
+      setMe(await r.json());
+    } catch {
+      setMe({ authenticated: false });
+    }
+  }, []);
+
+  useEffect(() => { refreshMe(); }, [refreshMe]);
 
   async function run(question: string) {
     if (!question.trim() || loading) return;
+    if (!me?.authenticated) {
+      setPending(question);
+      setAuthOpen(true);
+      return;
+    }
     setLoading(true);
     setResp(null);
     try {
@@ -32,12 +63,32 @@ export default function QueryApp() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question }),
       });
-      setResp(await r.json());
+      if (r.status === 401) {
+        setPending(question);
+        setAuthOpen(true);
+        return;
+      }
+      const data = await r.json();
+      if (r.status === 402) {
+        setMe((prev) => prev ? { ...prev, used: data.used, limit: data.limit, plan: data.plan } : prev);
+        setUpgradeOpen(true);
+        return;
+      }
+      setResp(data);
+      if (typeof data.used === 'number') {
+        setMe((prev) => prev ? { ...prev, used: data.used, limit: data.limit, plan: data.plan } : prev);
+      }
     } catch (e) {
       setResp({ error: e instanceof Error ? e.message : String(e) });
     } finally {
       setLoading(false);
     }
+  }
+
+  async function signOut() {
+    await supabaseBrowser().auth.signOut();
+    setMe({ authenticated: false });
+    setResp(null);
   }
 
   const rows = resp?.rows ?? [];
@@ -67,6 +118,26 @@ export default function QueryApp() {
 
   return (
     <div className="flex flex-col gap-4">
+      <div className="flex items-center justify-end gap-3 text-xs text-zinc-600 dark:text-zinc-400">
+        {me?.authenticated ? (
+          <>
+            <span className="hidden sm:inline">{me.email}</span>
+            <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 capitalize">{me.plan}</span>
+            {typeof me.used === 'number' && typeof me.limit === 'number' && (
+              <span className="tabular-nums">{me.used}/{me.limit}</span>
+            )}
+            {me.plan !== 'pro' && (
+              <button onClick={() => setUpgradeOpen(true)} className="text-blue-600 hover:underline">Upgrade</button>
+            )}
+            <button onClick={signOut} className="hover:text-zinc-900 dark:hover:text-zinc-100">Sign out</button>
+          </>
+        ) : (
+          <button onClick={() => setAuthOpen(true)} className="hover:text-zinc-900 dark:hover:text-zinc-100">
+            Sign in
+          </button>
+        )}
+      </div>
+
       <form
         onSubmit={(e) => { e.preventDefault(); run(q); }}
         className="flex gap-2"
@@ -169,6 +240,30 @@ export default function QueryApp() {
       {resp && !resp.error && rows.length === 0 && (
         <div className="text-sm text-zinc-500">No rows returned.</div>
       )}
+
+      <AuthDialog
+        open={authOpen}
+        onClose={async () => {
+          setAuthOpen(false);
+          const r = await fetch('/api/me', { cache: 'no-store' });
+          const next: Me = await r.json();
+          setMe(next);
+          if (next.authenticated && pending) {
+            const q = pending;
+            setPending(null);
+            setTimeout(() => run(q), 0);
+          } else {
+            setPending(null);
+          }
+        }}
+      />
+
+      <UpgradeDialog
+        open={upgradeOpen}
+        onClose={() => setUpgradeOpen(false)}
+        used={me?.used}
+        limit={me?.limit}
+      />
     </div>
   );
 }
