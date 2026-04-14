@@ -19,7 +19,12 @@ export async function POST(req: Request) {
   let sql: string;
   let explanation: string;
   try {
-    ({ sql, explanation } = await questionToSql(question));
+    const r = await questionToSql(question);
+    if (!r.ok) {
+      return Response.json({ error: r.reason, explanation: r.explanation, rows: [] }, { status: 400 });
+    }
+    sql = r.sql;
+    explanation = r.explanation;
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     return Response.json({ error: `LLM error: ${msg}` }, { status: 502 });

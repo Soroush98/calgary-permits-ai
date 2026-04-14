@@ -171,21 +171,25 @@ export default function PermitMap({
   // Initialize once.
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
+    const mtKey = process.env.NEXT_PUBLIC_MAPTILER_KEY;
+    const style: maplibregl.StyleSpecification | string = mtKey
+      ? `https://api.maptiler.com/maps/dataviz/style.json?key=${mtKey}`
+      : {
+          version: 8,
+          sources: {
+            osm: {
+              type: 'raster',
+              tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+              tileSize: 256,
+              maxzoom: 18,
+              attribution: '© OpenStreetMap contributors',
+            },
+          },
+          layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
+        };
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: {
-        version: 8,
-        sources: {
-          osm: {
-            type: 'raster',
-            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
-            tileSize: 256,
-            maxzoom: 18,
-            attribution: '© OpenStreetMap contributors',
-          },
-        },
-        layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
-      },
+      style,
       center: CALGARY,
       zoom: 10,
       maxZoom: 19,
@@ -323,7 +327,7 @@ export default function PermitMap({
         },
       });
 
-      // Click a cluster: zoom if possible, spiderfy if not.
+      // Click a cluster: spiderfy if leaves are co-located, else fit bounds to leaves.
       map.on('click', 'clusters', async (e) => {
         clearSpider(map);
         const feat = map.queryRenderedFeatures(e.point, { layers: ['clusters'] })[0];
@@ -331,18 +335,51 @@ export default function PermitMap({
         const pointCount = feat?.properties?.point_count;
         if (clusterId == null) return;
         const src = map.getSource(SRC) as maplibregl.GeoJSONSource;
-        const expansionZoom = await src.getClusterExpansionZoom(clusterId);
+        const leaves = (await src.getClusterLeaves(clusterId, pointCount ?? 1000, 0)) as GeoJSON.Feature[];
         const center = (feat.geometry as GeoJSON.Point).coordinates as [number, number];
 
-        if (expansionZoom >= 19 || map.getZoom() >= 17) {
-          // Can't zoom further — spiderfy
-          const leaves = await src.getClusterLeaves(clusterId, pointCount ?? 100, 0);
+        // Measure how spread out the leaves are.
+        let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity;
+        for (const l of leaves) {
+          const [lng, lat] = (l.geometry as GeoJSON.Point).coordinates as [number, number];
+          if (lng < minLng) minLng = lng;
+          if (lng > maxLng) maxLng = lng;
+          if (lat < minLat) minLat = lat;
+          if (lat > maxLat) maxLat = lat;
+        }
+        const latMid = (minLat + maxLat) / 2;
+        const spreadM = Math.max(
+          (maxLat - minLat) * 110574,
+          (maxLng - minLng) * 111320 * Math.cos((latMid * Math.PI) / 180),
+        );
+
+        if (spreadM < 5) {
+          // Truly co-located — spiderfy around the shared point.
           map.easeTo({ center, zoom: Math.max(map.getZoom(), 17), duration: 300 });
-          setTimeout(() => spiderfy(map, center, leaves as GeoJSON.Feature[]), 350);
+          setTimeout(() => spiderfy(map, center, leaves), 350);
         } else {
-          map.easeTo({ center, zoom: Math.min(expansionZoom + 2, 19) });
+          // Distinct positions — fit them so they separate into individual markers.
+          const bounds = new maplibregl.LngLatBounds([minLng, minLat], [maxLng, maxLat]);
+          map.fitBounds(bounds, { padding: 80, maxZoom: 18, duration: 400 });
         }
       });
+
+      const panPopupIntoView = (popup: maplibregl.Popup) => {
+        const container = map.getContainer();
+        const popupEl = popup.getElement();
+        if (!popupEl) return;
+        const cRect = container.getBoundingClientRect();
+        const pRect = popupEl.getBoundingClientRect();
+        const margin = 8;
+        let dx = 0;
+        let dy = 0;
+        if (pRect.top < cRect.top + margin) dy = pRect.top - (cRect.top + margin);
+        else if (pRect.bottom > cRect.bottom - margin) dy = pRect.bottom - (cRect.bottom - margin);
+        if (pRect.left < cRect.left + margin) dx = pRect.left - (cRect.left + margin);
+        else if (pRect.right > cRect.right - margin) dx = pRect.right - (cRect.right - margin);
+        if (dx === 0 && dy === 0) return;
+        map.panBy([dx, dy], { duration: 200 });
+      };
 
       const openPopup = (coords: [number, number], props: Record<string, unknown>) => {
         const pn = typeof props.permitnum === 'string' ? props.permitnum : null;
@@ -355,6 +392,7 @@ export default function PermitMap({
           const el = popup.getElement().querySelector<HTMLButtonElement>('[data-action="goto-row"]');
           el?.addEventListener('click', () => onGoToRowRef.current?.(pn));
         }
+        requestAnimationFrame(() => panPopupIntoView(popup));
       };
 
       // Popup on spider point.

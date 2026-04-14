@@ -49,7 +49,27 @@ export async function POST(req: Request) {
   let sql: string;
   let explanation: string;
   try {
-    ({ sql, explanation } = await questionToSql(question));
+    const result = await questionToSql(question);
+    if (!result.ok) {
+      await supabase.from('query_log').insert({
+        user_id: user.id,
+        question,
+        error: `${result.reason}: ${result.explanation}`,
+      });
+      return Response.json(
+        {
+          error: result.reason,
+          explanation: result.explanation,
+          rows: [],
+          plan,
+          used: usedCount + 1,
+          limit,
+        },
+        { status: result.reason === 'out_of_scope' ? 400 : 422 },
+      );
+    }
+    sql = result.sql;
+    explanation = result.explanation;
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     await supabase.from('query_log').insert({ user_id: user.id, question, error: msg });
