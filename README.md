@@ -1,11 +1,23 @@
 # Calgary Permits
 
+**Live: [yycpermits.com](https://yycpermits.com)**
+
 Ask anything about 488,000+ City of Calgary building permits in plain English. An LLM translates your question to PostgreSQL, the query runs read-only, results land on a map and in a sortable table.
 
 Examples:
 - *"Multi-family residential permits in Beltline issued since January over $5 million"*
 - *"Top 10 contractors by permit count in the last 12 months"*
 - *"Demolition permits within 1 km of downtown in the last 90 days"*
+
+## Dataset
+
+All permit data comes from the **City of Calgary Open Data Portal**:
+
+- **Dataset:** [Building Permits](https://data.calgary.ca/Business-and-Economic-Activity/Building-Permits/c2es-76ed) (`c2es-76ed`)
+- **API endpoint:** `https://data.calgary.ca/resource/c2es-76ed.json` (Socrata SODA)
+- **Coverage:** every City of Calgary building permit from the late 1990s onward — residential, commercial, multi-family, demolition, signs — with applicant, contractor, address, community, cost, and lat/lon for each.
+- **Refresh:** the dataset is updated daily by the City. A Node ingestion script ([scripts/ingest.mjs](scripts/ingest.mjs)) pulls from Socrata and upserts into Postgres in 50k-row pages, with a `--since=<date>` flag for incremental deltas.
+- **License:** [Open Government Licence – City of Calgary](https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa).
 
 ## Tech stack
 
