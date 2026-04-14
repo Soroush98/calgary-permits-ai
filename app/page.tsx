@@ -35,7 +35,7 @@ export default async function Home() {
           {[
             ['488K', 'permits'],
             ['1.8K+', 'contractors'],
-            ['∞', 'questions'],
+            ['1000+', 'questions / mo'],
           ].map(([n, l]) => (
             <div key={l} className="px-4 py-3 rounded-xl bg-white/50 dark:bg-white/[0.03] border border-zinc-200/60 dark:border-white/[0.06] backdrop-blur-sm">
               <div className="text-2xl sm:text-3xl font-semibold tracking-tight">{n}</div>

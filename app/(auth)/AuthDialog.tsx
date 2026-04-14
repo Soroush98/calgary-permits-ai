@@ -81,84 +81,110 @@ export default function AuthDialog({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md p-4 fade-up"
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl p-7"
+        className="relative w-full max-w-md overflow-hidden rounded-3xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-start justify-between">
-          <div>
-            <h2 className="text-xl font-semibold">{heading}</h2>
-            <p className="mt-1 text-sm text-zinc-500">{sub}</p>
+        {/* Mesh-gradient accent blobs behind the card */}
+        <div className="absolute -top-24 -left-20 w-72 h-72 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-60 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-20 -right-16 w-72 h-72 rounded-full bg-gradient-to-br from-pink-400 to-fuchsia-600 opacity-50 blur-3xl pointer-events-none" />
+
+        <div className="relative glass rounded-3xl p-7 sm:p-8 fade-up delay-1">
+          <div className="flex items-start justify-between">
+            <div>
+              <h2 className="hero-title text-2xl sm:text-3xl font-semibold tracking-tight">{heading}</h2>
+              <p className="mt-1.5 text-sm text-zinc-600 dark:text-zinc-400">{sub}</p>
+            </div>
+            <button
+              onClick={onClose}
+              aria-label="Close"
+              className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 text-2xl leading-none w-8 h-8 rounded-full flex items-center justify-center hover:bg-zinc-100 dark:hover:bg-white/5 transition"
+            >
+              ×
+            </button>
           </div>
-          <button
-            onClick={onClose}
-            aria-label="Close"
-            className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 text-xl leading-none px-1"
-          >
-            ×
-          </button>
-        </div>
 
-        <button
-          type="button"
-          onClick={handleGoogle}
-          disabled={loading}
-          className="mt-6 w-full h-11 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm font-medium flex items-center justify-center gap-3 hover:bg-zinc-50 dark:hover:bg-zinc-700 disabled:opacity-50"
-        >
-          <GoogleIcon /> Continue with Google
-        </button>
-
-        <div className="my-5 flex items-center gap-3 text-xs text-zinc-400">
-          <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
-          or use email
-          <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
-        </div>
-
-        <form onSubmit={handleEmail} className="flex flex-col gap-3">
-          <input
-            type="email"
-            required
-            placeholder="you@example.com"
-            autoComplete="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            disabled={loading}
-            className="h-11 px-4 rounded-xl bg-white/70 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500"
-          />
-          <input
-            type="password"
-            required
-            placeholder={mode === 'signup' ? 'Password (min 8 chars)' : 'Password'}
-            autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            disabled={loading}
-            className="h-11 px-4 rounded-xl bg-white/70 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500"
-          />
-
-          {error && <div className="text-xs text-red-600 dark:text-red-400">{error}</div>}
-          {info && <div className="text-xs text-emerald-600 dark:text-emerald-400">{info}</div>}
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="h-11 rounded-xl bg-gradient-to-b from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white text-sm font-semibold shadow-[0_4px_14px_rgba(37,99,235,0.35)] disabled:opacity-50"
-          >
-            {loading ? '…' : cta}
-          </button>
-        </form>
-
-        <div className="mt-5 text-center text-xs text-zinc-500">
           <button
             type="button"
-            onClick={() => { setMode(mode === 'signup' ? 'login' : 'signup'); setError(null); setInfo(null); }}
-            className="hover:text-zinc-900 dark:hover:text-zinc-100"
+            onClick={handleGoogle}
+            disabled={loading}
+            className="mt-6 w-full h-12 rounded-2xl bg-white dark:bg-white/5 border border-zinc-200 dark:border-white/10 text-sm font-medium flex items-center justify-center gap-3 hover:bg-zinc-50 dark:hover:bg-white/10 transition-all active:scale-[0.98] disabled:opacity-50 shadow-sm"
           >
-            {mode === 'signup' ? 'Already have an account? Sign in' : "Don't have an account? Sign up"}
+            <GoogleIcon /> Continue with Google
           </button>
+
+          <div className="my-5 flex items-center gap-3 text-[11px] uppercase tracking-wider text-zinc-400">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent dark:via-white/10" />
+            or email
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent dark:via-white/10" />
+          </div>
+
+          <form onSubmit={handleEmail} className="flex flex-col gap-3">
+            <div className="relative group">
+              <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-blue-500/50 via-purple-500/50 to-pink-500/50 opacity-0 group-focus-within:opacity-100 transition-opacity blur-sm" />
+              <input
+                type="email"
+                required
+                placeholder="you@example.com"
+                autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={loading}
+                className="relative w-full h-12 px-4 rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-white/10 text-sm focus:outline-none focus:border-transparent transition"
+              />
+            </div>
+            <div className="relative group">
+              <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-blue-500/50 via-purple-500/50 to-pink-500/50 opacity-0 group-focus-within:opacity-100 transition-opacity blur-sm" />
+              <input
+                type="password"
+                required
+                placeholder={mode === 'signup' ? 'Password (min 8 chars)' : 'Password'}
+                autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                disabled={loading}
+                className="relative w-full h-12 px-4 rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-white/10 text-sm focus:outline-none focus:border-transparent transition"
+              />
+            </div>
+
+            {error && (
+              <div className="text-xs text-red-600 dark:text-red-400 px-1 animate-in fade-in">{error}</div>
+            )}
+            {info && (
+              <div className="text-xs text-emerald-600 dark:text-emerald-400 px-1 animate-in fade-in">{info}</div>
+            )}
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="mt-1 h-12 rounded-2xl bg-gradient-to-b from-zinc-900 to-black dark:from-white dark:to-zinc-200 text-white dark:text-black text-sm font-semibold shadow-lg hover:shadow-xl transition-all active:scale-[0.98] disabled:opacity-40"
+            >
+              {loading ? (
+                <span className="flex items-center justify-center gap-2">
+                  <span className="w-4 h-4 rounded-full border-2 border-current border-t-transparent animate-spin" />
+                  Just a moment
+                </span>
+              ) : (
+                <>{cta} →</>
+              )}
+            </button>
+          </form>
+
+          <div className="mt-6 text-center text-xs text-zinc-500">
+            <button
+              type="button"
+              onClick={() => { setMode(mode === 'signup' ? 'login' : 'signup'); setError(null); setInfo(null); }}
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition"
+            >
+              {mode === 'signup' ? 'Already have an account? ' : "Don't have an account? "}
+              <span className="font-medium text-blue-600 dark:text-blue-400 hover:underline underline-offset-2">
+                {mode === 'signup' ? 'Sign in' : 'Sign up'}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
