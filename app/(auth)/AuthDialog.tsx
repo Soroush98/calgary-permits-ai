@@ -10,10 +10,12 @@ export default function AuthDialog({
   open,
   onClose,
   initialMode = 'signup',
+  confirmed = false,
 }: {
   open: boolean;
   onClose: () => void;
   initialMode?: Mode;
+  confirmed?: boolean;
 }) {
   const [mode, setMode] = useState<Mode>(initialMode);
   const [email, setEmail] = useState('');
@@ -24,7 +26,7 @@ export default function AuthDialog({
 
   const supabase = supabaseBrowser();
 
-  useEffect(() => { if (open) setMode(initialMode); }, [open, initialMode]);
+  useEffect(() => { if (open) { setMode(initialMode); setInfo(confirmed ? 'Email confirmed! You can now sign in.' : null); } }, [open, initialMode, confirmed]);
 
   useEffect(() => {
     if (!open) return;

@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import ResultsView, { type QueryResponse } from './ResultsView';
 import AuthDialog from './(auth)/AuthDialog';
 import UpgradeDialog from './(auth)/UpgradeDialog';
@@ -20,8 +21,22 @@ export default function QueryApp({ initialMe }: { initialMe: Me }) {
   const [resp, setResp] = useState<QueryResponse | null>(null);
   const [me, setMe] = useState<Me>(initialMe);
   const [authOpen, setAuthOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<'signup' | 'login'>('signup');
+  const [confirmed, setConfirmed] = useState(false);
   const [upgradeOpen, setUpgradeOpen] = useState(false);
   const [pending, setPending] = useState<string | null>(null);
+
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    if (searchParams.get('confirmed') === 'true') {
+      setConfirmed(true);
+      setAuthMode('login');
+      setAuthOpen(true);
+      // Clean up the URL
+      window.history.replaceState({}, '', '/');
+    }
+  }, [searchParams]);
 
   async function run(question: string) {
     if (!question.trim() || loading) return;
@@ -137,6 +152,7 @@ export default function QueryApp({ initialMe }: { initialMe: Me }) {
         open={authOpen}
         onClose={async () => {
           setAuthOpen(false);
+          setConfirmed(false);
           const r = await fetch('/api/me', { cache: 'no-store' });
           const next: Me = await r.json();
           setMe(next);
@@ -148,6 +164,8 @@ export default function QueryApp({ initialMe }: { initialMe: Me }) {
             setPending(null);
           }
         }}
+        initialMode={authMode}
+        confirmed={confirmed}
       />
 
       <UpgradeDialog

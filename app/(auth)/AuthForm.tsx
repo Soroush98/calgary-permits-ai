@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { supabaseBrowser } from '@/lib/supabase/browser';
 
@@ -9,13 +9,11 @@ type Mode = 'signup' | 'login';
 
 export default function AuthForm({ mode }: { mode: Mode }) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const confirmed = searchParams.get('confirmed') === 'true';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [info, setInfo] = useState<string | null>(confirmed ? 'Email confirmed! You can now sign in.' : null);
+  const [info, setInfo] = useState<string | null>(null);
 
   const supabase = supabaseBrowser();
 
