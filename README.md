@@ -71,6 +71,30 @@ Every generated query is checked against an allowlist before it touches the data
 - Admin route path is obfuscated; admin status checked server-side per request.
 - Stripe webhook signature verified via `STRIPE_WEBHOOK_SECRET`.
 
+## Data & privacy
+
+**What we store**
+
+| Data | Where | Why |
+|---|---|---|
+| Email, display name | `profiles` (Supabase) | Sign-in, billing receipts |
+| Password hash | Supabase Auth (`auth.users`) | Sign-in only — we never see the plaintext password |
+| Your questions + the generated SQL | `query_log` | Quota enforcement, debugging bad queries |
+| Stripe customer / subscription IDs + status | `profiles` | Unlock Pro access on paid subscriptions |
+
+**What we don't store**
+
+- **No card numbers, CVCs, or bank details.** Payments happen entirely on Stripe (PCI-DSS Level 1). Our server only ever sees the opaque `cus_...` / `sub_...` IDs Stripe hands back.
+- No IP logs, no ad trackers, no third-party analytics.
+
+**How it's protected**
+
+- **In transit:** HTTPS/TLS for every request — app ↔ Supabase, app ↔ Stripe, app ↔ Anthropic.
+- **At rest:** Supabase encrypts the Postgres volume with AES-256 and manages key rotation. Passwords are hashed by Supabase Auth (bcrypt) — not stored in plaintext, not reversible.
+- **Access isolation:** the database enforces Row-Level Security so one user's session can only read their own `profiles` row and their own `query_log`. Writes to `profiles` (plan, Stripe IDs) are restricted to the service-role key held only by the server — users cannot modify their own plan client-side.
+- **Least-privileged keys:** the browser only gets the public `anon` key, which has read-only access to the public `permits` dataset. The `service_role` key that bypasses RLS stays on the server and is never shipped to the client.
+- **Delete on request:** email us and we remove your profile + query log. The Postgres `on delete cascade` on `auth.users` removes everything associated with your account.
+
 ## Local setup
 
 ### 1. Environment variables
