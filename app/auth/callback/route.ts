@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase/server';
 
-// Handles the redirect back from OAuth (Google) and from email magic links.
+// Handles the redirect back from OAuth (Google) and from email confirmation.
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
@@ -11,6 +11,11 @@ export async function GET(request: Request) {
     const supabase = await supabaseServer();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) return NextResponse.redirect(`${origin}${next}`);
+
+    // PKCE code_verifier cookie may be gone (user closed tab/browser before
+    // clicking the confirmation link). The email *is* confirmed on Supabase's
+    // side, so redirect to login with a friendly message instead of an error.
+    return NextResponse.redirect(`${origin}/login?confirmed=true`);
   }
 
   return NextResponse.redirect(`${origin}/login?error=callback_failed`);
