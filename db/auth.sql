@@ -20,10 +20,14 @@ alter table profiles add column if not exists current_period_end     timestamptz
 
 alter table profiles enable row level security;
 
+-- Users may read their own profile. All writes go through service_role
+-- (Stripe webhook + checkout route), so `authenticated` gets no UPDATE/INSERT/DELETE
+-- on profiles — this is what prevents clients from self-upgrading `plan`.
 drop policy if exists "own profile read"   on profiles;
 drop policy if exists "own profile update" on profiles;
-create policy "own profile read"   on profiles for select using (auth.uid() = id);
-create policy "own profile update" on profiles for update using (auth.uid() = id) with check (auth.uid() = id);
+create policy "own profile read" on profiles for select using (auth.uid() = id);
+
+revoke insert, update, delete on profiles from authenticated, anon;
 
 -- Auto-provision a profile row on new signup.
 create or replace function handle_new_user()

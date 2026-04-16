@@ -1,4 +1,4 @@
-import { supabaseServer } from '@/lib/supabase/server';
+import { supabaseServer, supabaseAdmin } from '@/lib/supabase/server';
 import { stripe, PRO_PRICE_ID } from '@/lib/stripe';
 
 export async function POST() {
@@ -19,7 +19,7 @@ export async function POST() {
       metadata: { user_id: user.id },
     });
     customerId = customer.id;
-    await supabase.from('profiles').update({ stripe_customer_id: customerId }).eq('id', user.id);
+    await supabaseAdmin().from('profiles').update({ stripe_customer_id: customerId }).eq('id', user.id);
   }
 
   const origin = process.env.NEXT_PUBLIC_SITE_URL!;

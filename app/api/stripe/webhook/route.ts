@@ -1,16 +1,8 @@
-import { createClient } from '@supabase/supabase-js';
 import type Stripe from 'stripe';
 import { stripe } from '@/lib/stripe';
+import { supabaseAdmin } from '@/lib/supabase/server';
 
 export const runtime = 'nodejs';
-
-function admin() {
-  return createClient(
-    process.env.SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!,
-    { auth: { persistSession: false } },
-  );
-}
 
 export async function POST(req: Request) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
@@ -28,7 +20,7 @@ export async function POST(req: Request) {
     return Response.json({ error: `invalid signature: ${msg}` }, { status: 400 });
   }
 
-  const db = admin();
+  const db = supabaseAdmin();
 
   async function applySubscription(sub: Stripe.Subscription) {
     const userId = (sub.metadata?.user_id as string | undefined) ?? null;
