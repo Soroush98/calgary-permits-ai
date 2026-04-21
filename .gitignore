@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# agent instructions (local only)
+CLAUDE.md
+AGENTS.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

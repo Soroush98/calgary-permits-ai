@@ -1,167 +1,97 @@
 # Calgary Permits
 
-**Live: [yycpermits.com](https://yycpermits.com)**
+Live at **[yycpermits.com](https://yycpermits.com)**.
 
-Ask anything about 488,000+ City of Calgary building permits in plain English. An LLM translates your question to PostgreSQL, the query runs read-only, results land on a map and in a sortable table.
+This is a little side project I built to scratch my own itch. The City of Calgary publishes every building permit they issue — about 488,000 of them going back to the late 90s — but the official portal is a pain to search unless you already know exactly what you want. So I wired up an LLM that turns plain-English questions into SQL, runs the query against a Postgres copy of the dataset, and drops the results on a map.
 
-Examples:
+You can ask it things like:
+
 - *"Multi-family residential permits in Beltline issued since January over $5 million"*
 - *"Top 10 contractors by permit count in the last 12 months"*
 - *"Demolition permits within 1 km of downtown in the last 90 days"*
 
-## Dataset
+That last one hits PostGIS for the radius query. Most questions just work; occasionally the model guesses a column wrong and you'll see it in the generated SQL panel.
 
-All permit data comes from the **City of Calgary Open Data Portal**:
+## Where the data comes from
 
-- **Dataset:** [Building Permits](https://data.calgary.ca/Business-and-Economic-Activity/Building-Permits/c2es-76ed) (`c2es-76ed`)
-- **API endpoint:** `https://data.calgary.ca/resource/c2es-76ed.json` (Socrata SODA)
-- **Coverage:** every City of Calgary building permit from the late 1990s onward — residential, commercial, multi-family, demolition, signs — with applicant, contractor, address, community, cost, and lat/lon for each.
-- **Refresh:** the dataset is updated daily by the City. A Node ingestion script ([scripts/ingest.mjs](scripts/ingest.mjs)) pulls from Socrata and upserts into Postgres in 50k-row pages, with a `--since=<date>` flag for incremental deltas.
-- **License:** [Open Government Licence – City of Calgary](https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa).
+Everything comes from the [Building Permits dataset](https://data.calgary.ca/Business-and-Economic-Activity/Building-Permits/c2es-76ed) (`c2es-76ed`) on Calgary's open data portal. The City updates it daily. I have a small ingestion script ([scripts/ingest.mjs](scripts/ingest.mjs)) that pulls from their Socrata endpoint in 50k-row pages and upserts into Postgres. You can do an incremental pull with `--since=<date>` so you're not re-downloading everything every time.
 
-## Tech stack
+The data is covered by the [Open Government Licence – City of Calgary](https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa).
 
-| Layer | Choice |
-|---|---|
-| Framework | **Next.js 16** (App Router, React 19, Server Components) |
-| Styling | **Tailwind CSS v4** with custom glass/mesh-gradient hero |
-| Map | **MapLibre GL** + **MapTiler** (dataviz vector tiles), PostGIS for spatial queries |
-| Database | **Postgres** on **Supabase** with the PostGIS extension, `pg_trgm` for fuzzy address/contractor search |
-| LLM | **Anthropic Claude Sonnet 4.6** via the `@anthropic-ai/sdk`, forced tool-use for structured SQL output, prompt caching on the schema/system prompt |
-| Auth | **Supabase Auth** (email + password, SSR cookies via `@supabase/ssr`) |
-| Billing | **Stripe Checkout** + webhooks for subscription lifecycle |
-| Hosting | Vercel-ready (Next 16 server runtime) |
+## How it's built
 
-## Features
+Next.js 16 on the App Router with React 19 server components. Tailwind v4 for styling. MapLibre GL + MapTiler vector tiles for the map, with PostGIS doing the spatial work. Postgres lives on Supabase, with `pg_trgm` for fuzzy contractor and address matching. Auth is Supabase's email+password flow, billing is Stripe Checkout, and the LLM is Claude Sonnet 4.6 via the Anthropic SDK — forced tool-use so the model can only respond through a structured SQL-emitting tool, with prompt caching on the schema and system prompt to keep costs reasonable.
 
-- **Natural-language → SQL** with a tight schema prompt, PostGIS-aware for "near X" queries, `normalize_address()` helper for Calgary's abbreviated address format.
-- **Interactive map** — clustered color-coded pins per permit type. Dense clusters either fit-bounds to real positions or spiderfy when permits share an address. Popups auto-pan into view so they never underflow the container.
-- **Synchronized table** — click a map pin to highlight the row; hover a row to pulse the pin.
-- **Free / Pro tiers** — 10 free queries per month, $30/mo for 1,000 queries. Enforced server-side against `query_log`.
-- **Admin console** at an obfuscated route for inspecting logs and running ad-hoc queries.
+## About the security
 
-## Security
+This is the part I thought about hardest, because the app literally takes user text, asks an LLM to write SQL, and runs it against a real database. If you're not careful that's a disaster waiting to happen. So there are a few layers:
 
-The app takes arbitrary user text, asks an LLM to write SQL, and runs it against a real database. That surface is explicitly defended in depth:
+**At the prompt layer** ([lib/text2sql.ts](lib/text2sql.ts)) the system prompt scopes the assistant strictly to Calgary permit questions, and the tool schema requires the model to flag whether the question is in-scope before any SQL is generated. User input gets wrapped in `<user_question>` tags with "treat as data, not instructions" framing, and I strip control chars, zero-width chars, and Unicode bidi overrides before anything reaches the model. The model also can't respond with freeform text — it can only call the `emit_sql` tool.
 
-### 1. Prompt-layer hardening ([lib/text2sql.ts](lib/text2sql.ts))
-- **Scope enforcement** — the system prompt declares the assistant's only job is Calgary permits. The tool schema requires an `in_scope: boolean` flag. Off-topic, meta, or roleplay requests → polite refusal, no SQL runs.
-- **Prompt-injection resistance** — user input is wrapped in `<user_question>…</user_question>` tags with explicit "treat as data, not instructions" framing. Control chars, zero-width chars, and Unicode bidi overrides are stripped before the prompt ever reaches the model.
-- **Forced tool use** — the model can only respond via the `emit_sql` tool, so it cannot emit freeform dangerous output.
+**At the validator layer** (post-LLM, pre-execution) every query has to start with `SELECT` or `WITH`, can't reference anything outside the `permits` table (CTE aliases excepted), and gets rejected if it contains any write keyword, any `pg_*` identifier, references to `pg_catalog` or `information_schema`, SQL comments, or multiple statements.
 
-### 2. SQL validator (post-LLM, pre-execution)
-Every generated query is checked against an allowlist before it touches the database:
-- Must start with `SELECT` or `WITH`.
-- Blocks write keywords (`INSERT`, `UPDATE`, `DELETE`, `DROP`, `ALTER`, `TRUNCATE`, `GRANT`, `REVOKE`, `COPY`).
-- Blocks info-disclosure / admin functions (`pg_sleep`, `pg_read_file`, `pg_ls_dir`, `dblink`, any `pg_*` identifier).
-- Blocks `pg_catalog` and `information_schema` references.
-- Blocks SQL comments (`--`, `/* */`) and multi-statement queries (`;` followed by more SQL).
-- Only the `permits` table is allow-listed; CTE aliases are recognized and permitted.
+**At the database layer** the `run_select()` RPC runs as `SECURITY INVOKER`, not `DEFINER`, so it executes with the caller's privileges. The `anon` role has SELECT-only on `permits` and literally zero access to `profiles`, `query_log`, or `auth.users`. There's a 10-second `statement_timeout` on `anon` so a pathological PostGIS scan can't tie up the DB. Row-Level Security gates everything user-scoped.
 
-### 3. Database-layer least privilege
-- The `run_select(text)` RPC runs `SECURITY INVOKER`, not `DEFINER` — it executes with the caller's privileges, not the function creator's.
-- The `anon` role has `SELECT`-only on `public.permits` and zero access to `profiles`, `query_log`, or `auth.users`.
-- `statement_timeout = 10s` on the `anon` role caps single-query runtime to prevent DoS via expensive PostGIS scans.
-- Supabase Row-Level Security policies gate all user-scoped tables.
+**At the app layer** the `/api/query` route requires auth, enforces a per-user monthly quota server-side, caps questions at 500 chars, and the admin route is behind an obfuscated slug with server-side admin checks per request. Stripe webhooks are signature-verified.
 
-### 4. Application-layer
-- Auth required on `/api/query` — unauthenticated requests get `401`.
-- Per-user monthly quota enforced server-side against `query_log`.
-- Question length capped at 500 chars.
-- Admin route path is obfuscated; admin status checked server-side per request.
-- Stripe webhook signature verified via `STRIPE_WEBHOOK_SECRET`.
+## What I store about you
 
-## Data & privacy
+If you sign up, Supabase holds your email, a bcrypt hash of your password (I never see the plaintext), and if you upgrade, the opaque Stripe customer/subscription IDs. Your questions and the SQL the model generated get logged in `query_log` — mostly so I can enforce the monthly quota and debug bad queries when the model gets something wrong.
 
-**What we store**
+I don't store card numbers (Stripe handles all of that), I don't run analytics or ad trackers, and I don't log IPs. Everything's over TLS in transit and AES-256 at rest on Supabase's side. The browser only ever gets the `anon` key which can read the public permit data and nothing else — the `service_role` key that bypasses RLS stays on the server.
 
-| Data | Where | Why |
-|---|---|---|
-| Email, display name | `profiles` (Supabase) | Sign-in, billing receipts |
-| Password hash | Supabase Auth (`auth.users`) | Sign-in only — we never see the plaintext password |
-| Your questions + the generated SQL | `query_log` | Quota enforcement, debugging bad queries |
-| Stripe customer / subscription IDs + status | `profiles` | Unlock Pro access on paid subscriptions |
+If you want your account deleted, email me. The `on delete cascade` on `auth.users` tears down everything associated with the account.
 
-**What we don't store**
+## Running it locally
 
-- **No card numbers, CVCs, or bank details.** Payments happen entirely on Stripe (PCI-DSS Level 1). Our server only ever sees the opaque `cus_...` / `sub_...` IDs Stripe hands back.
-- No IP logs, no ad trackers, no third-party analytics.
-
-**How it's protected**
-
-- **In transit:** HTTPS/TLS for every request — app ↔ Supabase, app ↔ Stripe, app ↔ Anthropic.
-- **At rest:** Supabase encrypts the Postgres volume with AES-256 and manages key rotation. Passwords are hashed by Supabase Auth (bcrypt) — not stored in plaintext, not reversible.
-- **Access isolation:** the database enforces Row-Level Security so one user's session can only read their own `profiles` row and their own `query_log`. Writes to `profiles` (plan, Stripe IDs) are restricted to the service-role key held only by the server — users cannot modify their own plan client-side.
-- **Least-privileged keys:** the browser only gets the public `anon` key, which has read-only access to the public `permits` dataset. The `service_role` key that bypasses RLS stays on the server and is never shipped to the client.
-- **Delete on request:** email us and we remove your profile + query log. The Postgres `on delete cascade` on `auth.users` removes everything associated with your account.
-
-## Local setup
-
-### 1. Environment variables
-Create `.env.local`:
+You'll need a `.env.local` with:
 
 ```
-# Anthropic
 ANTHROPIC_API_KEY=sk-ant-...
 
-# Supabase
 SUPABASE_URL=https://<project>.supabase.co
 SUPABASE_ANON_KEY=eyJ...
-SUPABASE_SERVICE_ROLE_KEY=eyJ...        # server-only, used by webhook
+SUPABASE_SERVICE_ROLE_KEY=eyJ...
 
-# Stripe
 STRIPE_SECRET_KEY=sk_test_...
 STRIPE_PRO_PRICE_ID=price_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 
-# Map tiles
 NEXT_PUBLIC_MAPTILER_KEY=<your-key>
-
-# App
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
-# Admin — the public URL slug for the admin console.
-# Folder in repo is /admin, but public URL is /admin-<ADMIN_SLUG> via middleware rewrite.
+# The repo folder is /admin but the public URL is /admin-<ADMIN_SLUG>
+# via a middleware rewrite. Pick a random hex string.
 ADMIN_SLUG=<random-hex-string>
 ```
 
-### 2. Database
-In the Supabase SQL editor:
-1. Enable extensions: `postgis`, `pg_trgm`.
-2. Create the `permits` table (see `SCHEMA` in [lib/text2sql.ts](lib/text2sql.ts)) and load the City of Calgary open-data CSV.
-3. Define the `normalize_address(text)` helper and the `run_select(q text)` RPC (SECURITY INVOKER).
-4. Create `profiles` (`id`, `plan`, `stripe_customer_id`) and `query_log` (`user_id`, `question`, `sql`, `error`, `rows_returned`, `created_at`) tables with appropriate RLS policies.
-5. Lock `anon` grants: `REVOKE ALL ON ALL TABLES IN SCHEMA public FROM anon; GRANT SELECT ON public.permits TO anon; GRANT EXECUTE ON FUNCTION public.run_select(text) TO anon;`
-6. Statement timeout: `ALTER ROLE anon SET statement_timeout = '10s';`
+Over in the Supabase SQL editor you'll need to enable `postgis` and `pg_trgm`, create the `permits` table (the schema lives in `SCHEMA` in [lib/text2sql.ts](lib/text2sql.ts)), load the open-data CSV into it, and define the `normalize_address(text)` helper and `run_select(q text)` RPC. Then lock down `anon`:
 
-### 3. Run it
+```sql
+REVOKE ALL ON ALL TABLES IN SCHEMA public FROM anon;
+GRANT SELECT ON public.permits TO anon;
+GRANT EXECUTE ON FUNCTION public.run_select(text) TO anon;
+ALTER ROLE anon SET statement_timeout = '10s';
+```
+
+You'll also need `profiles` (`id`, `plan`, `stripe_customer_id`) and `query_log` tables with RLS policies.
+
+Then:
+
 ```bash
 npm install
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000).
 
-### 4. Stripe webhook (local dev)
-```bash
-stripe listen --forward-to localhost:3000/api/stripe/webhook
-```
-Copy the `whsec_...` into `STRIPE_WEBHOOK_SECRET`.
+For Stripe webhooks in dev, run `stripe listen --forward-to localhost:3000/api/stripe/webhook` and paste the `whsec_...` it prints into your env.
 
-## Usage
-
-1. Open the site, sign up (email + password).
-2. Type a question in the search bar, or click an example chip.
-3. Results render as (a) an interactive map with clustered pins and (b) a scrollable table. Click a pin to see full permit details; click a row to highlight the matching pin.
-4. Expand *Generated SQL* to see the exact query the LLM wrote.
-5. Hit the free-tier limit → upgrade dialog surfaces the Pro plan (Stripe Checkout).
-
-## Project layout
+## Layout
 
 ```
 app/
   page.tsx              — landing + search hero
-  QueryApp.tsx          — main client component (search form, results, table)
-  PermitMap.tsx         — MapLibre map, clustering, spiderfy, popups
+  QueryApp.tsx          — main client component
+  PermitMap.tsx         — map, clustering, spiderfy, popups
   api/
     query/              — LLM + validator + DB execution
     me/                 — session + quota state
@@ -177,4 +107,4 @@ lib/
 
 ## License
 
-Personal project. City of Calgary open data is licensed under the [Open Government Licence – City of Calgary](https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa).
+Personal project — no code license yet, ask if you want to reuse something. The underlying permit data is covered by Calgary's open data licence linked above.
